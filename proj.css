@@ -1,0 +1,321 @@
+a,
+a:hover{
+    text-decoration: none !important;
+    color:inherit;
+}
+
+
+.jumbotronRow{
+	height: 350px;
+	padding-top: 150px;
+	padding-bottom: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	
+}
+
+.jumbotronRow h5{
+	line-height: 1.5;
+}
+
+
+.wetell_jumbotron{
+	background: url("img/jumbotron_wetell.png");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+.wetell_jumbotron .btn{
+	background-color: rgba(255,255,255,1);
+	border-radius: 0px;
+	color: #007ee5;
+}
+.wetell_jumbotron .btn:hover{
+/*	border-bottom: 2px solid #00325c;
+*/}
+
+.calligraphy_jumbotron{	
+	background: url("img/jumbotron_shufa.png");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+.calligraphy_jumbotron .btn{
+	background-color: rgba(255,255,255,1);
+	border-radius: 0px;
+	color: black;
+}
+/*.calligraphy_jumbotron .btn:hover{
+	border-bottom: 3px solid black;
+}*/
+
+.culturameme_jumbotron{	
+	background: url("img/jumbotron_culture.png");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	color:#0D47A1;
+}
+.culturameme_jumbotron .btn{
+	background-color: rgba(255,255,255,1);
+	border-radius: 0px;
+	color:#0D47A1;
+}
+.culturameme_jumbotron .btn:hover{
+	/*border-bottom: 2px solid #0D47A1;*/
+}
+
+.photography_jumbotron{	
+	background: url("img/jumbotron_photography.png");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+.photography_jumbotron .btn{
+	background-color: rgba(255,255,255,1);
+	border-radius: 0px;
+	color: rgb(106,27,154);
+}
+/*.photography_jumbotron .btn:hover{
+	border-bottom:3px solid #481268;
+}*/
+
+.p365_jumbotron{	
+	background: url("img/jumbotron_365.png");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+
+.museum_jumbotron{	
+	background: url("img/jumbotron_museum.png");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.evolution_jumbotron{	
+	background: url("img/jumbotron_evolution.png");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	opacity: 0.8;
+}
+.city_jumbotron{	
+	background: url("img/jumbotron_city.png");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	color:#558B2F;
+}
+.city_jumbotron .btn{
+	background-color: rgba(255,255,255,1);
+	border-radius: 0px;
+	color:#558B2F;
+}
+/*.city_jumbotron .btn:hover{
+	border-bottom: 3px solid #558B2F;
+ }*/
+
+.season_jumbotron{	
+	background: url("img/jumbotron_season.png");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+.tcweb_jumbotron{	
+	background: url("img/jumbotron_tcweb.png");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	color: #335b89;
+}
+/*.greenLine{
+	background-color: rgba(85,139,47,0.1);
+}
+.blueLine{
+	background-color: rgba(0,126,229,0.1);
+}
+
+.blackLine{
+	background-color: rgba(100,100,100,0.1);
+}
+
+.purpleLine{
+	background-color: rgba(106,27,154,0.1);
+}
+
+.brownLine{
+	background-color: rgba(62,39,35,0.1);
+}*/
+
+
+.whiteLine,
+.specialLine{
+	padding:30px 50px 20px 50px;
+}
+
+.specialLine{
+	margin-bottom: 80px;
+	margin-top:40px;
+}
+
+.whiteLine h4,
+.specialLine h4{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color:#777;
+}
+
+.whiteLine p,
+.specialLine p{
+	font-family: 'Raleway', sans-serif;
+	color:#333;
+	font-size: 16px;
+}
+
+
+
+
+
+.whiteLine img{
+	width: 100%;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+
+/*.whiteLine:hover{
+	background-color: #eee;
+}*/
+
+/*carousel img margin*/
+.carousel-inner img{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.carousel-inner{
+	height:500px;
+	overflow: hidden;
+}
+
+.carousel{
+width: 80%;
+margin: auto;
+}
+
+.carousel-indicators{
+
+	 bottom: 10px; 
+
+}
+
+.carousel-indicators li{
+	border: 1px solid black;
+}
+.carousel-indicators .active{
+	background-color: black;
+}
+
+/*jumbotronRow btn animation*/
+.jumbotronRow .btn{
+	position:relative;
+	overflow: hidden;
+	width:120px;
+	height: 35px;
+}
+.jumbotronRow .btn span{
+	position: absolute;
+	transition:top 0.3s;
+	-webkit-transition:top 0.3s;
+	-moz-transition:top 0.3s;
+	-o-transition:top 0.3s;
+	
+}
+
+.top_content{
+	top:7.5px;
+	left:15px;
+}
+.bottom_content{
+	top:100px;
+	left:15px;
+}
+.jumbotronRow .btn:hover .top_content{
+	top:-100px;
+}
+.jumbotronRow .btn:hover .bottom_content{
+	top:7.5px;
+}
+
+
+ /*TC website redesign */
+.TCweb-btn{
+	border: 2px solid #3b6aa0;
+	color:#3b6aa0;
+	background-color: transparent;
+	border-radius: 0px;
+}
+.TCweb-btn:hover{
+	background-color: #3b6aa0;
+	color:white;
+}
+.TCweb-btn:hover a{
+color:white;
+}
+.TCweb-btn a,
+.TCweb-btn a:hover{
+	text-decoration: none;
+}
+
+.TCweb-btn a{
+	color:#3b6aa0;
+}
+
+.TC-Web-Row{
+	margin-bottom: 20px;
+}
+.Web-info{
+	margin-top: 10px;
+}
+
+.TC-web-link a{
+	color:#3b6aa0;
+	font-weight: 800;
+
+}
+
+.TC-web-link:hover{
+	color:#1D3550;
+}
+
+.link-wrapper{
+	margin-bottom:10px;
+}
+
+.link-wrapper .TC-web-link{
+	display:inline-block;
+	margin-right:10px;
+}
+
+.whiteLine .label-info{
+	font-family: 'Raleway', sans-serif;
+}
+.Web-info li{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
