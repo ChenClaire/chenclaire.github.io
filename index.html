@@ -3,7 +3,6 @@
 <head>
     <title>Claire Chen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
- 
     <!-- jQuery UI lib -->
     <script type="text/javascript" src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
@@ -19,24 +18,29 @@
     <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,700' rel='stylesheet' type='text/css'>
-    
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-67851225-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    ga('create', 'UA-67851225-1', 'auto');
+    ga('send', 'pageview');
+    </script>
 </head>
 
 <body>
     <div class="container-fluid">
-        <nav class="navbar navbar-default navbar-fixed-top NavRow mainNavRow ">
+        <!-- <nav class="navbar navbar-default navbar-fixed-top NavRow mainNavRow ">
             <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header navHeader">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsed" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -46,7 +50,7 @@
                     </button>
                     <a class="navbar-brand" href="index.html">CLAIRE CHEN</a>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
+                Collect the nav links, forms, and other content for toggling
                 <div class="collapse navbar-collapse" id="navbar-collapsed">
                     <ul class="nav navbar-nav navbar-right navList">
                         <li onclick="goTo('aboutMe')">
@@ -60,20 +64,16 @@
                         </li>
                     </ul>
                 </div>
-                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.container-fluid -->
-        </nav>
+        </nav> -->
         <a id="aboutMe"></a>
         <div class="row IntroRow">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="intro text-center">
-                    <!-- <img class="avatar" src="img/avatar.png" alt=""> -->
-                    <!-- <h1> Xintong Chen</h1> -->
-                        <h2 class="fullName">Claire Chen</h2>
-                        <hr class="blackHr">
-                        <h3 class="keywords"> UI/UX Designer & Developer </h3>
-                        <p class="selfIntro">I love UI/UX Design. I apply educational, cognitive and psychological theories to support my design. I code to bring design ideas into reality.</p>
+                    <h1 class="fullName">Claire Chen</h1>
+                    <hr class="blackHr">
+                    <h4 class="keywords"> UI/UX Designer & Developer </h4>
+                    <p class="selfIntro">Hi! My name is Claire Chen. Here is my UI/UX portfolio which consists of mostly web-based projects which I have designed and/or coded while studying Instructional Technology & Media at Colombia University.</p>
                 </div>
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12 text-center arrowDown">
@@ -84,172 +84,196 @@
         </div>
         <!-- presentation of works -->
         <a id="works"></a>
-        <div class="row rowTitle text-center">
+        <!-- <div class="row rowTitle text-center">
             <h2>UI/UX Design and Development</h2>
             <p class="explanation">I am passionate about UI/UX Design. With a strong educational technology background and instructional design experience, most of my projects are for web-based learning. I am also interested in UX design in other contexts (e.g. board game and museum). </p>
-        </div>
+        </div> -->
         <div class="row ProjRow">
+            <a href="Proj_TCweb.html">
+                <div class="col-md-3 col-sm-4 col-xs-12  square" id="square_8">
+                    <div class="projImg">
+                        <img class="scaled-img" src="img/icon-tc-bk.jpg" alt="">
+                        <div class="projIcon text-center">
+                            <img src="img/icon-tc.png" alt="">
+                            <h4 class="projTitle">TC Web Redesign</h4>
+                        </div>
+                    </div>
+                    <div class="projInfo" id="projInfo_11">
+                        <!-- <h4 class="projTitle">TC Web Redesign & Development</h4> -->
+                        <p class="projSubTitle"> Web Design&Dev Internship</p>
+                        <p class="projTags">
+                            Redsign and devleopment of academic websites for Teachers College, Columbia University.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="Proj_MuseumStory.html">
+                <div class="col-md-3 col-sm-4 col-xs-12 square" id="square_4">
+                    <div class="projImg">
+                        <img class="scaled-img" src="img/icon-museum-bk.jpg" alt="">
+                        <div class="projIcon text-center">
+                            <img src="img/icon-museum.png" alt="">
+                            <h4 class="projTitle">Story x Museum</h4>
+                        </div>
+                    </div>
+                    <div class="projInfo" id="projInfo_4">
+                        <!-- <h4 class="projTitle">Story x Museum</h4> -->
+                        <p class="projSubTitle">Mobile App Design</p>
+                        <p class="projTags"> Enhancing art museum experience by story-telling and story-sharing.</p>
+                    </div>
+                </div>
+            </a>
             <a href="Proj_Wetell.html">
                 <div class="col-md-3 col-sm-4 col-xs-12 square" id="square_2">
-                    <img src="img/icon-2.png" alt="">
+                    <div class="projImg">
+                        <img class="scaled-img" src="img/icon-westory-bk.jpg" alt="">
+                        <div class="projIcon text-center">
+                            <img src="img/icon-westory.png" alt="">
+                            <h4 class="projTitle">WeStory</h4>
+                        </div>
+                    </div>
+                    <!-- <img src="img/icon-2.png" alt=""> -->
                     <div class="projInfo" id="projInfo_2">
-                        <h4 class="projTitle">WeStory</h4>
+                        <!-- <h4 class="projTitle">WeStory</h4> -->
                         <p class="projSubTitle">Collaborative Learning Community</p>
                         <p class="projTags">Helping college students to improve literacy and writing skills.</p>
                     </div>
                 </div>
             </a>
-
             <a href="Proj_Culturameme.html">
-            <div class="col-md-3 col-sm-4 col-xs-12 square" id="square_5">
-                
-                    <img src="img/icon-5.png" alt="">
-                
-                <div class="projInfo" id="projInfo_5">
-                    <h4 class="projTitle">CulturaMeme</h4>
-                    <p class="projSubTitle">Collaborative Learning Community</p>
-                    <p class="projTags">Helping international students to improve inter-culture competency.</p>
+                <div class="col-md-3 col-sm-4 col-xs-12 square" id="square_5">
+                    <div class="projImg">
+                        <img class="scaled-img" src="img/icon-meme-bk.jpg" alt="">
+                        <div class="projIcon text-center">
+                            <img src="img/icon-meme.png" alt="">
+                            <h4 class="projTitle">CulturaMeme</h4>
+                        </div>
+                    </div>
+                    <!-- <img src="img/icon-5.png" alt=""> -->
+                    <div class="projInfo" id="projInfo_5">
+                        <!-- <h4 class="projTitle">CulturaMeme</h4> -->
+                        <p class="projSubTitle">Collaborative Learning Community</p>
+                        <p class="projTags">Helping international students to improve inter-culture competency.</p>
+                    </div>
                 </div>
-            </div>
             </a>
-
             <a href="Proj_Calligraphy.html">
-            <div class="col-md-3 col-sm-4 col-xs-12 square" id="square_6">
-                
-                    <img src="img/icon-7.png" alt="">
-                
-                <div class="projInfo" id="projInfo_6">
-                    <h4 class="projTitle">Chinese Script Styles</h4>
-                    <p class="projSubTitle">Educational Website</p>
-                    <p class="projTags">Explanation of 5 basic script styles in Chinese Calligraphy.</p>
+                <div class="col-md-3 col-sm-4 col-xs-12 square" id="square_6">
+                    <div class="projImg">
+                        <img class="scaled-img" src="img/icon-shufa-bk.jpg" alt="">
+                        <div class="projIcon text-center">
+                            <img src="img/icon-shufa.png" alt="">
+                            <h4 class="projTitle">Chinese Script Styles</h4>
+                        </div>
+                    </div>
+                    <div class="projInfo" id="projInfo_6">
+                        <!-- <h4 class="projTitle">Chinese Script Styles</h4> -->
+                        <p class="projSubTitle">Educational Website</p>
+                        <p class="projTags">Explanation of 5 basic script styles in Chinese Calligraphy.</p>
+                    </div>
                 </div>
-            </div>
             </a>
-
+            <a href="Proj_City.html">
+                <div class="col-md-3 col-sm-4 col-xs-12  square" id="square_3">
+                    <div class="projImg">
+                        <img class="scaled-img" src="img/icon-city-bk.jpg" alt="">
+                        <div class="projIcon text-center">
+                            <img src="img/icon-city.png" alt="">
+                            <h4 class="projTitle">Image x City</h4>
+                        </div>
+                    </div>
+                    <!-- <img src="img/icon-6.png" alt=""> -->
+                    <div class="projInfo" id="projInfo_3">
+                        <!-- <h4 class="projTitle">Image x City</h4> -->
+                        <p class="projSubTitle">Interactive Photo Gallery</p>
+                        <!-- <br> Cities & Images </p> -->
+                    </div>
+                </div>
+            </a>
+            <a href="Proj_Ebola.html">
+                <div class="col-md-3 col-sm-4 col-xs-12  square" id="square_8">
+                    <div class="projImg">
+                        <img class="scaled-img" src="img/icon-ebola-bk.jpg" alt="">
+                        <div class="projIcon text-center">
+                            <img src="img/icon-ebola.png" alt="">
+                            <h4 class="projTitle">Ebola!</h4>
+                        </div>
+                    </div>
+                    <!-- <img src="img/icon-9.png" alt=""> -->
+                    <div class="projInfo" id="projInfo_8">
+                        <!-- <h4 class="projTitle">Ebola!</h4> -->
+                        <p class="projSubTitle"> Educational Board Game</p>
+                        <pclass="projTags">
+                            Raising people's awareness of Ebola and eliminating people's threat of Ebola.</p>
+                    </div>
+                </div>
+            </a>
             <a href="Proj_Photography.html">
-            <div class="col-md-3 col-sm-4 col-xs-12  square" id="square_1">
-                
-                    <img src="img/icon-1.png" alt="">
-                
-                <div class="projInfo" id="projInfo_1">
-                    <h4 class="projTitle"> Photo Composition </h4>
-                    <p class="projSubTitle"> Educational Website</p>
-                    <p class="projTags">Teaching how to use Golden Ratio in photo composition.</p>
+                <div class="col-md-3 col-sm-4 col-xs-12  square" id="square_1">
+                    <div class="projImg">
+                        <img class="scaled-img" src="img/icon-foto-bk.jpg" alt="">
+                        <div class="projIcon text-center">
+                            <img src="img/icon-foto.png" alt="">
+                            <h4 class="projTitle"> Photo Composition </h4>
+                        </div>
+                    </div>
+                    <div class="projInfo" id="projInfo_1">
+                        <!-- <h4 class="projTitle"> Photo Composition </h4> -->
+                        <p class="projSubTitle"> Educational Website</p>
+                        <p class="projTags">Teaching how to use Golden Ratio in photo composition.</p>
+                    </div>
                 </div>
-            </div>
             </a>
-
-            <a href="Proj_TCweb.html">
-            <div class="col-md-3 col-sm-4 col-xs-12  square" id="square_8">
-                
-                    <img src="img/icon-11.png" alt="">
-                
-                <div class="projInfo" id="projInfo_11">
-                    <h4 class="projTitle">TC Web Redesign & Development</h4>
-                    <p class="projSubTitle"> Web Design&Dev Internship</p>
-                    <pclass="projTags">
-                        Redsign and devleopment of academic websites for Teachers College, Columbia University.</p>
-                </div>
-            </div>
-            </a>
-
-           
-
-            <a href="Proj_MuseumStory.html">
-            <div class="col-md-3 col-sm-4 col-xs-12 square" id="square_4">
-                
-                    <img src="img/icon-4.png" alt="">
-               
-                <div class="projInfo" id="projInfo_4">
-                    <h4 class="projTitle">Storytelling in Museum</h4>
-                    <p class="projSubTitle">Mobile App Design</p>
-                    <p class="projTags"> Enhancing art museum experience by story-telling and story-sharing.</p>
-                </div>
-            </div>
-             </a>
-              <a href="Proj_Ebola.html">
-            <div class="col-md-3 col-sm-4 col-xs-12  square" id="square_8">
-                
-                    <img src="img/icon-9.png" alt="">
-                
-                <div class="projInfo" id="projInfo_8">
-                    <h4 class="projTitle">Ebola!</h4>
-                    <p class="projSubTitle"> Educational Board Game</p>
-                    <pclass="projTags">
-                        Raising people's awareness of Ebola and eliminating people's threat of Ebola.</p>
-                </div>
-            </div>
-            </a>
-
-             <a href="Proj_Evolution.html">
-            <div class="col-md-3 col-sm-4 col-xs-12 square" id="square_9">
-                
+            
+            <!--  <a href="Proj_Evolution.html">
+                <div class="col-md-3 col-sm-4 col-xs-12 square" id="square_9">
                     <img src="img/icon-8.png" alt="">
-                
-                <div class="projInfo" id="projInfo_9">
-                    <h4 class="projTitle">Evolution!</h4>
-                    <p class="projSubTitle">Instructional Design</p>
-                    <p class="projTags">Teaching key principles of Evolution within a simulation game. </p>
+                    <div class="projInfo" id="projInfo_9">
+                        <h4 class="projTitle">Evolution!</h4>
+                        <p class="projSubTitle">Instructional Design</p>
+                        <p class="projTags">Teaching key principles of Evolution within a simulation game. </p>
+                    </div>
                 </div>
-            </div>
-            </a>
+            </a> -->
         </div>
-
-        <div class="row rowTitle text-center">
+        <!--   <div class="row rowTitle text-center">
             <h2>Graphic Design</h2>
             <p class="explanation">I have been doing photography for 4 years. And I spend lots of time playing with Photoshop and Lightroom. I also enjoy doing graphic design with Illustrator, inDesign and Processing.
             </p>
-        </div>
-        <div class="row ProjRow">
-         <a href="Proj_City.html">
-            <div class="col-md-3 col-sm-4 col-xs-12  square" id="square_3">
-               
+        </div> -->
+        <!-- <div class="row ProjRow">
+            <a href="Proj_City.html">
+                <div class="col-md-3 col-sm-4 col-xs-12  square" id="square_3">
                     <img src="img/icon-6.png" alt="">
-               
-                <div class="projInfo" id="projInfo_3">
-                    <h4 class="projTitle">Image x City</h4>
-                    <p class="projSubTitle">Interactive Photo Gallery</p>
-                    <!-- <br> Cities & Images </p> -->
+                    <div class="projInfo" id="projInfo_3">
+                        <h4 class="projTitle">Image x City</h4>
+                        <p class="projSubTitle">Interactive Photo Gallery</p>
+                    </div>
                 </div>
-            </div>
-             </a>
-             <a href="Proj_Season.html">
-            <div class="col-md-3 col-sm-4 col-xs-12 square" id="square_10">
-                
+            </a>
+            <a href="Proj_Season.html">
+                <div class="col-md-3 col-sm-4 col-xs-12 square" id="square_10">
                     <img src="img/icon-10.png" alt="">
-                
-                <div class="projInfo" id="projInfo_10">
-                    <h4 class="projTitle">Seasons</h4>
-                    <p class="projSubTitle">Graphic Design</p>
-                    <!-- <br>Processing</p> -->
+                    <div class="projInfo" id="projInfo_10">
+                        <h4 class="projTitle">Seasons</h4>
+                        <p class="projSubTitle">Graphic Design</p>
+                    </div>
                 </div>
-            </div>
             </a>
             <a href="Proj_365.html">
-            <div class="col-md-3 col-sm-4 col-xs-12  square" id="square_7">
-                
+                <div class="col-md-3 col-sm-4 col-xs-12  square" id="square_7">
                     <img src="img/icon-3.png" alt="">
-                
-                <div class="projInfo" id="projInfo_7">
-                    <h4 class="projTitle">365&middot;Project</h4>
-                    <p class="projSubTitle">Photography</p>
+                    <div class="projInfo" id="projInfo_7">
+                        <h4 class="projTitle">365&middot;Project</h4>
+                        <p class="projSubTitle">Photography</p>
+                    </div>
                 </div>
-            </div>
             </a>
-        </div>
-        <a id="contactMe"></a>
+        </div> -->
+        <!-- <a id="contactMe"></a> -->
         <div class="row ContactRow">
-            <div class="col-md-3">
-                <h4>Get In Touch</h4>
-            </div>
-            <div class="col-md-4">
-                <div class="messageMe">
-                    <p>xintong0308@gmail.com
-                        <br>646.241.8178</p>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="social">
+            <div class="col-md-12 text-center">
+                <a href="index.html">Claire Chen</a> | xc2282@tc.columbia.edu | 646.241.8178
+                <div class="col-md-12 text-center">
                     <a href="https://www.linkedin.com/in/xintongchen" target="_blank"><i class="fa fa-linkedin-square"></i></a>
                     <a href="https://www.flickr.com/photos/xin-tong/" target="_blank"><i class="fa fa-flickr"></i></a>
                     <a href="https://instagram.com/xin.tong/" target="_blank"><i class="fa fa-instagram"></i></a>

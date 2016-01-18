@@ -4,88 +4,126 @@ a:hover{
     color:inherit;
 }
 
+.homeKey{
+	border-radius: 100%;
+	background-color: #ff7373;
+	width:50px;
+	height:50px;
+	position:fixed;
+	top:20px;
+	left:20px;
+	color:white;
+	box-shadow: 0px 6px 13px 0 rgba(0,0,0,0.20);
+	z-index: 10;
+}
+
+.homeKey:hover{
+	box-shadow: 0px 12px 17px 0 rgba(0,0,0,0.20);
+	cursor: pointer;
+}
+.homeKey img{
+	position:absolute;
+	width:30px;
+	height:30px;
+	left:10;
+	top:8;
+	z-index:100;
+}
 
 .jumbotronRow{
-	height: 350px;
-	padding-top: 150px;
+	height: 300px;
+	padding-top: 70px;
 	padding-bottom: 50px;
 	padding-left: 10px;
 	padding-right: 10px;
-	color: white;
-	font-family: 'Raleway', sans-serif;
+	color: #ff7373;
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	
+}
+
+.jumbotronRow hr{
+	width:65%;
 }
 
 .jumbotronRow h5{
 	line-height: 1.5;
 }
 
+.JumbotronRow .btn{
+	background-color: rgba(255,255,255,1);
+	border-radius: 0px;
+	color: #ff7373;
+	border-color: #ff7373;
+	margin-top:15px;
+}
 
-.wetell_jumbotron{
+/*.wetell_jumbotron{
 	background: url("img/jumbotron_wetell.png");
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-}
-.wetell_jumbotron .btn{
+}*/
+/*.wetell_jumbotron .btn{
 	background-color: rgba(255,255,255,1);
 	border-radius: 0px;
-	color: #007ee5;
-}
+	color: #ff7373;
+	border-color: #ff7373;
+}*/
 .wetell_jumbotron .btn:hover{
 /*	border-bottom: 2px solid #00325c;
 */}
 
-.calligraphy_jumbotron{	
+/*.calligraphy_jumbotron{	
 	background: url("img/jumbotron_shufa.png");
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-}
-.calligraphy_jumbotron .btn{
+}*/
+/*.calligraphy_jumbotron .btn{
 	background-color: rgba(255,255,255,1);
 	border-radius: 0px;
-	color: black;
-}
+	color: #ff7373;
+	border-color: #ff7373;
+}*/
 /*.calligraphy_jumbotron .btn:hover{
 	border-bottom: 3px solid black;
 }*/
 
-.culturameme_jumbotron{	
+/*.culturameme_jumbotron{	
 	background: url("img/jumbotron_culture.png");
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
   	color:#0D47A1;
-}
-.culturameme_jumbotron .btn{
+}*/
+/*.culturameme_jumbotron .btn{
 	background-color: rgba(255,255,255,1);
 	border-radius: 0px;
-	color:#0D47A1;
-}
+	color:#ff7373;
+	border-color: #ff7373;
+}*/
 .culturameme_jumbotron .btn:hover{
 	/*border-bottom: 2px solid #0D47A1;*/
 }
 
-.photography_jumbotron{	
+/*.photography_jumbotron{	
 	background: url("img/jumbotron_photography.png");
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-}
-.photography_jumbotron .btn{
+}*/
+/*.photography_jumbotron .btn{
 	background-color: rgba(255,255,255,1);
 	border-radius: 0px;
-	color: rgb(106,27,154);
-}
-/*.photography_jumbotron .btn:hover{
-	border-bottom:3px solid #481268;
+	color:#ff7373;
+	border-color: #ff7373;
 }*/
+
 
 .p365_jumbotron{	
 	background: url("img/jumbotron_365.png");
@@ -95,14 +133,14 @@ a:hover{
   	background-size: cover;
 }
 
-
+/*
 .museum_jumbotron{	
 	background: url("img/jumbotron_museum.png");
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-}
+}*/
 
 .evolution_jumbotron{	
 	background: url("img/jumbotron_evolution.png");
@@ -112,19 +150,20 @@ a:hover{
   	background-size: cover;
   	opacity: 0.8;
 }
-.city_jumbotron{	
+/*.city_jumbotron{	
 	background: url("img/jumbotron_city.png");
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
   	color:#558B2F;
-}
-.city_jumbotron .btn{
+}*/
+/*.city_jumbotron .btn{
 	background-color: rgba(255,255,255,1);
 	border-radius: 0px;
-	color:#558B2F;
-}
+	color:#ff7373;
+	border-color: #ff7373;
+}*/
 /*.city_jumbotron .btn:hover{
 	border-bottom: 3px solid #558B2F;
  }*/
@@ -136,14 +175,14 @@ a:hover{
   	-o-background-size: cover;
   	background-size: cover;
 }
-.tcweb_jumbotron{	
+/*.tcweb_jumbotron{	
 	background: url("img/jumbotron_tcweb.png");
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
   	color: #335b89;
-}
+}*/
 /*.greenLine{
 	background-color: rgba(85,139,47,0.1);
 }
@@ -163,10 +202,13 @@ a:hover{
 	background-color: rgba(62,39,35,0.1);
 }*/
 
-
+.details{
+	margin-bottom: 50px;
+	margin-left: 15px;
+}
 .whiteLine,
 .specialLine{
-	padding:30px 50px 20px 50px;
+	padding:30px 80px 20px 80px;
 }
 
 .specialLine{
@@ -176,14 +218,14 @@ a:hover{
 
 .whiteLine h4,
 .specialLine h4{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	color:#777;
 }
 
 .whiteLine p,
 .specialLine p{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
 	color:#333;
 	font-size: 16px;
 }
@@ -287,7 +329,7 @@ color:white;
 }
 
 .TC-Web-Row{
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 .Web-info{
 	margin-top: 10px;
@@ -313,9 +355,9 @@ color:white;
 }
 
 .whiteLine .label-info{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 .Web-info li{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-size: 16px;
 }
