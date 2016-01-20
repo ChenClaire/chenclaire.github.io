@@ -123,9 +123,9 @@ a:hover p{
 
 .intro{
     /*background-color: rgba(255,255,255,0.5);*/
-    width:45%;
+    width:50%;
     margin:auto;
-    margin-top: 40px;
+    margin-top: 30px;
     padding-top: 5px;
 }
 
@@ -201,7 +201,7 @@ a:hover p{
 }
 
 .ProjRow .square{
-    padding:20px;
+    padding:15px;
     margin-bottom: 20px;
 }
 
@@ -368,8 +368,7 @@ a:hover p{
 
 
 
-
-@media (min-width: 320px) {
+@media screen and (min-width: 320px) {
     .intro{
         width: 90%;
     }
@@ -377,17 +376,9 @@ a:hover p{
         font-size: 20px;
     }
     .intro .selfIntro{
-        font-size: 15px;
+        font-size: 16px;
     }
     
-    .rowTitle .explanation{   
-        width:95%;
-        font-size: 15px; 
-    }
-
-    .rowTitle h2{
-        font-size:23px;
-    }
 
     .whiteLine,
     .specialLine{
@@ -397,9 +388,9 @@ a:hover p{
 
 }
 
-@media(min-width: 480px){
+@media screen and (min-width: 480px){
     .intro{
-        width: 80%;
+        width: 75%;
     }
     .intro .keywords{
         font-size: 24px;
@@ -407,44 +398,54 @@ a:hover p{
     .intro .selfIntro{
         font-size: 17px;
     }
-
-    .rowTitle .explanation{   
-        width:95%;
-        font-size: 17px;
+    .projRow .square{
+        padding:20px;
     }
+
     .whiteLine,
+.specialLine{
+    padding:30px 40px 20px 40px;
+}
+
+}
+
+@media screen and (min-width: 768px){
+    .intro{
+        width: 70%;
+    }
+    .projRow .square{
+        padding:5px;
+    }
+        .whiteLine,
+.specialLine{
+    padding:30px 50px 20px 50px;
+}
+
+}
+
+@media screen and (min-width: 900px){
+    .intro{
+        width: 60%;
+    }
+    .projRow .square{
+        padding:5px;
+    }
+        .whiteLine,
+.specialLine{
+    padding:30px 60px 20px 60px;
+}
+}
+
+@media screen and (min-width: 992px){
+    .intro{
+        width: 50%;
+    }
+    .projRow  .square{
+        padding:15px;
+    }
+        .whiteLine,
 .specialLine{
     padding:30px 80px 20px 80px;
 }
 
-}
-
-@media(min-width: 768px){
-    .intro{
-        width: 60%;
-    }
-    .rowTitle .explanation{   
-        width:80%;
-    }
-    .rowTitle h2{
-        font-size:30px;
-    }
-}
-
-@media(min-width: 900px){
-    .intro{
-        width: 50%;
-    }
-    .rowTitle .explanation{   
-        width:60%;
-    }
-}
-
-@media(min-width: 992px){
-    .intro{
-        width: 50%;
-    }
-    .rowTitle .explanation{   
-        width:55%;
-    }
 }
