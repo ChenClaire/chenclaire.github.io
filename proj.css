@@ -6,7 +6,8 @@ a:hover{
 
 .homeKey{
 	border-radius: 100%;
-	background-color: #ff7373;
+	/*background-color: #ff7373;*/
+	background-color: #d83e77; 
 	width:50px;
 	height:50px;
 	position:fixed;
@@ -36,7 +37,8 @@ a:hover{
 	padding-bottom: 50px;
 	padding-left: 10px;
 	padding-right: 10px;
-	color: #ff7373;
+	/*color: #ff7373;*/
+	color: #d83e77;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	
@@ -53,8 +55,10 @@ a:hover{
 .JumbotronRow .btn{
 	background-color: rgba(255,255,255,1);
 	border-radius: 0px;
-	color: #ff7373;
-	border-color: #ff7373;
+	/*color: #ff7373;*/
+	color:#d83e77;
+	/*border-color: #ff7373;*/
+	border-color:#d83e77;
 	margin-top:15px;
 }
 
@@ -164,9 +168,6 @@ a:hover{
 	color:#ff7373;
 	border-color: #ff7373;
 }*/
-/*.city_jumbotron .btn:hover{
-	border-bottom: 3px solid #558B2F;
- }*/
 
 .season_jumbotron{	
 	background: url("img/jumbotron_season.png");
@@ -183,24 +184,7 @@ a:hover{
   	background-size: cover;
   	color: #335b89;
 }*/
-/*.greenLine{
-	background-color: rgba(85,139,47,0.1);
-}
-.blueLine{
-	background-color: rgba(0,126,229,0.1);
-}
 
-.blackLine{
-	background-color: rgba(100,100,100,0.1);
-}
-
-.purpleLine{
-	background-color: rgba(106,27,154,0.1);
-}
-
-.brownLine{
-	background-color: rgba(62,39,35,0.1);
-}*/
 
 .details{
 	margin-bottom: 50px;
@@ -220,7 +204,7 @@ a:hover{
 .specialLine h4{
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
-	color:#777;
+	color:#888;
 }
 
 .whiteLine p,
@@ -291,11 +275,11 @@ margin: auto;
 
 .top_content{
 	top:7.5px;
-	left:15px;
+	left:16px;
 }
 .bottom_content{
 	top:100px;
-	left:15px;
+	left:16px;
 }
 .jumbotronRow .btn:hover .top_content{
 	top:-100px;
@@ -307,26 +291,27 @@ margin: auto;
 
  /*TC website redesign */
 .TCweb-btn{
-	border: 2px solid #3b6aa0;
-	color:#3b6aa0;
-	background-color: transparent;
+	/*border: 2px solid #3b6aa0;*/
+	color:#d83e77;
+	/*background-color: transparent;*/
 	border-radius: 0px;
+	opacity: 0.75;
 }
 .TCweb-btn:hover{
-	background-color: #3b6aa0;
-	color:white;
+	opacity: 1;
+	color:#d83e77;
 }
-.TCweb-btn:hover a{
+/*.TCweb-btn:hover a{
 color:white;
-}
+}*/
 .TCweb-btn a,
 .TCweb-btn a:hover{
 	text-decoration: none;
 }
 
-.TCweb-btn a{
+/*.TCweb-btn a{
 	color:#3b6aa0;
-}
+}*/
 
 .TC-Web-Row{
 	margin-bottom: 40px;
@@ -337,7 +322,7 @@ color:white;
 
 .TC-web-link a{
 	color:#3b6aa0;
-	font-weight: 800;
+	/*font-weight: 800;*/
 
 }
 
@@ -347,6 +332,7 @@ color:white;
 
 .link-wrapper{
 	margin-bottom:10px;
+	margin-top: 5px;
 }
 
 .link-wrapper .TC-web-link{
@@ -360,4 +346,9 @@ color:white;
 .Web-info li{
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
+}
+
+.label-tag{
+	background-color: #d83e77;
+	opacity: 0.75;
 }
