@@ -277,11 +277,15 @@ a:hover p {
     -o-transform: scale(1.15);
     -ms-transform: scale(1.15);
     transform: scale(1.15);*/
+
+
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
     -o-filter:grayscale(0);
     -moz-filter:grayscale(0);
     -ms-filter:grayscale(0);
+
+
     border-radius: 50%;
 }
 
@@ -291,11 +295,15 @@ a:hover p {
     -o-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;*/
     border-radius: 50%;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -o-filter:grayscale(100%);
-    -moz-filter:grayscale(100%);
-    -ms-filter:grayscale(100%);
+
+
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+    -o-filter:grayscale(50%);
+    -moz-filter:grayscale(50%);
+    -ms-filter:grayscale(50%);
+
+
 }
 
 /*.ProjRow .projInfo {
