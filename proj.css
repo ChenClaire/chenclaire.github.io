@@ -15,7 +15,7 @@ a:hover{
 	left:20px;
 	color:white;
 	box-shadow: 0px 6px 13px 0 rgba(0,0,0,0.20);
-	z-index: 10;
+	z-index: 100;
 }
 
 .homeKey:hover{
@@ -32,16 +32,26 @@ a:hover{
 }
 
 .jumbotronRow{
-	height: 270px;
-	padding-top: 40px;
-	padding-bottom: 20px;
+	position: relative;
+	/*height: 260px;*/
+	padding-top: 25px;
+	padding-bottom: 40px;
 	padding-left: 10px;
 	padding-right: 10px;
 	/*color: #ff7373;*/
 	color: #d83e77;
 	font-family: 'Lato', sans-serif;
-	/*font-weight: 400;*/
+	font-weight: 400;
+	/*z-index:-10;*/
 }
+
+/*.projIntro{
+	position:fixed;
+	top:50px;
+	left:10px;
+	width: 100%;
+}*/
+
 
 .jumbotronRow hr{
 	width:65%;
@@ -53,7 +63,7 @@ a:hover{
 	line-height: 1.5;
 }
 
-.JumbotronRow .btn{
+.jumbotronRow .btn{
 	background-color: rgba(255,255,255,1);
 	border-radius: 0px;
 	/*color: #ff7373;*/
@@ -63,153 +73,36 @@ a:hover{
 	margin-top:15px;
 }
 
-/*.wetell_jumbotron{
-	background: url("img/jumbotron_wetell.png");
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}*/
-/*.wetell_jumbotron .btn{
-	background-color: rgba(255,255,255,1);
-	border-radius: 0px;
-	color: #ff7373;
-	border-color: #ff7373;
-}*/
-.wetell_jumbotron .btn:hover{
-/*	border-bottom: 2px solid #00325c;
-*/}
-
-/*.calligraphy_jumbotron{	
-	background: url("img/jumbotron_shufa.png");
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}*/
-/*.calligraphy_jumbotron .btn{
-	background-color: rgba(255,255,255,1);
-	border-radius: 0px;
-	color: #ff7373;
-	border-color: #ff7373;
-}*/
-/*.calligraphy_jumbotron .btn:hover{
-	border-bottom: 3px solid black;
-}*/
-
-/*.culturameme_jumbotron{	
-	background: url("img/jumbotron_culture.png");
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	color:#0D47A1;
-}*/
-/*.culturameme_jumbotron .btn{
-	background-color: rgba(255,255,255,1);
-	border-radius: 0px;
-	color:#ff7373;
-	border-color: #ff7373;
-}*/
-.culturameme_jumbotron .btn:hover{
-	/*border-bottom: 2px solid #0D47A1;*/
-}
-
-/*.photography_jumbotron{	
-	background: url("img/jumbotron_photography.png");
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}*/
-/*.photography_jumbotron .btn{
-	background-color: rgba(255,255,255,1);
-	border-radius: 0px;
-	color:#ff7373;
-	border-color: #ff7373;
-}*/
-
-
-.p365_jumbotron{	
-	background: url("img/jumbotron_365.png");
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-
-/*
-.museum_jumbotron{	
-	background: url("img/jumbotron_museum.png");
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}*/
-
-.evolution_jumbotron{	
-	background: url("img/jumbotron_evolution.png");
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	opacity: 0.8;
-}
-/*.city_jumbotron{	
-	background: url("img/jumbotron_city.png");
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	color:#558B2F;
-}*/
-/*.city_jumbotron .btn{
-	background-color: rgba(255,255,255,1);
-	border-radius: 0px;
-	color:#ff7373;
-	border-color: #ff7373;
-}*/
-
-.season_jumbotron{	
-	background: url("img/jumbotron_season.png");
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-/*.tcweb_jumbotron{	
-	background: url("img/jumbotron_tcweb.png");
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	color: #335b89;
-}*/
-
 
 .details{
 	margin-bottom: 50px;
 	margin-left: 15px;
 }
-.whiteLine,
-.specialLine{
-	padding:30px 80px 20px 80px;
+
+.details h4{
+	font-variant: small-caps;
 }
 
-.specialLine{
-	margin-bottom: 80px;
-	margin-top:40px;
+
+.whiteLine{
+	box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+
 }
 
-.whiteLine h4,
-.specialLine h4{
+
+
+.whiteLine{
+	padding:35px 80px 40px 80px;
+}
+
+
+.whiteLine h4{
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	color:#888;
 }
 
-.whiteLine p,
-.specialLine p{
+.whiteLine p{
 	font-family: 'Lato', sans-serif;
 	color:#333;
 	font-size: 16px;
@@ -225,11 +118,7 @@ a:hover{
 	margin-bottom: 10px;
 }
 
-/*.whiteLine:hover{
-	background-color: #eee;
-}*/
 
-/*carousel img margin*/
 .carousel-inner img{
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -258,7 +147,6 @@ margin: auto;
 	background-color: black;
 }
 
-/*jumbotronRow btn animation*/
 .jumbotronRow .btn{
 	position:relative;
 	overflow: hidden;
@@ -353,3 +241,7 @@ color:white;
 	background-color: #d83e77;
 	opacity: 0.75;
 }
+
+
+
+

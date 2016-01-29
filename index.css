@@ -73,19 +73,12 @@ a:hover p {
 }*/
 
 .IntroRow {
-    /* background: url("img/bkg_2.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;*/
     padding-bottom: 30px;
-    /* padding-top:50px;*/
 }
 
 .IntroRow .arrowDown {
     font-size: 33px;
     margin-top: 20px;
-    /*color:#ff7373;*/
     color: #d83e77;
 }
 
@@ -172,6 +165,7 @@ a:hover p {
 }
 
 .intro .fullName {
+    font-variant: small-caps;
     letter-spacing: 2;
     color: #555;
     font-family: 'Josefin Sans', sans-serif;
@@ -184,49 +178,25 @@ a:hover p {
 }
 
 .intro .keywords {
-    /*color:#ff7373;*/
     color: #d83e77;
     font-family: 'Josefin Sans', sans-serif;
-    /*font-weight: 400;*/
+    font-variant: small-caps;
     padding-top: 10px;
     opacity: 0;
 }
 
 .intro .selfIntro {
-    /*font-family: 'Raleway', sans-serif;*/
     font-family: 'Lato', sans-serif;
     color: #555;
     font-size: 18px;
     line-height: 1.5;
     display: block;
-    /*padding:5px 15px 15px 15px;*/
-    /*font-weight: 200;*/
     opacity: 0;
 }
 
-/*.rowTitle {
-    margin-left: 4%;
-    margin-right: 7%;
-    padding-top: 40px;
-    margin-bottom: 10px;
-}*/
-/*
-.rowTitle h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    color: #999;
-    font-weight: 700;
-}*/
 
-/*.rowTitle .explanation {
-    font-weight: normal;
-    font-family: 'Lato', sans-serif;
-    font-size: 17px;
-    color: #777;
-    display: block;
-    width: 55%;
-    margin: auto;
-    margin-bottom: 15px;
-}*/
+
+
 
 .ProjRow {
     margin-bottom: 10px;
@@ -245,6 +215,7 @@ a:hover p {
     border-radius: 50%;
     /*overflow: hidden;*/
 }
+
 .ProjRow .projIcon p{
     font-family: 'Lato', sans-serif;
 }
@@ -252,16 +223,7 @@ a:hover p {
     margin:10px auto;
     width: 80%;
 }
-/*.ProjRow .hide-overflow{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    overflow: hidden;
-    top:0;
-    left:0;
-    z-index: 100;
-}*/
+
 
 .ProjRow .square:hover {    
     cursor: pointer;
@@ -272,30 +234,21 @@ a:hover p {
     box-shadow: 2px 8px 15px 0 rgba(0, 0, 0, 0.3);
 }
 .projRow .square:hover .projImg .scaled-img {
-   /* -webkit-transform: scale(1.15);
-    -moz-transform: scale(1.15);
-    -o-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    transform: scale(1.15);*/
-
-
+   
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
     -o-filter:grayscale(0);
     -moz-filter:grayscale(0);
     -ms-filter:grayscale(0);
 
-
     border-radius: 50%;
 }
 
 
-.projImg .scaled-img {
-   /* -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;*/
-    border-radius: 50%;
 
+.projImg .scaled-img {
+   
+    border-radius: 50%;
 
     filter: grayscale(50%);
     -webkit-filter: grayscale(50%);
@@ -306,17 +259,11 @@ a:hover p {
 
 }
 
-/*.ProjRow .projInfo {
-    width: 100%;
-    padding: 5px 5px 10px 5px;
-    height: 140px;
-    font-family: 'Lato', sans-serif;
-    color: #555;
-}*/
+
 
 .ProjRow .projTitle {
     font-family: 'Lato', sans-serif;
-
+    font-variant: small-caps;
 }
 
 .ProjRow .projInfo .projTags {
@@ -329,8 +276,6 @@ a:hover p {
 
 .projImg {
     position: relative;
-    /*overflow: hidden;*/
-    /*margin-bottom: 5px;*/
     width:330px;
     margin:auto;
     border-radius: 50%;
@@ -344,7 +289,6 @@ a:hover p {
     padding-bottom: 40px;
     padding-left: 25px;
     padding-right:25px;
-    /*color:#FF80AB;*/
 }
 
 .projIcon img {
@@ -357,7 +301,6 @@ a:hover p {
     border-top: 2px solid #d83e77;
     padding-top: 20px;
     padding-bottom: 25px;
-    margin-top: 20px;
     color: #d83e77;
     font-family: 'Lato', sans-serif;
     box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.15);
@@ -366,7 +309,6 @@ a:hover p {
 
 
 .ContactRow i {
-    /*color: #ff7373;*/
     color: #d83e77;
     margin: 5px 4px 0px 4px;
     font-size: 20px;
@@ -390,11 +332,9 @@ a:hover p {
     .intro .selfIntro {
         font-size: 16px;
     }
-    .projRow .square {
-        /*padding: 5px;*/
-    }
+  
     .whiteLine{
-        padding: 30px 25px 20px 25px;
+        padding: 30px 25px 10px 25px;
     }
     .projImg{
         width: 300px;
@@ -411,12 +351,10 @@ a:hover p {
     .intro .selfIntro {
         font-size: 17px;
     }
-    .projRow .square {
-        /*padding: 25px;*/
-    }
+
     .whiteLine,
     .specialLine {
-        padding: 30px 40px 20px 40px;
+        padding: 30px 40px 30px 40px;
     }
     .projImg{
         width: 350px;
@@ -428,12 +366,10 @@ a:hover p {
     .intro {
         width: 70%;
     }
-    .projRow .square {
-        /*padding: 25px;*/
-    }
+
     .whiteLine,
     .specialLine {
-        padding: 30px 50px 20px 50px;
+        padding: 30px 50px 30px 50px;
     }
        .projImg{
         width: 300px;
@@ -456,7 +392,7 @@ a:hover p {
     }
     .whiteLine,
     .specialLine {
-        padding: 30px 60px 20px 60px;
+        padding: 40px 60px 30px 60px;
     }
     .projImg{
         width: 350px;
@@ -467,12 +403,10 @@ a:hover p {
     .intro {
         width: 55%;
     }
-    .projRow .square {
-        /*padding: 15px;*/
-    }
+
     .whiteLine,
     .specialLine {
-        padding: 30px 80px 20px 80px;
+        padding: 35px 80px 40px 80px;
     }
       .projImg{
         width: 270px;
