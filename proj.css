@@ -34,14 +34,14 @@ a:hover{
 .jumbotronRow{
 	position: relative;
 	/*height: 260px;*/
-	padding-top: 25px;
+	padding-top: 40px;
 	padding-bottom: 40px;
 	padding-left: 10px;
 	padding-right: 10px;
 	/*color: #ff7373;*/
 	color: #d83e77;
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
+	font-family: 'Josefin Sans', sans-serif;
+	/*letter-spacing: 1.05;*/
 	/*z-index:-10;*/
 }
 
@@ -60,14 +60,15 @@ a:hover{
 }
 
 .jumbotronRow h5{
-	line-height: 1.5;
+	/*line-height: 1.5;*/
+	font-family: 'Nunito', sans-serif;
 }
 
 .jumbotronRow .btn{
-	background-color: rgba(255,255,255,1);
+	background-color: #d83e77;
 	border-radius: 0px;
 	/*color: #ff7373;*/
-	color:#d83e77;
+	color:white;
 	/*border-color: #ff7373;*/
 	border-color:#d83e77;
 	margin-top:15px;
@@ -80,7 +81,10 @@ a:hover{
 }
 
 .details h4{
-	font-variant: small-caps;
+	/*font-variant: small-caps;*/
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	color:#888;
 }
 
 
@@ -97,13 +101,11 @@ a:hover{
 
 
 .whiteLine h4{
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	color:#888;
+
 }
 
 .whiteLine p{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	color:#333;
 	font-size: 16px;
 }
@@ -150,8 +152,9 @@ margin: auto;
 .jumbotronRow .btn{
 	position:relative;
 	overflow: hidden;
-	width:120px;
+	width:110px;
 	height: 35px;
+	border-radius: 2px;
 }
 .jumbotronRow .btn span{
 	position: absolute;
@@ -186,7 +189,8 @@ margin: auto;
 	border-radius: 0px;
 	opacity: 0.75;
 }
-.TCweb-btn:hover{
+.TCweb-btn:hover,
+.TCweb-btn:focus{
 	opacity: 1;
 	color:#d83e77;
 }
@@ -240,8 +244,21 @@ color:white;
 .label-tag{
 	background-color: #d83e77;
 	opacity: 0.75;
+	font-weight: normal;
+	padding:3px 5px;
 }
 
-
+.proj-label{
+	display: inline-block;
+	border:1px solid #d83e77;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin:5px;
+	border-radius: 2px;
+	color:#d83e77;
+}
+.proj-label:hover{
+	background-color: rgba(216,62,119,0.1);
+}
 
 
