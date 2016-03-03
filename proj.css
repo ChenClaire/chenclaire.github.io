@@ -41,16 +41,8 @@ a:hover{
 	/*color: #ff7373;*/
 	color: #d83e77;
 	font-family: 'Josefin Sans', sans-serif;
-	/*letter-spacing: 1.05;*/
-	/*z-index:-10;*/
 }
 
-/*.projIntro{
-	position:fixed;
-	top:50px;
-	left:10px;
-	width: 100%;
-}*/
 
 
 .jumbotronRow hr{
@@ -60,20 +52,10 @@ a:hover{
 }
 
 .jumbotronRow h5{
-	/*line-height: 1.5;*/
 	font-family: 'Nunito', sans-serif;
 	color:#666;
 }
 
-.jumbotronRow .btn{
-	background-color: #d83e77;
-	border-radius: 0px;
-	/*color: #ff7373;*/
-	color:white;
-	/*border-color: #ff7373;*/
-	border-color:#d83e77;
-	margin-top:15px;
-}
 
 
 .details{
@@ -149,11 +131,18 @@ margin: auto;
 .carousel-indicators .active{
 	background-color: black;
 }
+.jumbotronRow .btn{
+	background-color: #d83e77;
+	border-radius: 0px;
+	color:white;
+	border-color:#d83e77;
+	margin-top:15px;
+}
 
 .jumbotronRow .btn{
 	position:relative;
 	overflow: hidden;
-	width:110px;
+	width:120px;
 	height: 35px;
 	border-radius: 2px;
 }
