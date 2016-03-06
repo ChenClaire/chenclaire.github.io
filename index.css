@@ -215,7 +215,7 @@ a:hover p {
 }
 
 .resume-link:hover{
-	background-color: #d83e77;
+	background-color: rgba(216, 62, 119, 0.74);
 	color:white;
 }
 
