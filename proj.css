@@ -184,17 +184,13 @@ margin: auto;
 	opacity: 1;
 	color:#d83e77;
 }
-/*.TCweb-btn:hover a{
-color:white;
-}*/
+
 .TCweb-btn a,
 .TCweb-btn a:hover{
 	text-decoration: none;
 }
 
-/*.TCweb-btn a{
-	color:#3b6aa0;
-}*/
+
 
 .TC-Web-Row{
 	margin-bottom: 40px;
@@ -205,8 +201,6 @@ color:white;
 
 .TC-web-link a{
 	color:#3b6aa0;
-	/*font-weight: 800;*/
-
 }
 
 .TC-web-link:hover{
@@ -223,11 +217,9 @@ color:white;
 	margin-right:10px;
 }
 
-.whiteLine .label-info{
-	font-family: 'Lato', sans-serif;
-}
+
 .Web-info li{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 16px;
 }
 
@@ -239,6 +231,7 @@ color:white;
 }
 
 .proj-label{
+	    font-family: 'Nunito', sans-serif;
 	display: inline-block;
 	/*border:1px solid #d83e77;*/
 	border:1px solid #333;
