@@ -208,7 +208,7 @@ a:hover p {
 	font-size: 15px;
 	font-weight: bold;
 	width: 170px;
-	margin: 30px auto;
+	margin: 15px auto;
 	padding-top:10px;
 	padding-bottom: 5px;
 	border-radius: 2px;
@@ -224,7 +224,7 @@ a:hover p {
 }
 
 .ProjRow {
-    margin-bottom: 5px;
+    margin-bottom: 35px;
     margin-top: 10px;
     margin-right: 7%;
     margin-left: 7%;
@@ -239,6 +239,10 @@ a:hover p {
     margin-bottom: 20px;
     border-radius: 50%;
     /*overflow: hidden;*/
+    transition:box-shadow 0.2s;
+    -webkit-transition:box-shadow 0.2s;
+   -moz-transition:box-shadow 0.2s;
+   -o-transition:box-shadow 0.2s;
 }
 
 .ProjRow .projIcon p{
@@ -257,7 +261,8 @@ a:hover p {
 }
 
 .projRow .square:hover .projImg{
-    box-shadow: 2px 8px 15px 0 rgba(0, 0, 0, 0.3);
+    /*box-shadow: 2px 8px 15px 0 rgba(0, 0, 0, 0.3);*/
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0,0,0,.2);
 }
 .projRow .square:hover .projImg .scaled-img {
    
