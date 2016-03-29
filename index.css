@@ -469,9 +469,11 @@ font-family: 'Nunito', sans-serif;
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   
-   
+   .whiteLine .small-img{
+    width:88%;
+}
 }
 
 @media only screen and (max-width: 800px) {
