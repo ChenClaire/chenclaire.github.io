@@ -469,14 +469,20 @@ font-family: 'Nunito', sans-serif;
 }
 
 
-
+@media only screen and (max-width: 800px) {
+  
+   
+}
 
 @media only screen and (max-width: 800px) {
-    .carousel-inner>.item>img {
+    #deepintent-carousel .carousel-inner>.item>img {
         height: auto;
         width: 100%;
     }
-    .carousel-inner {
+    #deepintent-carousel .carousel-inner {
         height: auto;
+    }
+     #calligraphy-carousel .carousel-inner {
+        width:90%;
     }
 }

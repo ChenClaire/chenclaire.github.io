@@ -72,7 +72,7 @@ a:hover{
 
 
 .whiteLine{
-	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+	/*box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);*/
 
 }
 
@@ -101,19 +101,32 @@ a:hover{
 	width: 100%;
 	margin-top:10px;
 	margin-bottom: 20px;
-	    box-shadow: 2px 2px 13px #b7b7b7;
+	    /*box-shadow: 2px 2px 13px #b7b7b7;*/
 }
 
+#calligraphy-carousel .carousel-inner>.item>img {
+    /*margin: auto;*/
+    /*height: 100%;*/
+    width: 100%;
+}
 
-.carousel-inner>.item>img {
+#calligraphy-carousel .carousel-inner {
+    width: 750px;
+    margin:auto;
+}
+
+#deepintent-carousel .carousel-inner>.item>img {
     margin: auto;
     height: 100%;
     width: auto;
 }
 
-.carousel-inner {
+#deepintent-carousel .carousel-inner {
     height: 740px;
-    padding-bottom:10px;
+}
+
+.carousel-inner {
+    padding-bottom:15px;
 }
 .carousel-control.left,
 .carousel-control.right{
@@ -138,7 +151,7 @@ a:hover{
 }
 
 .carousel-indicators {
-    /*bottom: 10px;*/
+    bottom: 30px;
 }
 .carousel-indicators li {
     border: 1px solid #D83E77;
