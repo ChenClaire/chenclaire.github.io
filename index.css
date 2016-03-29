@@ -276,7 +276,6 @@ a:hover p {
 }
 
 
-
 .projImg .scaled-img {
    
     border-radius: 50%;
@@ -466,5 +465,18 @@ font-family: 'Nunito', sans-serif;
 @media screen and (min-width: 1200px){
     .projImg{
         width: 330px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .carousel-inner>.item>img {
+        height: auto;
+        width: 100%;
+    }
+    .carousel-inner {
+        height: auto;
     }
 }

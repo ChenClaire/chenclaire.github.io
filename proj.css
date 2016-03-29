@@ -105,33 +105,51 @@ a:hover{
 }
 
 
-.carousel-inner img{
-	margin-top: 0px;
-	margin-bottom: 0px;
+.carousel-inner>.item>img {
+    margin: auto;
+    height: 100%;
+    width: auto;
 }
 
-.carousel-inner{
-	height:500px;
-	overflow: hidden;
+.carousel-inner {
+    height: 740px;
+    padding-bottom:10px;
+}
+.carousel-control.left,
+.carousel-control.right{
+	background-image:none !important;
 }
 
-.carousel{
-width: 80%;
-margin: auto;
+.carousel-control {
+ 
+    color: #D83E77;
+    
+    text-shadow:none;
+     opacity: 0.6; 
+}
+.carousel-control:focus,
+.carousel-control:hover {
+    color: #D83E77;
+    
+    opacity: 1;
+}
+.carousel {
+    margin-bottom: 45px;
 }
 
-.carousel-indicators{
-
-	 bottom: 10px; 
-
+.carousel-indicators {
+    /*bottom: 10px;*/
+}
+.carousel-indicators li {
+    border: 1px solid #D83E77;
 }
 
-.carousel-indicators li{
-	border: 1px solid black;
+
+
+.carousel-indicators .active {
+    background-color: #D83E77;
 }
-.carousel-indicators .active{
-	background-color: black;
-}
+
 .jumbotronRow .btn{
 	background-color: #d83e77;
 	border-radius: 0px;
