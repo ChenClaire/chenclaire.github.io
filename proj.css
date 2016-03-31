@@ -106,6 +106,7 @@ a:hover{
 
 .whiteLine .small-img{
 	width:70%;
+	box-shadow: none !important;
 }
 
 #calligraphy-carousel .carousel-inner>.item>img {
