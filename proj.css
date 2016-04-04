@@ -101,12 +101,21 @@ a:hover{
 	width: 100%;
 	margin-top:10px;
 	margin-bottom: 20px;
-	    box-shadow: 2px 2px 13px #b7b7b7;
+	   
+}
+
+.shadow-img{
+	 box-shadow: 2px 2px 13px #b7b7b7;
 }
 
 .whiteLine .small-img{
 	width:70%;
 	box-shadow: none !important;
+}
+
+.whiteLine .no-shadow-img{
+	box-shadow: none;
+	width: 100%;
 }
 
 #calligraphy-carousel .carousel-inner>.item>img {
