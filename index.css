@@ -86,11 +86,14 @@ a:hover p {
     cursor: pointer;
 }
 
+
+
+
 .bounce {
-    animation: bounce 2s 3s 10;
-    -webkit-animation: bounce 2s 3s 10;
-    -moz-animation: bounce 2s 3s 10;
-    -o-animation: bounce 2s 3s 10;
+    animation: bounce  2s 3s 10;
+    -webkit-animation: bounce  2s 3s 10;
+    -moz-animation: bounce  2s 3s 10;
+    -o-animation: bounce  2s 3s 10;
 }
 
 @-webkit-keyframes bounce {
@@ -156,6 +159,9 @@ a:hover p {
         transform: translateY(-15px);
     }
 }
+
+
+
 
 .intro {
     width: 53%;
