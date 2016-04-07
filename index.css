@@ -208,21 +208,23 @@ a:hover p {
 
 .resume-link{
 	display: block;
-	color: #d83e77;
+	
+    color: rgba(216, 62, 119, 0.74);
 	font-family: 'Josefin Sans', sans-serif;
 	text-transform: uppercase;
 	font-size: 15px;
 	font-weight: bold;
-	width: 170px;
+
+	width: 170px ;
 	margin: 15px auto;
 	padding-top:10px;
 	padding-bottom: 5px;
-	border-radius: 2px;
+	/*border-radius: 2px;*/
 }
 
 .resume-link:hover{
-	background-color: rgba(216, 62, 119, 0.74);
-	color:white;
+	/*background-color: rgba(216, 62, 119, 0.74);*/
+	color: #d83e77;
 }
 
 .resume-link:focus{
@@ -483,14 +485,15 @@ font-family: 'Nunito', sans-serif;
 }*/
 
 @media only screen and (max-width: 800px) {
-    #deepintent-carousel .carousel-inner>.item>img {
+    #deepintent-carousel .carousel-inner>.item>img{
         height: auto;
         width: 100%;
     }
-    #deepintent-carousel .carousel-inner {
+    #deepintent-carousel .carousel-inner{
         height: auto;
     }
-     #calligraphy-carousel .carousel-inner {
+     #calligraphy-carousel .carousel-inner,
+     #gridspark-carousel .carousel-inner  {
         width:90%;
     }
 }
