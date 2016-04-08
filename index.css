@@ -348,7 +348,9 @@ a:hover p {
     .intro .selfIntro {
         font-size: 16px;
     }
-    
+     .details {
+        margin-right: 0px;
+    }
     .whiteLine {
         padding: 30px 25px 10px 25px;
     }
@@ -372,7 +374,7 @@ a:hover p {
     
     .whiteLine,
     .specialLine {
-        padding: 30px 40px 30px 40px;
+        padding: 30px 25px 30px 25px;
     }
     
     .projImg {
@@ -386,7 +388,11 @@ a:hover p {
     
     .whiteLine,
     .specialLine {
-        padding: 30px 50px 30px 50px;
+        padding: 30px 30px 30px 30px;
+    }
+    
+    .details {
+        margin-right: 15px;
     }
     
     .projImg {
@@ -423,7 +429,7 @@ a:hover p {
     
     .whiteLine,
     .specialLine {
-        padding: 35px 80px 40px 80px;
+        padding: 35px 100px 40px 100px;
     }
     
     .projImg {
@@ -525,7 +531,7 @@ a:hover p {
     left: 50px;
     top: 50px;
     width: 100px;
-    height:100px;
+    height: 100px;
     -webkit-animation-delay: 0.7s;
     animation-delay: 0.7s;
 }
