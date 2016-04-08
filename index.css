@@ -491,9 +491,9 @@ a:hover p {
     width: 200px;
     margin-top: -100px;
     margin-left: -100px;
-    -ms-transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-    transform: rotate(-135deg);
+    -ms-transform: rotate(-100deg);
+    -webkit-transform: rotate(-100deg);
+    transform: rotate(-100deg);
 }
 .object {
     -moz-border-radius: 50% 50% 50% 50%;
@@ -518,8 +518,8 @@ a:hover p {
     top: 65px;
     width: 70px;
     height: 70px;
-    -webkit-animation-delay: 0.3s;
-    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
 }
 .object_three {
     left: 50px;
