@@ -1,3 +1,10 @@
+$(window).load(function() {
+   $("#loading").fadeOut(500);
+})
+
+
+
+
  function goTo(el) {
      var ID = "#" + el;
      $('body, html').animate({ scrollTop: $(ID).offset().top }, '700');
