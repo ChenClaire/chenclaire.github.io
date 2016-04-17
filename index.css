@@ -233,69 +233,154 @@ a:hover p {
     width: 100%;
 }
 
-.ProjRow .square {
-    padding: 5px;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    /*overflow: hidden;*/
-    transition: box-shadow 0.2s;
-    -webkit-transition: box-shadow 0.2s;
-    -moz-transition: box-shadow 0.2s;
-    -o-transition: box-shadow 0.2s;
+.square .border{
+    position: absolute;
+     
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #d83e77;
+
 }
 
+.square:before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    background: #ffffff;
+    width: 40px;
+    height: 2px;
+    left: -50px;
+    bottom: 0;
+    margin-bottom: 25px;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.square:hover:before {
+    left: 60px;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out 0.3s;
+    -moz-transition: all 0.3s ease-in-out 0.3s;
+    transition: all 0.3s ease-in-out 0.3s;
+}
+.square:after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #ffffff;
+    bottom: 0;
+    left: -20px;
+    margin-bottom: 21px;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.square:hover:after {
+    left: 97px;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out 0.3s;
+    -moz-transition: all 0.3s ease-in-out 0.3s;
+    transition: all 0.3s ease-in-out 0.3s;
+}
+
+.ProjRow .square{
+        /*transition: all 0.3s ease-in-out 0.1s;*/
+    padding: 5px;
+    margin-bottom: 20px;
+    /*border-radius: 50%;*/
+    /*overflow: hidden;*/
+   
+}
+
+.ProjRow .square .border,
+.ProjRow .square .scaled-img{
+     transition: all 0.3s ease-in-out 0.1s;
+    -webkit-transition: all 0.3s ease-in-out 0.1s;
+    -moz-transition: all 0.3s ease-in-out 0.1s;
+    -o-transition: all 0.3s ease-in-out 0.1s;
+}
 .ProjRow .projIcon p {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 16px;
 }
 
 .ProjRow .projIcon hr {
-    margin: 10px auto;
-    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    /*width: 80%;*/
 }
 
 .ProjRow .square:hover {
     cursor: pointer;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
 }
-
+.ProjRow .square:hover .border{
+    height: 40px;
+}
 .projRow .square:hover .projImg {
     /*box-shadow: 2px 8px 15px 0 rgba(0, 0, 0, 0.3);*/
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, .2);
-}
-
-.projRow .square:hover .projImg .scaled-img {
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0);
-    -o-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    border-radius: 50%;
+    /*box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, .2);*/
 }
 
 .projImg .scaled-img {
-    border-radius: 50%;
-    filter: grayscale(50%);
-    -webkit-filter: grayscale(50%);
-    -o-filter: grayscale(50%);
-    -moz-filter: grayscale(50%);
-    -ms-filter: grayscale(50%);
+    opacity: 0;
+    /*border-radius: 50%;*/
+    /*filter: grayscale(85%);
+    -webkit-filter: grayscale(85%);
+    -o-filter: grayscale(85%);
+    -moz-filter: grayscale(85%);
+    -ms-filter: grayscale(85%);*/
 }
 
+.projRow .square:hover .projImg .scaled-img {
+   /* filter: grayscale(85%);
+    -webkit-filter: grayscale(85%);
+    -o-filter: grayscale(85%);
+    -moz-filter: grayscale(85%);
+    -ms-filter: grayscale(85%);*/
+    opacity: 1;
+    
+    /*border-radius: 50%;*/
+}
+
+.projRow .square:hover .projTitle,
+.projRow .square:hover .projTags {
+    color: white;
+}
+
+.projRow .square:hover .projIcon img {
+    -webkit-filter: invert(0);
+    filter: invert(0);
+    -o-filter: invert(0);
+    -moz-filter: invert(0);
+    -ms-filter: invert(0);
+
+
+}
 .ProjRow .projTitle {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 19px;
     font-variant: small-caps;
     letter-spacing: 1.01;
+    color: #21282f;
+    font-weight: 700;
 }
-
-
-/*.ProjRow .projInfo .projTags {
-    font-size: 16px;
-    font-family: 'Josefin Sans', sans-serif;
-*/
-
-
+.ProjRow .projInfo .projTags {
+    color: #7b7c7e;
 }
 .ProjRow .projInfo .projSubTitle {
     opacity: 0.65;
@@ -304,38 +389,63 @@ a:hover p {
     position: relative;
     width: 330px;
     margin: auto;
-    border-radius: 50%;
+    /*border-bottom: 8px solid #d83e77;*/
+    /*border-radius: 50%;*/
 }
 .projIcon {
     position: absolute;
     bottom: 5px;
-    color: white;
+    /*color: white;*/
+    
     width: 100%;
     padding-bottom: 40px;
     padding-left: 25px;
     padding-right: 25px;
 }
 .projIcon img {
+    -webkit-filter: invert(0.2);
+    filter: invert(0.2);
+    -o-filter: invert(0.2);
+    -moz-filter: invert(0.2);
+    -ms-filter: invert(0.2);
     width: 22%;
 }
 .ContactRow {
-    border-top: 2px solid #d83e77;
-    padding-top: 20px;
-    padding-bottom: 25px;
-    color: #d83e77;
+    /*border-top: 2px solid #d83e77;*/
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: #2F2F2F;
+color:white;
+margin-top:50px;
     font-family: 'Nunito', sans-serif;
-    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.15);
+    /*box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.15);*/
     /*letter-spacing: 1.1;*/
 }
 .ContactRow i {
-    color: #d83e77;
+    color: white;
     margin: 5px 4px 0px 4px;
     font-size: 20px;
 }
 .ContactRow i:hover {
     cursor: pointer;
-    box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.20);
+    /*box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.20);*/
 }
+
+.ContactRow .myPic img{
+    border-radius: 50%;
+    /*display: block;*/
+    width: 250px;
+    
+    margin:auto;
+}
+
+.ContactRow .myPic{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+
+
 @media screen and (min-width: 320px) {
     .intro {
         width: 85%;
@@ -348,9 +458,11 @@ a:hover p {
     .intro .selfIntro {
         font-size: 16px;
     }
-     .details {
+    
+    .details {
         margin-right: 0px;
     }
+    
     .whiteLine {
         padding: 30px 25px 10px 25px;
     }
@@ -409,10 +521,7 @@ a:hover p {
         width: 60%;
     }
     
-    .projRow .square {
-        /*padding: 25px;*/
-    }
-    
+     
     .whiteLine,
     .specialLine {
         padding: 40px 60px 30px 60px;
@@ -452,12 +561,12 @@ a:hover p {
     }
 }
 
-/*@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   
    .whiteLine .small-img{
     width:90%;
 }
-}*/
+}
 @media only screen and (max-width: 800px) {
     #deepintent-carousel .carousel-inner>.item>img {
         height: auto;
