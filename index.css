@@ -375,16 +375,13 @@ a:hover p {
     font-family: 'Nunito', sans-serif;
     font-size: 19px;
     font-variant: small-caps;
-    letter-spacing: 1.01;
     color: #21282f;
     font-weight: 700;
 }
 .ProjRow .projInfo .projTags {
     color: #7b7c7e;
 }
-.ProjRow .projInfo .projSubTitle {
-    opacity: 0.65;
-}
+ 
 .projImg {
     position: relative;
     width: 330px;
@@ -444,6 +441,9 @@ margin-top:50px;
     margin-bottom: 60px;
 }
 
+.ContactRow *{
+    font-weight: 300;
+}
 
 
 @media screen and (min-width: 320px) {
