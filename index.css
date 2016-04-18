@@ -157,6 +157,7 @@
         letter-spacing: 2;
         color: #555;
         font-family: 'Josefin Sans', sans-serif;
+        font-size: 55px;
     }
     
     .intro .blackHr {
@@ -168,11 +169,12 @@
     .intro .keywords {
         color: #d83e77;
         font-family: 'Josefin Sans', sans-serif;
-        font-variant: small-caps;
+        /*font-variant: small-caps;*/
         padding-top: 10px;
         opacity: 0;
         font-weight: bold;
         letter-spacing: 1.01;
+        font-size: 20px;
     }
     
     .intro .selfIntro {
@@ -187,26 +189,30 @@
         /*letter-spacing: 1.01;*/
     }
     
-    .resume-link {
-        display: block;
-        color: rgba(216, 62, 119, 0.74);
-        font-family: 'Josefin Sans', sans-serif;
+    .nav-link {
+        display: inline-block;
+        /*color: rgba(216, 62, 119, 0.74);*/
+        color:#666;
+        font-weight: 300;
+       font-family: 'Nunito', sans-serif;
         text-transform: uppercase;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: bold;
-        width: 170px;
         margin: 15px auto;
         padding-top: 10px;
         padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        letter-spacing: 1.1;
         /*border-radius: 2px;*/
     }
     
-    .resume-link:hover {
+    .nav-link:hover {
         /*background-color: rgba(216, 62, 119, 0.74);*/
         color: #d83e77;
     }
     
-    .resume-link:focus {
+    .nav-link:focus {
         color: #972B53;
     }
     
@@ -395,25 +401,28 @@
         -o-filter: invert(0.2);
         -moz-filter: invert(0.2);
         -ms-filter: invert(0.2);
-        width: 22%;
+        width: 30%;
     }
     
     .ContactRow {
         /*border-top: 2px solid #d83e77;*/
         padding-top: 40px;
-        padding-bottom: 50px;
-        background-color: #2F2F2F;
-        color: white;
+        padding-bottom: 30px;
+        background-color: #F1EDEE;
+        color: #555;
         margin-top: 50px;
         font-family: 'Nunito', sans-serif;
         /*box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.15);*/
         /*letter-spacing: 1.1;*/
     }
     
+    .ContactRow h4{
+        color:#d83e77;
+    }
     .ContactRow i {
-        color: white;
+        color: #555;
         margin: 5px 4px 0px 4px;
-        font-size: 20px;
+        font-size: 23px;
     }
     
     .ContactRow i:hover {
@@ -433,16 +442,32 @@
         margin-bottom: 60px;
     }
     
+    .ContactRow .myIntro {
+        /*margin-top: 50px;*/
+        margin-bottom: 20px;
+        font-size: 14px;
+        letter-spacing: 1.01;
+        color:#555;
+    }
+    .ContactRow .ending-hr{
+        width:250px;
+        border-top: 2.5px solid #D83E77;
+    }
     .ContactRow * {
         font-weight: 300;
     }
-    
 
-     @media only screen and (min-width: 1650px) {
+    .ContactRow .special{
+        font-weight: 700;
+        color:#d83e77;
+    }
+    
+    @media only screen and (min-width: 1650px) {
         .projImg {
             width: 400px;
         }
     }
+    
     @media only screen and (max-width: 1200px) {
         .projImg {
             width: 300px;
@@ -518,12 +543,10 @@
         .intro {
             width: 65%;
         }
-        .intro .keywords {
-            font-size: 24px;
-        }
-        .intro .selfIntro {
+        
+        /*.intro .selfIntro {
             font-size: 17px;
-        }
+        }*/
         .whiteLine,
         .specialLine {
             padding: 30px 25px 30px 25px;
@@ -549,7 +572,7 @@
             -moz-filter: invert(0);
             -ms-filter: invert(0);
         }
-        .border{
+        .border {
             height: 40px;
         }
     }
@@ -559,11 +582,12 @@
             width: 85%;
         }
         .intro .keywords {
-            font-size: 20px;
+            font-size: 18px;
         }
-        .intro .selfIntro {
+       /* .intro .selfIntro {
             font-size: 16px;
-        }
+        }*/
+
         .details {
             margin-right: 0px;
         }
@@ -572,6 +596,10 @@
         }
         .projImg {
             width: 300px;
+        }
+
+        .intro .fullName {
+            font-size: 35px;
         }
     }
     

@@ -80,13 +80,19 @@
                 <div class="intro text-center">
                     <h1 class="fullName">Claire Chen</h1>
                     <hr class="blackHr">
-                    <h4 class="keywords"> UI/UX Designer & Front-End Developer </h4>
-                    <p class="selfIntro">Hi! My name is Claire. Here is my UI/UX portfolio, consisting of mostly web-based projects, which I have designed and/or coded while studying Instructional Technology and Media at Columbia University.</p>
+                    <h4 class="keywords"> passionate UI/UX designer with a great ability to code </h4>
+                    <!-- <p class="selfIntro">Hi! My name is Claire. Here is my UI/UX portfolio, consisting of mostly web-based projects, which I have designed and/or coded while studying Instructional Technology and Media at Columbia University.</p> -->
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <a class="resume-link text-center" href="ClaireChen_Resume.pdf" target="_blank">View Resume</a>
+                <div class="col-md-12 text-center">
+                    <a onclick="goTo('aboutme')" class="nav-link">
+                        About Me
+                    </a>
+                    <a onclick="goTo('works')" class="nav-link">
+                        Work
+                    </a>
+                    <a class="nav-link text-center" href="ClaireChen_Resume.pdf" target="_blank">Resume</a>
                 </div>
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12 text-center arrowDown">
@@ -199,12 +205,21 @@
                 </div>
             </a> -->
         </div>
+        <a id="aboutme"></a>
         <div class="row ContactRow">
             <div class="col-md-12 text-center">
-                <h4>CONTACT ME</h4>
-                <div class="myPic">
-                    <img src="img/avatar.jpg" alt="">
-                </div>
+                <h4>MORE ABOUT ME</h4>
+            </div>
+            <div class="col-md-12 myPic text-center">
+                <img src="img/avatar.jpg" alt="">
+            </div>
+            <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 myIntro">
+                <p>I have a professional background in Instructional Technology which is a interdisciplinary program in design, technology, cognitive science and educational psychology. I found my interests in UI/UX when designing learning products and practiced my skills in UI/UX design and front-end development in various projects during my graduate study at Columbia University.</p>
+                <p>I love travel and photography. I once did a 365-project in 2012 and I am planning to do another one. I take photos to document my life & travel. Welcome to check them out <a class="special" href="https://www.flickr.com/photos/xin-tong/" target="_blank">HERE</a> and <a href="http://d0nut-hole.tumblr.com" class="special" target="_blank">HERE</a>.</p>
+                <p>I am also interested in calligraphy, reading, swimming, roller coaster, art museum/gallery.</p>
+            </div>
+            <div class="col-md-12 text-center">
+                <hr class="ending-hr">
                 <a href="index.html">Claire Chen</a> | xc2282@tc.columbia.edu | 646.241.8178
                 <div class="col-md-12 text-center">
                     <a href="https://www.linkedin.com/in/xintongchen" target="_blank"><i class="fa fa-linkedin-square"></i></a>
@@ -217,6 +232,7 @@
             </div>
         </div>
     </div>
+    <!-- </div> -->
     <!-- Bootstrapt js-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- myJS -->
