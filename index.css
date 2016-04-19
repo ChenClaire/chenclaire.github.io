@@ -350,6 +350,9 @@
         opacity: 1;
         /*border-radius: 50%;*/
     }
+    .ProjRow .projImg .projTags {
+        color: #555;
+    }
     
     .projRow .square:hover .projTitle,
     .projRow .square:hover .projTags {
@@ -372,9 +375,7 @@
         font-weight: 400;
     }
     
-    .ProjRow .projImg .projTags {
-        color: #555;
-    }
+    
     
     .projImg {
         position: relative;
