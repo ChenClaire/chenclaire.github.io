@@ -192,9 +192,9 @@
     .nav-link {
         display: inline-block;
         /*color: rgba(216, 62, 119, 0.74);*/
-        color:#666;
+        color: #666;
         font-weight: 300;
-       font-family: 'Nunito', sans-serif;
+        font-family: 'Nunito', sans-serif;
         text-transform: uppercase;
         font-size: 14px;
         font-weight: bold;
@@ -370,11 +370,11 @@
         font-size: 19px;
         font-variant: small-caps;
         color: #21282f;
-        font-weight: 700;
+        font-weight: 400;
     }
     
-    .ProjRow .projInfo .projTags {
-        color: #7b7c7e;
+    .ProjRow .projImg .projTags {
+        color: #555;
     }
     
     .projImg {
@@ -406,7 +406,6 @@
     
     .ContactRow {
         /*border-top: 2px solid #d83e77;*/
-         
         padding-top: 40px;
         padding-bottom: 30px;
         background-color: #F1EDEE;
@@ -417,9 +416,10 @@
         /*letter-spacing: 1.1;*/
     }
     
-    .ContactRow h4{
-        color:#d83e77;
+    .ContactRow h4 {
+        color: #d83e77;
     }
+    
     .ContactRow i {
         color: #555;
         margin: 20px 4px 0px 4px;
@@ -448,19 +448,21 @@
         margin-bottom: 20px;
         font-size: 14px;
         letter-spacing: 1.01;
-        color:#555;
+        color: #555;
     }
-    .ContactRow .ending-hr{
-        width:250px;
+    
+    .ContactRow .ending-hr {
+        width: 250px;
         border-top: 2.5px solid #D83E77;
     }
+    
     .ContactRow * {
         font-weight: 300;
     }
-
-    .ContactRow .special{
+    
+    .ContactRow .special {
         font-weight: 700;
-        color:#d83e77;
+        color: #d83e77;
     }
     
     @media only screen and (min-width: 1650px) {
@@ -544,7 +546,6 @@
         .intro {
             width: 65%;
         }
-        
         /*.intro .selfIntro {
             font-size: 17px;
         }*/
@@ -585,10 +586,9 @@
         .intro .keywords {
             font-size: 18px;
         }
-       /* .intro .selfIntro {
+        /* .intro .selfIntro {
             font-size: 16px;
         }*/
-
         .details {
             margin-right: 0px;
         }
@@ -598,7 +598,6 @@
         .projImg {
             width: 300px;
         }
-
         .intro .fullName {
             font-size: 35px;
         }
