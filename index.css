@@ -297,13 +297,7 @@
         /*overflow: hidden;*/
     }
     
-    .ProjRow .square .border,
-    .ProjRow .square .scaled-img {
-        transition: all 0.3s ease-in-out 0.1s;
-        -webkit-transition: all 0.3s ease-in-out 0.1s;
-        -moz-transition: all 0.3s ease-in-out 0.1s;
-        -o-transition: all 0.3s ease-in-out 0.1s;
-    }
+    
     
     .ProjRow .projIcon p {
         font-family: 'Nunito', sans-serif;
@@ -326,30 +320,27 @@
         height: 40px;
     }
     
-    .projRow .square:hover .projImg {
-        /*box-shadow: 2px 8px 15px 0 rgba(0, 0, 0, 0.3);*/
-        /*box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, .2);*/
-    }
+    
     
     .projImg .scaled-img {
         opacity: 0;
-        /*border-radius: 50%;*/
-        /*filter: grayscale(85%);
-    -webkit-filter: grayscale(85%);
-    -o-filter: grayscale(85%);
-    -moz-filter: grayscale(85%);
-    -ms-filter: grayscale(85%);*/
+        
     }
     
     .projRow .square:hover .projImg .scaled-img {
-        /* filter: grayscale(85%);
-    -webkit-filter: grayscale(85%);
-    -o-filter: grayscale(85%);
-    -moz-filter: grayscale(85%);
-    -ms-filter: grayscale(85%);*/
+        
         opacity: 1;
-        /*border-radius: 50%;*/
+     }
+
+
+.ProjRow .square .border,
+    .ProjRow .square .scaled-img {
+        transition: all 0.3s ease-in-out 0.1s;
+        -webkit-transition: all 0.3s ease-in-out 0.1s;
+        -moz-transition: all 0.3s ease-in-out 0.1s;
+        -o-transition: all 0.3s ease-in-out 0.1s;
     }
+     
     .ProjRow .projImg .projTags {
         color: #555;
     }
@@ -405,15 +396,13 @@
     }
     
     .ContactRow {
-        /*border-top: 2px solid #d83e77;*/
-        padding-top: 40px;
+         padding-top: 40px;
         padding-bottom: 30px;
         background-color: #F1EDEE;
         color: #555;
         margin-top: 50px;
         font-family: 'Nunito', sans-serif;
-        /*box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.15);*/
-        /*letter-spacing: 1.1;*/
+         
     }
     
     .ContactRow h4 {
