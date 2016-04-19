@@ -565,7 +565,7 @@
         }
         .ProjRow .projTitle,
         .ProjRow .projTags {
-            color: white;
+            color: white !important;
         }
         .projIcon img {
             -webkit-filter: invert(0);
