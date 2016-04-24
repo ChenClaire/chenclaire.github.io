@@ -441,6 +441,7 @@
     
     .ContactRow i:hover {
         cursor: pointer;
+        color: #d83e77;
         /*box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.20);*/
     }
     
