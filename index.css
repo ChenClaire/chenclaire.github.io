@@ -224,7 +224,6 @@
         -moz-transform: translateX(-50%) translateY(-50%);
         -ms-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
-
         -webkit-transition: all 0.25s;
         -moz-transition: all 0.25s;
         transition: all 0.25s;
@@ -614,6 +613,10 @@
         }
         .intro .fullName {
             font-size: 35px;
+        }
+        
+        #museum-carousel .carousel-inner {
+            height: 610px;
         }
     }
     
