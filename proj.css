@@ -85,8 +85,8 @@ a:hover {
 
 .whiteLine img {
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    /*margin-top: 10px;*/
+    /*margin-bottom: 20px;*/
 }
 
 .shadow-img {
@@ -101,6 +101,10 @@ a:hover {
 .whiteLine .no-shadow-img {
     box-shadow: none;
     width: 100%;
+}
+.add-margin{
+    margin-top:10px;
+    margin-bottom:20px;
 }
 
 #calligraphy-carousel .carousel-inner>.item>img,
@@ -128,7 +132,7 @@ a:hover {
     height: 740px;
 }
 
-.carousel-inner {
+#deepintent-carousel .carousel-inner {
     padding-bottom: 15px;
 }
 
@@ -150,17 +154,12 @@ a:hover {
 }
 
 .carousel {
-    margin-bottom: 45px;
+    margin-bottom: 65px;
+    margin-top:15px;
 }
 
-#deepintent-carousel .carousel-indicators,
-#museum-carousel .carousel-indicators {
-    bottom: -20px;
-}
-
-#gridspark-carousel .carousel-indicators,
-#calligraphy-carousel .carousel-indicators {
-    bottom: -10px;
+.carousel-indicators {
+    bottom: -45px;
 }
 .carousel-control{
     font-size: 30px;

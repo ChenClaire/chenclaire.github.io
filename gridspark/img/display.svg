@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-359 235 560 331" style="enable-background:new -359 235 560 331;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:square;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:2;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st4{font-family:'Raleway-Regular';}
+	.st5{font-size:20px;}
+	.st6{letter-spacing:2;}
+	.st7{font-size:24px;}
+	.st8{letter-spacing:3;}
+	.st9{font-size:10px;}
+	.st10{letter-spacing:1;}
+	.st11{font-size:8px;}
+</style>
+<title>Display</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Display" transform="translate(1.000000, 1.000000)">
+		<path id="Rectangle-15" class="st0" d="M-153,394V245c0-5.5,4.5-10,10-10h313c5.5,0,10,4.5,10,10v188.4"/>
+		<path id="Line" class="st1" d="M-78.5,459h210"/>
+		<path id="Rectangle-11" class="st2" d="M-319,419c0-5.5,4.5-10,10-10h199.6c5.5,0,10,4.5,10,10v124.6H-319V419z"/>
+		<rect id="Rectangle-12" x="-306" y="421" class="st2" width="194.8" height="110"/>
+		<path id="Combined-Shape" class="st2" d="M-244.7,550H-358v6.8c0,3.8,3.1,6.8,6.8,6.8h284.7c3.8,0,6.8-3.1,6.8-6.8V550H-173v5.5
+			h-71.8V550H-244.7z"/>
+		<ellipse id="Oval-6" class="st2" cx="-208.6" cy="416.4" rx="2.4" ry="2.4"/>
+		<text transform="matrix(1 0 0 1 -260 476.3)" class="st3 st4 st5 st6">YOUR AD</text>
+		<path id="Rectangle-16" class="st0" d="M-134,391V253h295v181H-79"/>
+		<path id="Rectangle-17" class="st2" d="M-10.9,482.9c0.8-5.5,6-9.9,11.5-9.9h25c5.5,0,10.7,4.4,11.5,9.9l11,70.9
+			c0.8,5.5-3,9.9-8.5,9.9h-53c-5.5,0-9.3-4.4-8.5-9.9L-10.9,482.9z"/>
+		<circle id="Oval-7" class="st2" cx="13.5" cy="449.5" r="3.5"/>
+		<path id="Rectangle-18" class="st2" d="M150,453h40c5.5,0,10,4.5,10,10v91c0,5.5-4.5,10-10,10h-40c-5.5,0-10-4.5-10-10v-91
+			C140,457.5,144.5,453,150,453z"/>
+		<rect id="Rectangle-19" x="148" y="463" class="st2" width="44" height="91"/>
+		<text transform="matrix(1 0 0 1 -49 348)" class="st3 st4 st7 st8">YOUR AD</text>
+		<text transform="matrix(1 0 0 1 153.564 505)" class="st3 st4 st9 st10">YOUR</text>
+		<text transform="matrix(1 0 0 1 183.4199 505)" class="st3 st4 st11 st10"> </text>
+		<text transform="matrix(1 0 0 1 160.472 515)" class="st3 st4 st9 st10">AD</text>
+	</g>
+</g>
+</svg>
