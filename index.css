@@ -1,8 +1,8 @@
     a,
     a:hover {
+        cursor: pointer;
         text-decoration: none !important;
         color: inherit;
-        cursor: pointer;
     }
     
     a:hover p {
@@ -75,10 +75,10 @@
     }
     
     .bounce {
-        animation: bounce 2s 3s 10;
         -webkit-animation: bounce 2s 3s 10;
         -moz-animation: bounce 2s 3s 10;
         -o-animation: bounce 2s 3s 10;
+        animation: bounce 2s 3s 10;
     }
     
     @-webkit-keyframes bounce {
@@ -153,11 +153,11 @@
     }
     
     .intro .fullName {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 55px;
         font-variant: small-caps;
         letter-spacing: 2;
         color: #555;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 55px;
     }
     
     .intro .blackHr {
@@ -167,66 +167,66 @@
     }
     
     .intro .keywords {
-        color: #d83e77;
         font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
         /*font-variant: small-caps;*/
         padding-top: 10px;
-        opacity: 0;
-        font-weight: bold;
         letter-spacing: 1.01;
-        font-size: 20px;
+        opacity: 0;
+        color: #d83e77;
     }
     
     .intro .selfIntro {
         /*font-family: 'Lato', sans-serif;*/
         font-family: 'Nunito', sans-serif;
-        color: #555;
         font-size: 20px;
         line-height: 1.5;
         display: block;
-        opacity: 0;
         margin-bottom: 10px;
+        opacity: 0;
+        color: #555;
         /*letter-spacing: 1.01;*/
     }
     
     .nav-link {
-        display: inline-block;
-        /*color: rgba(216, 62, 119, 0.74);*/
-        color: #666;
-        font-weight: 300;
         font-family: 'Nunito', sans-serif;
-        text-transform: uppercase;
         font-size: 15px;
+        font-weight: 300;
+        position: relative;
+        display: inline-block;
         margin: 15px auto;
         padding-top: 10px;
+        padding-right: 10px;
         padding-bottom: 5px;
         padding-left: 10px;
-        padding-right: 10px;
+        -webkit-transition: all .25s;
+        -moz-transition: all .25s;
+        transition: all .25s;
         letter-spacing: 1.1;
-        position: relative;
-        -webkit-transition: all 0.25s;
-        -moz-transition: all 0.25s;
-        transition: all 0.25s;
+        text-transform: uppercase;
+        /*color: rgba(216, 62, 119, 0.74);*/
+        color: #666;
         /*border-radius: 2px;*/
     }
     
     .nav-link:after {
-        content: '';
         position: absolute;
         z-index: -1;
-        width: 50%;
-        height: 5%;
         top: 90%;
         left: 50%;
-        background: rgba(216, 62, 119, 0.25);
-        opacity: 0;
+        width: 50%;
+        height: 5%;
+        content: '';
+        -webkit-transition: all .25s;
+        -moz-transition: all .25s;
+        transition: all .25s;
         -webkit-transform: translateX(-50%) translateY(-50%);
         -moz-transform: translateX(-50%) translateY(-50%);
         -ms-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
-        -webkit-transition: all 0.25s;
-        -moz-transition: all 0.25s;
-        transition: all 0.25s;
+        opacity: 0;
+        background: rgba(216, 62, 119, .25);
     }
     
     .nav-link:hover:after {
@@ -249,9 +249,9 @@
     }
     
     .ProjRow {
-        margin-bottom: 35px;
         margin-top: 10px;
         margin-right: 7%;
+        margin-bottom: 35px;
         margin-left: 7%;
     }
     
@@ -270,62 +270,62 @@
     
     .square:before {
         position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: -50px;
         display: inline-block;
-        content: "";
-        background: #ffffff;
         width: 40px;
         height: 2px;
-        left: -50px;
-        bottom: 0;
         margin-bottom: 25px;
-        z-index: 1;
+        content: '';
+        -webkit-transition: all .3s ease-in-out 0s;
+        -moz-transition: all .3s ease-in-out 0s;
+        transition: all .3s ease-in-out 0s;
         opacity: 0;
-        -webkit-transition: all 0.3s ease-in-out 0s;
-        -moz-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s;
+        background: #fff;
     }
     
     .square:hover:before {
         left: 60px;
+        -webkit-transition: all .3s ease-in-out .3s;
+        -moz-transition: all .3s ease-in-out .3s;
+        transition: all .3s ease-in-out .3s;
         opacity: 1;
-        -webkit-transition: all 0.3s ease-in-out 0.3s;
-        -moz-transition: all 0.3s ease-in-out 0.3s;
-        transition: all 0.3s ease-in-out 0.3s;
     }
     
     .square:after {
         position: absolute;
-        display: inline-block;
-        content: "";
-        width: 10px;
-        height: 10px;
-        width: 0;
-        height: 0;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        border-left: 5px solid #ffffff;
+        z-index: 1;
         bottom: 0;
         left: -20px;
+        display: inline-block;
+        width: 10px;
+        width: 0;
+        height: 10px;
+        height: 0;
         margin-bottom: 21px;
-        z-index: 1;
+        content: '';
+        -webkit-transition: all .3s ease-in-out 0s;
+        -moz-transition: all .3s ease-in-out 0s;
+        transition: all .3s ease-in-out 0s;
         opacity: 0;
-        -webkit-transition: all 0.3s ease-in-out 0s;
-        -moz-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid #fff;
     }
     
     .square:hover:after {
         left: 97px;
+        -webkit-transition: all .3s ease-in-out .3s;
+        -moz-transition: all .3s ease-in-out .3s;
+        transition: all .3s ease-in-out .3s;
         opacity: 1;
-        -webkit-transition: all 0.3s ease-in-out 0.3s;
-        -moz-transition: all 0.3s ease-in-out 0.3s;
-        transition: all 0.3s ease-in-out 0.3s;
     }
     
     .ProjRow .square {
+        margin-bottom: 20px;
         /*transition: all 0.3s ease-in-out 0.1s;*/
         padding: 5px;
-        margin-bottom: 20px;
         /*border-radius: 50%;*/
         /*overflow: hidden;*/
     }
@@ -361,10 +361,10 @@
     
     .ProjRow .square .border,
     .ProjRow .square .scaled-img {
-        transition: all 0.3s ease-in-out 0.1s;
-        -webkit-transition: all 0.3s ease-in-out 0.1s;
-        -moz-transition: all 0.3s ease-in-out 0.1s;
-        -o-transition: all 0.3s ease-in-out 0.1s;
+        -webkit-transition: all .3s ease-in-out .1s;
+        -moz-transition: all .3s ease-in-out .1s;
+        -o-transition: all .3s ease-in-out .1s;
+        transition: all .3s ease-in-out .1s;
     }
     
     .ProjRow .projImg .projTags {
@@ -387,9 +387,9 @@
     .ProjRow .projTitle {
         font-family: 'Nunito', sans-serif;
         font-size: 19px;
+        font-weight: 400;
         font-variant: small-caps;
         color: #21282f;
-        font-weight: 400;
     }
     
     .projImg {
@@ -405,27 +405,27 @@
         bottom: 5px;
         /*color: white;*/
         width: 100%;
+        padding-right: 25px;
         padding-bottom: 40px;
         padding-left: 25px;
-        padding-right: 25px;
     }
     
     .projIcon img {
-        -webkit-filter: invert(0.2);
-        filter: invert(0.2);
-        -o-filter: invert(0.2);
-        -moz-filter: invert(0.2);
-        -ms-filter: invert(0.2);
         width: 30%;
+        -webkit-filter: invert(.2);
+        filter: invert(.2);
+        -o-filter: invert(.2);
+        -moz-filter: invert(.2);
+        -ms-filter: invert(.2);
     }
     
     .ContactRow {
+        font-family: 'Nunito', sans-serif;
+        margin-top: 50px;
         padding-top: 40px;
         padding-bottom: 30px;
-        background-color: #F1EDEE;
         color: #555;
-        margin-top: 50px;
-        font-family: 'Nunito', sans-serif;
+        background-color: #f1edee;
     }
     
     .ContactRow h4 {
@@ -433,9 +433,9 @@
     }
     
     .ContactRow i {
-        color: #555;
-        margin: 20px 4px 0px 4px;
         font-size: 23px;
+        margin: 20px 4px 0 4px;
+        color: #555;
     }
     
     .ContactRow i:hover {
@@ -445,10 +445,10 @@
     }
     
     .ContactRow .myPic img {
-        border-radius: 50%;
         /*display: block;*/
         width: 250px;
         margin: auto;
+        border-radius: 50%;
     }
     
     .ContactRow .myPic {
@@ -457,16 +457,16 @@
     }
     
     .ContactRow .myIntro {
+        font-size: 14px;
         /*margin-top: 50px;*/
         margin-bottom: 20px;
-        font-size: 14px;
         letter-spacing: 1.01;
         color: #555;
     }
     
     .ContactRow .ending-hr {
         width: 250px;
-        border-top: 2.5px solid #D83E77;
+        border-top: 2.5px solid #d83e77;
     }
     
     .ContactRow * {
@@ -542,9 +542,9 @@
     }
     
     @media only screen and (max-width: 800px) {
-        #deepintent-carousel .carousel-inner>.item>img {
-            height: auto;
+        #deepintent-carousel .carousel-inner > .item > img {
             width: 100%;
+            height: auto;
         }
         #deepintent-carousel .carousel-inner {
             height: auto;
@@ -603,7 +603,7 @@
             font-size: 16px;
         }*/
         .details {
-            margin-right: 0px;
+            margin-right: 0;
         }
         .whiteLine {
             padding: 30px 25px 10px 25px;
@@ -614,7 +614,6 @@
         .intro .fullName {
             font-size: 35px;
         }
-        
         #museum-carousel .carousel-inner {
             height: 610px;
         }
@@ -634,84 +633,84 @@
     /*pre-load effect*/
     
     .loading {
-        background-color: white;
-        height: 100%;
-        width: 100%;
         position: fixed;
         z-index: 100;
-        margin-top: 0px;
-        top: 0px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        background-color: white;
     }
     
     .loading-center {
+        position: relative;
         width: 100%;
         height: 100%;
-        position: relative;
     }
     
     .loading-center-absolute {
         position: absolute;
-        left: 50%;
         top: 50%;
-        height: 200px;
+        left: 50%;
         width: 200px;
+        height: 200px;
         margin-top: -100px;
         margin-left: -100px;
-        -ms-transform: rotate(-100deg);
         -webkit-transform: rotate(-100deg);
+        -ms-transform: rotate(-100deg);
         transform: rotate(-100deg);
     }
     
     .object {
-        -moz-border-radius: 50% 50% 50% 50%;
-        -webkit-border-radius: 50% 50% 50% 50%;
-        border-radius: 50% 50% 50% 50%;
         position: absolute;
-        border-top: 5px solid #d83e77;
-        border-bottom: 5px solid transparent;
-        border-left: 5px solid #d83e77;
-        border-right: 5px solid transparent;
         -webkit-animation: animate 2s infinite;
         animation: animate 2s infinite;
+        border-top: 5px solid #d83e77;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid #d83e77;
+        -webkit-border-radius: 50% 50% 50% 50%;
+        -moz-border-radius: 50% 50% 50% 50%;
+        border-radius: 50% 50% 50% 50%;
     }
     
     .object_one {
-        left: 80px;
         top: 80px;
+        left: 80px;
         width: 40px;
         height: 40px;
     }
     
     .object_two {
-        left: 65px;
         top: 65px;
+        left: 65px;
         width: 70px;
         height: 70px;
-        -webkit-animation-delay: 0.2s;
-        animation-delay: 0.2s;
+        -webkit-animation-delay: .2s;
+        animation-delay: .2s;
     }
     
     .object_three {
-        left: 50px;
         top: 50px;
+        left: 50px;
         width: 100px;
         height: 100px;
-        -webkit-animation-delay: 0.7s;
-        animation-delay: 0.7s;
+        -webkit-animation-delay: .7s;
+        animation-delay: .7s;
     }
     
     @-webkit-keyframes animate {
         50% {
-            -ms-transform: rotate(360deg) scale(0.8);
-            -webkit-transform: rotate(360deg) scale(0.8);
-            transform: rotate(360deg) scale(0.8);
+            -webkit-transform: rotate(360deg) scale(.8);
+            -ms-transform: rotate(360deg) scale(.8);
+            transform: rotate(360deg) scale(.8);
         }
     }
     
     @keyframes animate {
         50% {
-            -ms-transform: rotate(360deg) scale(0.8);
-            -webkit-transform: rotate(360deg) scale(0.8);
-            transform: rotate(360deg) scale(0.8);
+            -webkit-transform: rotate(360deg) scale(.8);
+            -ms-transform: rotate(360deg) scale(.8);
+            transform: rotate(360deg) scale(.8);
         }
     }
