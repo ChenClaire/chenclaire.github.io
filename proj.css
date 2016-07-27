@@ -108,14 +108,16 @@ a:hover {
 }
 
 #calligraphy-carousel .carousel-inner>.item>img,
-#gridspark-carousel .carousel-inner>.item>img {
+#gridspark-carousel .carousel-inner>.item>img,
+#ecorcoran-cms-carousel .carousel-inner>.item>img {
     /*margin: auto;*/
     /*height: 100%;*/
     width: 100%;
 }
 
 #calligraphy-carousel .carousel-inner,
-#gridspark-carousel .carousel-inner {
+#gridspark-carousel .carousel-inner,
+#ecorcoran-cms-carousel .carousel-inner{
     width: 770px;
     margin: auto;
 }
