@@ -425,6 +425,10 @@
         padding-top: 40px;
         padding-bottom: 30px;
         color: #555;
+        /*background-color: #f1edee;*/
+    }
+
+    .moreAboutMe{
         background-color: #f1edee;
     }
     
@@ -460,13 +464,15 @@
         font-size: 14px;
         /*margin-top: 50px;*/
         margin-bottom: 20px;
-        letter-spacing: 1.01;
+        letter-spacing: 0.5px;
+        line-height: 1.5;
         color: #555;
     }
     
     .ContactRow .ending-hr {
         width: 250px;
         border-top: 2.5px solid #d83e77;
+        margin-bottom: 30px;
     }
     
     .ContactRow * {
