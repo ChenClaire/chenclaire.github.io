@@ -102,9 +102,10 @@ a:hover {
     box-shadow: none;
     width: 100%;
 }
-.add-margin{
-    margin-top:10px;
-    margin-bottom:20px;
+
+.add-margin {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 #calligraphy-carousel .carousel-inner>.item>img,
@@ -117,7 +118,7 @@ a:hover {
 
 #calligraphy-carousel .carousel-inner,
 #gridspark-carousel .carousel-inner,
-#ecorcoran-cms-carousel .carousel-inner{
+#ecorcoran-cms-carousel .carousel-inner {
     width: 770px;
     margin: auto;
 }
@@ -157,26 +158,28 @@ a:hover {
 
 .carousel {
     margin-bottom: 65px;
-    margin-top:15px;
+    margin-top: 15px;
 }
 
 .carousel-indicators {
     bottom: -45px;
 }
-.carousel-control{
+
+.carousel-control {
     font-size: 30px;
 }
+
 .carousel-indicators li {
     width: 10px;
     height: 10px;
-        background-color: rgba(216, 62, 119, 0.5);
-        border:none;
+    background-color: rgba(216, 62, 119, 0.5);
+    border: none;
 }
 
 .carousel-indicators .active {
     background-color: #D83E77;
-    border:none;
-    margin:1px;
+    border: none;
+    margin: 1px;
     width: 30px;
     height: 10px;
 }
@@ -337,6 +340,7 @@ a:hover {
 
 /*fly effect*/
 
+
 /*.fly {
     opacity: 0;
     transition: all 600ms ease-in-out;
@@ -354,3 +358,13 @@ a:hover {
     -moz-transform: translateY(0) scale(1) translate3d(0, 0, 0);
     -o-transform: translateY(0) scale(1) translate3d(0, 0, 0);
 }*/
+
+.ecorcoran-img img:first-child {
+    width: 22%;
+    margin: 0px 2.5%;
+}
+
+.ecorcoran-img img:nth-child(2) {
+    width: 60%;
+    margin: 0px 4%;
+}

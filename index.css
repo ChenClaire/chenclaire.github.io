@@ -556,7 +556,8 @@
             height: auto;
         }
         #calligraphy-carousel .carousel-inner,
-        #gridspark-carousel .carousel-inner {
+        #gridspark-carousel .carousel-inner,
+        #ecorcoran-cms-carousel .carousel-inner{
             width: 90%;
         }
     }
@@ -595,6 +596,15 @@
         }
         .border {
             height: 40px;
+        }
+    }
+    @media only screen and (max-width: 550px) {
+        .jumbotronRow{
+            padding-left:40px;
+            padding-right: 40px;
+        }
+        .jumbotronRow h1{
+            font-size: 28px;
         }
     }
     
