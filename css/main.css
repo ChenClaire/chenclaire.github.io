@@ -1,0 +1,83 @@
+a,
+a:hover {
+  cursor: pointer;
+  text-decoration: none !important;
+  color: inherit; }
+  a p,
+  a:hover p {
+    text-decoration: none !important; }
+
+/*pre-load effect*/
+.loading {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  background-color: white; }
+  .loading .loading-center {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .loading .loading-center .loading-center-absolute {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 200px;
+      height: 200px;
+      margin-top: -100px;
+      margin-left: -100px;
+      -moz-transform: rotate(-100deg);
+      -o-transform: rotate(-100deg);
+      -ms-transform: rotate(-100deg);
+      -webkit-transform: rotate(-100deg);
+      transform: rotate(-100deg); }
+      .loading .loading-center .loading-center-absolute .object {
+        position: absolute;
+        -webkit-animation: rotating 2s infinite;
+        -moz-animation: rotating 2s infinite;
+        -ms-animation: rotating 2s infinite;
+        -o-animation: rotating 2s infinite;
+        animation: rotating 2s infinite;
+        border-top: 5px solid #d83e77;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid #d83e77;
+        border-radius: 50% 50% 50% 50%; }
+        .loading .loading-center .loading-center-absolute .object.object_one {
+          top: 80px;
+          left: 80px;
+          width: 40px;
+          height: 40px; }
+        .loading .loading-center .loading-center-absolute .object.object_two {
+          top: 65px;
+          left: 65px;
+          width: 70px;
+          height: 70px;
+          -webkit-animation-delay: .2s;
+          animation-delay: .2s; }
+        .loading .loading-center .loading-center-absolute .object.object_three {
+          top: 50px;
+          left: 50px;
+          width: 100px;
+          height: 100px;
+          -webkit-animation-delay: .7s;
+          animation-delay: .7s; }
+
+@-webkit-keyframes rotating {
+  50% {
+    -moz-transform: rotate(360deg) scale(0.8);
+    -o-transform: rotate(360deg) scale(0.8);
+    -ms-transform: rotate(360deg) scale(0.8);
+    -webkit-transform: rotate(360deg) scale(0.8);
+    transform: rotate(360deg) scale(0.8); } }
+@keyframes rotating {
+  50% {
+    -moz-transform: rotate(360deg) scale(0.8);
+    -o-transform: rotate(360deg) scale(0.8);
+    -ms-transform: rotate(360deg) scale(0.8);
+    -webkit-transform: rotate(360deg) scale(0.8);
+    transform: rotate(360deg) scale(0.8); } }
+
+/*# sourceMappingURL=main.css.map */
