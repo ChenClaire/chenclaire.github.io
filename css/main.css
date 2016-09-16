@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Muli:300,400);
 a,
 a:hover {
   cursor: pointer;
@@ -88,9 +90,8 @@ a:hover {
       .IntroRow .intro {
         width: 85%; } }
     .IntroRow .intro .fullName {
-      font-family: 'Josefin Sans', sans-serif;
+      font-family: 'Cormorant Garamond', serif;
       font-size: 55px;
-      font-variant: small-caps;
       letter-spacing: 2;
       color: #555; }
       @media only screen and (max-width: 480px) {
@@ -101,16 +102,16 @@ a:hover {
       margin: auto;
       margin-top: 15px; }
     .IntroRow .intro .keywords {
-      font-family: 'Josefin Sans', sans-serif;
-      font-size: 20px;
-      font-weight: bold;
+      font-family: 'Nunito', sans-serif;
+      font-size: 18px;
+      font-weight: 300;
       padding-top: 10px;
-      letter-spacing: 1.01;
+      letter-spacing: 0.5px;
       opacity: 0;
       color: #d83e77; }
       @media only screen and (max-width: 480px) {
         .IntroRow .intro .keywords {
-          font-size: 18px; } }
+          font-size: 17px; } }
   .IntroRow .nav-link {
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
@@ -239,7 +240,8 @@ a:hover {
           font-size: 19px;
           font-weight: 400;
           font-variant: small-caps;
-          color: #21282f; }
+          color: #21282f;
+          letter-spacing: 0.5px; }
         .ProjRow .square .projImg .projIcon hr {
           margin-top: 10px;
           margin-bottom: 10px;
@@ -247,6 +249,7 @@ a:hover {
         .ProjRow .square .projImg .projIcon .projTags {
           color: #555;
           font-family: 'Nunito', sans-serif;
+          font-weight: 300;
           font-size: 16px; }
     .ProjRow .square .border {
       -webkit-transition: all 0.3s ease-in-out 0.1s;
@@ -330,6 +333,43 @@ a:hover {
       -o-transition: all 0.3s ease-in-out 0.3s;
       transition: all 0.3s ease-in-out 0.3s;
       opacity: 1; }
+
+.ContactRow {
+  font-family: 'Nunito', sans-serif;
+  margin-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  color: #555;
+  font-weight: 300; }
+  .ContactRow .special {
+    font-weight: 700;
+    color: #d83e77; }
+  .ContactRow h4 {
+    color: #d83e77; }
+  .ContactRow .myIntro {
+    font-size: 14px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    color: #555; }
+  .ContactRow .myPic {
+    margin-top: 50px;
+    margin-bottom: 60px; }
+    .ContactRow .myPic img {
+      width: 250px;
+      margin: auto;
+      border-radius: 50%; }
+  .ContactRow .ending-hr {
+    width: 250px;
+    border-top: 2.5px solid #d83e77;
+    margin-bottom: 30px; }
+  .ContactRow i {
+    font-size: 23px;
+    margin: 20px 4px 0 4px;
+    color: #555; }
+    .ContactRow i:hover {
+      cursor: pointer;
+      color: #d83e77; }
 
 @media only screen and (max-width: 768px) {
   /*show background img for proj*/

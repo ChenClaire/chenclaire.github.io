@@ -41,7 +41,11 @@ a:hover {
     padding-right: 10px;
     /*color: #ff7373;*/
     color: #d83e77;
-    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    /*font-family: 'Josefin Sans', sans-serif;*/
+    /*font-family: 'Cormorant Garamond', serif;*/
+    font-family: 'Nunito', sans-serif;
+    /*text-transform: uppercase;*/
 }
 
 .jumbotronRow hr {
@@ -49,10 +53,15 @@ a:hover {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+.jumbotronRow h1{
+    /*text-transform: uppercase;*/
+    font-weight: 300;
+}
 
 .jumbotronRow h5 {
     font-family: 'Nunito', sans-serif;
     color: #666;
+    
 }
 
 .details {
@@ -63,8 +72,9 @@ a:hover {
 .details h4 {
     /*font-variant: small-caps;*/
     font-family: 'Nunito', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     color: #9d9d9d;
+
 }
 
 .whiteLine {
@@ -185,17 +195,19 @@ a:hover {
 }
 
 .jumbotronRow a {
-    font-size: 16px;
+    font-size: 14px;
     /*background-color: #d83e77;*/
     /*border-radius: 0px;*/
     /*color:white;*/
     color: #d83e77;
+    font-family: 'Nunito', sans-serif;
     text-decoration: none;
     font-weight: bold;
     display: block;
     width: 200px;
     margin: auto;
     margin-top: 30px;
+    /*font-variant: small-caps;*/
 }
 
 .jumbotronRow a i {
