@@ -121,8 +121,9 @@ a:hover {
             // font-variant: small-caps;
             letter-spacing: 2;
             color: #555;
+            padding-bottom: 10px;
             @media only screen and (max-width: 480px) {
-                font-size: 35px;
+                font-size: 40px;
             }
         }
         .blackHr {
@@ -134,7 +135,7 @@ a:hover {
             font-family: 'Nunito', sans-serif;
             font-size: 18px;
             font-weight: 300;
-            padding-top: 10px;
+            padding-top: 15px;
             letter-spacing: 0.5px;
             opacity: 0;
             color: $primary-color;
@@ -365,11 +366,15 @@ a:hover {
 // }
 .ContactRow {
     font-family: 'Nunito', sans-serif;
-    margin-top: 50px;
+    margin-top: 20px;
     padding-top: 40px;
     padding-bottom: 30px;
     color: #555;
     font-weight: 300;
+    @media only screen and (max-width: 768px){
+        margin-top: 0px;
+        padding-top: 10px;
+    }
     .special {
         font-weight: 700;
         color: $primary-color;
@@ -505,5 +510,297 @@ a:hover {
 @keyframes rotating {
     50% {
         @include transform(rotate(360deg) scale(.8));
+    }
+}
+
+.homeKey {
+    border-radius: 100%;
+    background-color: $primary-color;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: white;
+    box-shadow: 0px 6px 13px 0 rgba(0, 0, 0, 0.20);
+    z-index: 100;
+    &:hover {
+        box-shadow: 0px 12px 17px 0 rgba(0, 0, 0, 0.20);
+        cursor: pointer;
+    }
+    img {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 10;
+        top: 8;
+        z-index: 20;
+    }
+}
+
+.jumbotronRow {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: $primary-color;
+    font-weight: 300;
+    font-family: 'Nunito', sans-serif;
+    @media only screen and (max-width: 550px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    h1 {
+        font-weight: 300;
+        @media only screen and (max-width: 550px) {
+            font-size: 28px;
+        }
+    }
+    hr {
+        width: 65%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    h5 {
+        font-family: 'Nunito', sans-serif;
+        color: #666;
+        font-weight: 300;
+    }
+    a {
+        font-size: 14px;
+        color: $primary-color;
+        font-family: 'Nunito', sans-serif;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        width: 200px;
+        margin: auto;
+        margin-top: 30px;
+        i {
+            @include transition(all 0.2s ease);
+            opacity: 0;
+            vertical-align: middle;
+        }
+        &:hover {
+            i {
+                opacity: 1;
+                @include transform(translateX(10px));
+            }
+        }
+    }
+}
+
+.whiteLine {
+    padding: 35px 80px 40px 80px;
+    @media only screen and (max-width: 1100px) {
+        padding: 35px 100px 40px 100px;
+    }
+    @media only screen and (max-width: 992px) {
+        padding: 40px 60px 30px 60px;
+    }
+    @media only screen and (max-width: 815px) {
+        padding: 30px;
+    }
+    @media only screen and (max-width: 768px) {
+        padding: 30px 25px 30px 25px;
+    }
+    @media only screen and (max-width: 480px) {
+        padding: 30px 25px 10px 25px;
+    }
+    img {
+        width: 100%;
+    }
+    .details {
+        margin-bottom: 50px;
+        margin-right: 15px;
+        @media only screen and (max-width: 815px) {
+            margin-right: 15px;
+        }
+        @media only screen and (max-width: 480px) {
+            margin-right: 0px;
+        }
+        p {
+            font-family: 'Nunito', sans-serif;
+            color: #333;
+            font-size: 16px;
+        }
+        h4 {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+            color: #9d9d9d;
+        }
+        .label-tag {
+            background-color: $primary-color;
+            opacity: 0.75;
+            font-weight: normal;
+            padding: 3px 5px;
+        }
+        .proj-label {
+            font-family: 'Nunito', sans-serif;
+            display: inline-block;
+            border: 1px solid #333;
+            padding-right: 5px;
+            padding-left: 5px;
+            margin: 5px;
+            border-radius: 2px;
+            color: #333;
+            &:hover {
+                background-color: rgba($primary-color, 0.1);
+                border: 1px solid $primary-color;
+                color: $primary-color;
+            }
+        }
+    }
+    .small-img {
+        width: 90%;
+        box-shadow: none !important;
+        @media only screen and (max-width: 768px) {
+            width: 90%;
+        }
+    }
+    .no-shadow-img {
+        box-shadow: none;
+        width: 100%;
+    }
+    .shadow-img {
+        box-shadow: 2px 2px 13px #b7b7b7;
+    }
+    .add-margin {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+.carousel {
+    margin-bottom: 65px;
+    margin-top: 15px;
+    .carousel-indicators {
+        bottom: -45px;
+        li {
+            width: 10px;
+            height: 10px;
+            background-color: rgba($primary-color, 0.5);
+            border: none;
+        }
+        .active {
+            background-color: $primary-color;
+            border: none;
+            margin: 1px;
+            width: 30px;
+            height: 10px;
+        }
+    }
+    .carousel-control {
+        font-size: 30px;
+        color: $primary-color;
+        text-shadow: none;
+        opacity: 0.6;
+        &.left,
+        &.right {
+            background-image: none !important;
+        }
+        &:hover,
+        &:focus {
+            color: $primary-color;
+            opacity: 1;
+        }
+    }
+    &#calligraphy-carousel .carousel-inner>.item>img,
+    &#gridspark-carousel .carousel-inner>.item>img,
+    &#ecorcoran-cms-carousel .carousel-inner>.item>img {
+        width: 100%;
+    }
+    &#calligraphy-carousel .carousel-inner,
+    &#gridspark-carousel .carousel-inner,
+    &#ecorcoran-cms-carousel .carousel-inner {
+        width: 770px;
+        margin: auto;
+        @media only screen and (max-width: 800px) {
+            width: 90%
+        }
+    }
+    &#deepintent-carousel .carousel-inner>.item>img,
+    &#museum-carousel .carousel-inner>.item>img {
+        margin: auto;
+        height: 100%;
+        width: auto;
+    }
+    &#deepintent-carousel .carousel-inner {
+        height: 740px;
+    }
+    &#museum-carousel .carousel-inner {
+        height: 740px;
+        @media only screen and (max-width: 480px) {
+            height: 610px;
+        }
+    }
+    &#deepintent-carousel .carousel-inner {
+        padding-bottom: 15px;
+        @media only screen and (max-width: 800px) {
+            height: auto;
+        }
+        & > .item > img {
+            @media only screen and (max-width: 800px) {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+.ecorcoran-img img:first-child {
+    width: 22%;
+    margin: 0px 2.5%;
+}
+
+.ecorcoran-img img:nth-child(2) {
+    width: 60%;
+    margin: 0px 4%;
+}
+
+
+/*TC website redesign */
+
+.TCweb-btn {
+    color: $primary-color;
+    border-radius: 0px;
+    opacity: 0.75;
+    &:hover,
+    &:focus {
+        opacity: 1;
+        color: $primary-color;
+    }
+    // a {
+    //     text-decoration: none;
+    //     &:hover{
+    //         text-decoration: none;
+    //     }
+    // }
+}
+
+.TC-Web-Row {
+    margin-bottom: 40px;
+    .Web-info {
+        margin-top: 10px;
+        li {
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px;
+        }
+    }
+}
+
+.link-wrapper {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    .TC-web-link {
+        display: inline-block;
+        margin-right: 10px;
+        a {
+            color: #3b6aa0;
+            &:hover {
+                color: #1D3550;
+            }
+        }
     }
 }
