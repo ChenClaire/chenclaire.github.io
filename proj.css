@@ -61,7 +61,7 @@ a:hover {
 .jumbotronRow h5 {
     font-family: 'Nunito', sans-serif;
     color: #666;
-    
+    font-weight: 300;
 }
 
 .details {
