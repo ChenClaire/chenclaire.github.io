@@ -3,9 +3,10 @@
 <head>
     <title>Claire Chen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- jQuery lib -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <!-- jQuery UI lib -->
     <script type="text/javascript" src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <!-- transit -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.js"></script>
     <!-- Bootstrapt css-->
@@ -14,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <!-- myCSS -->
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- google font -->
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,700' rel='stylesheet' type='text/css'>
@@ -29,7 +31,6 @@
         a.src = g;
         m.parentNode.insertBefore(a, m)
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
     ga('create', 'UA-67851225-1', 'auto');
     ga('send', 'pageview');
     </script>
@@ -39,7 +40,6 @@
     <div class="loading">
         <div class="loading-center">
             <div class="loading-center-absolute">
-                <!-- <div class="object" id="object_four"></div> -->
                 <div class="object object_three"></div>
                 <div class="object object_two"></div>
                 <div class="object object_one"></div>
@@ -47,33 +47,6 @@
         </div>
     </div>
     <div class="container-fluid">
-        <!-- <nav class="navbar navbar-default navbar-fixed-top NavRow mainNavRow ">
-            <div class="container-fluid">
-                <div class="navbar-header navHeader">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsed" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">CLAIRE CHEN</a>
-                </div>
-                Collect the nav links, forms, and other content for toggling
-                <div class="collapse navbar-collapse" id="navbar-collapsed">
-                    <ul class="nav navbar-nav navbar-right navList">
-                        <li onclick="goTo('aboutMe')">
-                            <a>About <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li onclick="goTo('works')">
-                            <a>Work</a>
-                        </li>
-                        <li onclick="goTo('contactMe')">
-                            <a>Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav> -->
         <a id="aboutMe"></a>
         <div class="row IntroRow">
             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -81,7 +54,6 @@
                     <h1 class="fullName">Claire Chen</h1>
                     <hr class="blackHr">
                     <h4 class="keywords"> passionate UI/UX designer with a great ability to code </h4>
-                    <!-- <p class="selfIntro">Hi! My name is Claire. Here is my UI/UX portfolio, consisting of mostly web-based projects, which I have designed and/or coded while studying Instructional Technology and Media at Columbia University.</p> -->
                 </div>
             </div>
             <div class="row">
@@ -276,13 +248,10 @@
             </div>
         </div>
     </div>
-    <!-- </div> -->
     <!-- Bootstrapt js-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- myJS -->
     <script type="text/javascript" src="index.js"></script>
-    <!-- processing -->
-    <!-- <script src="processing.js" type="text/javascript"></script> -->
 </body>
 
 </html>
