@@ -396,6 +396,7 @@
         position: relative;
         width: 310px;
         margin: auto;
+        /*background-color: rgba(0,0,0,0.3);*/
         /*border-bottom: 8px solid #d83e77;*/
         /*border-radius: 50%;*/
     }
