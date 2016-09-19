@@ -596,6 +596,10 @@ a:hover {
 .carousel {
   margin-bottom: 65px;
   margin-top: 15px; }
+  .carousel .carousel-inner {
+    border-radius: 5px; }
+    .carousel .carousel-inner .item img {
+      border-radius: 5px; }
   .carousel .carousel-indicators {
     bottom: -45px; }
     .carousel .carousel-indicators li {

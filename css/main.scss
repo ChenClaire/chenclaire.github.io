@@ -371,7 +371,7 @@ a:hover {
     padding-bottom: 30px;
     color: #555;
     font-weight: 300;
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 768px) {
         margin-top: 0px;
         padding-top: 10px;
     }
@@ -675,6 +675,14 @@ a:hover {
 .carousel {
     margin-bottom: 65px;
     margin-top: 15px;
+    .carousel-inner {
+        border-radius: 5px;
+        .item {
+            img {
+                border-radius: 5px;
+            }
+        }
+    }
     .carousel-indicators {
         bottom: -45px;
         li {
