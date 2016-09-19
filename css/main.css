@@ -175,7 +175,7 @@ a:hover p {
   transition: all 0.25s;
   letter-spacing: 1.1;
   text-transform: uppercase;
-  color: #cacaca;
+  color: #c1c1c2;
 }
 .IntroRow .nav-link:focus {
   color: #d83e77;
@@ -717,7 +717,7 @@ a:hover p {
 }
 .whiteLine .details h4 {
   font-family: 'MuseoSans-700', sans-serif;
-  color: #cacaca;
+  color: #c1c1c2;
   text-transform: uppercase;
   letter-spacing: 0.2px;
   font-size: 16px;
