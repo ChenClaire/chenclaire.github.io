@@ -48,8 +48,6 @@ a:hover p {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 160px;
-  height: 160px;
   transform: translateY(-50%) translateX(-50%);
 }
 .loading .loading-center .loading-center-absolute .object {
