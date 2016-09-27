@@ -84,40 +84,28 @@ a:hover {
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 200px;
-            height: 200px;
-            margin-top: -100px;
-            margin-left: -100px;
-            .transform(rotate(-100deg));
+            width: 160px;
+            height: 160px;
+            transform: translateY(-50%) translateX(-50%);
             .object {
-                position: absolute;
-                .animation(rotating 2s infinite);
-                border-top: 5px solid @primary-color;
-                border-right: 5px solid transparent;
-                border-bottom: 5px solid transparent;
-                border-left: 5px solid @primary-color;
-                border-radius: 50% 50% 50% 50%;
-                &.object_one {
-                    top: 80px;
-                    left: 80px;
-                    width: 40px;
-                    height: 40px;
-                }
+                .animation(scaling 2s infinite);
+                width: 15px;
+                height: 15px;
+                background-color: @primary-color;
+                display: inline-block;
+                border-radius: 50%;
+                opacity: 1;
                 &.object_two {
-                    top: 65px;
-                    left: 65px;
-                    width: 70px;
-                    height: 70px;
-                    -webkit-animation-delay: .3s;
-                    animation-delay: .3s;
+                    -webkit-animation-delay: 0.3s;
+                    animation-delay: 0.3s;
                 }
                 &.object_three {
-                    top: 50px;
-                    left: 50px;
-                    width: 100px;
-                    height: 100px;
-                    -webkit-animation-delay: .8s;
-                    animation-delay: .8s;
+                    -webkit-animation-delay: 0.6s;
+                    animation-delay: 0.6s;
+                }
+                &.object_four {
+                    -webkit-animation-delay: 0.9s;
+                    animation-delay: 0.9s;
                 }
             }
         }
@@ -537,15 +525,17 @@ a:hover {
     }
 }
 
-@-webkit-keyframes rotating {
-    50% {
-        .transform(rotate(360deg) scale(.8));
+@-webkit-keyframes scaling {
+    75% {
+        .transform(scale(0.4));
+        opacity: 0;
     }
 }
 
-@keyframes rotating {
-    50% {
-        .transform(rotate(360deg) scale(.8));
+@keyframes scaling {
+    75% {
+        .transform(scale(0.4));
+        opacity: 0;
     }
 }
 
