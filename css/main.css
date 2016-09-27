@@ -584,11 +584,11 @@ a:hover p {
   top: 20px;
   left: 20px;
   color: white;
-  box-shadow: 0px 6px 13px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.2);
   z-index: 100;
 }
 .homeKey:hover {
-  box-shadow: 0px 12px 17px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 6px 14px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 .homeKey img {
@@ -597,6 +597,28 @@ a:hover p {
   height: 30px;
   left: 10;
   top: 8;
+  z-index: 20;
+}
+.topKey {
+  display: none;
+  background-color: #d83e77;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  border-radius: 2px;
+}
+.topKey:hover {
+  box-shadow: 2px 6px 14px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.topKey i {
+  margin-top: 7px;
+  font-size: 33px;
   z-index: 20;
 }
 .jumbotronRow {
