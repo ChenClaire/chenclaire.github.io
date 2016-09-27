@@ -441,6 +441,7 @@ a:hover p {
 .ContactRow h4 {
   font-family: 'MuseoSans-500', sans-serif;
   color: #d83e77;
+  letter-spacing: 1;
 }
 .ContactRow .myIntro {
   font-family: 'MuseoSans-300', sans-serif;
@@ -451,11 +452,11 @@ a:hover p {
   color: #555;
 }
 .ContactRow .myPic {
-  margin-top: 50px;
-  margin-bottom: 60px;
+  margin-top: 25px;
+  margin-bottom: 35px;
 }
 .ContactRow .myPic img {
-  width: 250px;
+  width: 185px;
   margin: auto;
   border-radius: 50%;
 }
@@ -644,7 +645,7 @@ a:hover p {
   width: 200px;
   margin: auto;
   margin-top: 30px;
-  letter-spacing: 0.5;
+  letter-spacing: 0.5px;
 }
 .jumbotronRow a i {
   -webkit-transition: all 0.2s ease;
