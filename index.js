@@ -28,9 +28,9 @@ $(window).load(function() {
 
  $(window).scroll(function() {
  	 if ($(window).scrollTop() > 800) {
- 	 	$(".topKey").fadeIn("slow");
+ 	 	$(".topKey").fadeIn();
  	 } else {
- 	 	$(".topKey").fadeOut("slow");
+ 	 	$(".topKey").fadeOut();
  	 }
  });
 
