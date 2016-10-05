@@ -157,7 +157,7 @@ a:hover p {
   transition: all 0.25s;
   letter-spacing: 1.1;
   text-transform: uppercase;
-  color: #c1c1c2;
+  color: #b9b9b9;
 }
 .IntroRow .nav-link:focus {
   color: #d83e77;
@@ -299,7 +299,7 @@ a:hover p {
   font-size: 19px;
   font-variant: small-caps;
   color: #555;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 .ProjRow .square .projImg .projIcon hr {
   margin-top: 10px;
@@ -724,9 +724,9 @@ a:hover p {
 }
 .whiteLine .details h4 {
   font-family: 'MuseoSans-700', sans-serif;
-  color: #c1c1c2;
+  color: #b9b9b9;
   text-transform: uppercase;
-  letter-spacing: 0.2px;
+  letter-spacing: 1px;
   font-size: 16px;
 }
 .whiteLine .details .label-tag {
