@@ -759,11 +759,6 @@ a:hover p {
   border-radius: 2px;
   color: #333;
 }
-.whiteLine .details .proj-label:hover {
-  background-color: rgba(216, 62, 119, 0.1);
-  border: 1px solid #d83e77;
-  color: #d83e77;
-}
 .whiteLine .small-img {
   width: 90%;
   box-shadow: none !important;
