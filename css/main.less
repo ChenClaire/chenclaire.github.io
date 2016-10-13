@@ -644,6 +644,19 @@ a:hover {
     }
 }
 
+
+.img-title {
+    color: @dark-gray;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    margin-top: 10px;
+    padding:0px;
+    @media only screen and (max-width: 992px) {
+        padding: 0px 15px;
+        text-align: center;
+    }
+}
+
 .whiteLine {
     padding: 35px 80px 40px 80px;
     @media only screen and (max-width: 1100px) {
@@ -663,6 +676,7 @@ a:hover {
     }
     img {
         width: 100%;
+        border-radius: 5px;
     }
     .details {
         margin-bottom: 50px;
@@ -814,14 +828,14 @@ a:hover {
     }
 }
 
-.ecorcoran-img img:first-child {
-    width: 22%;
-    margin: 0px 2.5%;
+.ecorcoran-img-responsive img:first-child {
+    width: 25%;
+    margin: 0px 1.5% 0px 0px;
 }
 
-.ecorcoran-img img:nth-child(2) {
-    width: 60%;
-    margin: 0px 4%;
+.ecorcoran-img-responsive img:nth-child(2) {
+    width: 68.5%;
+    margin: 0px 0px 0px 3%;
 }
 
 
