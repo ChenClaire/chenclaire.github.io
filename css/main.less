@@ -162,6 +162,14 @@ a:hover {
             @media only screen and (max-width: 480px) {
                 font-size: 17px;
             }
+            .inline-control {
+                @media only screen and (max-width: 480px) {
+                    display: block;
+                    &:nth-child(2){
+                        display: none;
+                    }
+                }
+            }
         }
     }
     .nav-link {

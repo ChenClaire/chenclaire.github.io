@@ -140,6 +140,14 @@ a:hover p {
     font-size: 17px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .IntroRow .intro .keywords .inline-control {
+    display: block;
+  }
+  .IntroRow .intro .keywords .inline-control:nth-child(2) {
+    display: none;
+  }
+}
 .IntroRow .nav-link {
   font-family: 'MuseoSans-700', sans-serif;
   font-size: 14px;
