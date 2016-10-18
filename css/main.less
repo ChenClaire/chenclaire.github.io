@@ -230,12 +230,14 @@ a:hover {
     .square {
         margin-bottom: 20px;
         padding: 5px;
+        // overflow: hidden;
+        
         .border {
             position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 10px;
+            height: 5px;
             background-color: @primary-color;
         }
         .projImg {
@@ -274,15 +276,16 @@ a:hover {
                 bottom: 5px;
                 width: 100%;
                 padding-right: 25px;
-                padding-bottom: 40px;
+                padding-bottom: 10px;
                 padding-left: 25px;
                 img {
-                    width: 30%;
-                    -webkit-filter: invert(.2);
-                    filter: invert(.2);
-                    -o-filter: invert(.2);
-                    -moz-filter: invert(.2);
-                    -ms-filter: invert(.2);
+                    width: 25%;
+                    // -webkit-filter: invert(.2);
+                    // filter: invert(.2);
+                    // -o-filter: invert(.2);
+                    // -moz-filter: invert(.2);
+                    // -ms-filter: invert(.2);
+                    margin-bottom: 10px;
                 }
                 .projTitle {
                     font-family: 'MuseoSans-700', sans-serif;
@@ -290,17 +293,20 @@ a:hover {
                     font-variant: small-caps;
                     color: @dark-gray;
                     letter-spacing: 1px;
+                    .transition(all .35s ease-in-out .1s);
                 }
                 hr {
                     margin-top: 10px;
                     margin-bottom: 10px;
                     text-align: left;
+                    .transition(all .35s ease-in-out .1s);
                 }
                 .projTags {
                     color: @mid-gray;
                     font-family: 'MuseoSans-300', sans-serif;
                     // font-family: 'Muli', sans-serif;
                     font-size: 16px;
+                    .transition(all .35s ease-in-out .1s);
                 }
             }
         }
@@ -308,28 +314,40 @@ a:hover {
             .transition(all .3s ease-in-out .1s);
         }
         .scaled-img {
-            .transition(all .3s ease-in-out .1s);
+            .transition(all .6s ease-in-out);
+            // .transition(transform 1s);
         }
         &:hover {
+
             cursor: pointer;
             .border {
                 height: 40px;
             }
             .projImg .scaled-img {
+                // transform:scale(1.5);
+
                 opacity: 1;
             }
             .projTitle {
                 color: white !important;
+                transform:translateY(-35px);
+            }
+            hr{
+                 transform:translateY(-35px);
             }
             .projTags {
                 color: white !important;
+                transform:translateY(-35px);
             }
             .projIcon img {
-                -webkit-filter: invert(0);
-                filter: invert(0);
-                -o-filter: invert(0);
-                -moz-filter: invert(0);
-                -ms-filter: invert(0);
+                // -webkit-filter: brightness(255);
+                // filter: brightness(255);
+                // -o-filter: brightness(255);
+                // -moz-filter: brightness(255);
+                // -ms-filter: brightness(255);
+                opacity: 0;
+                .transition(all .3s ease-in-out );
+
             }
         }
         &:before {
@@ -342,7 +360,7 @@ a:hover {
             height: 2px;
             margin-bottom: 25px;
             content: '';
-            .transition(all .3s ease-in-out 0s);
+            .transition(all .35s ease-in-out 0s);
             opacity: 0;
             background: #fff;
         }

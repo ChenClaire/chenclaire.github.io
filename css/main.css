@@ -227,7 +227,7 @@ a:hover p {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 10px;
+  height: 5px;
   background-color: #d83e77;
 }
 .ProjRow .square .projImg {
@@ -283,16 +283,12 @@ a:hover p {
   bottom: 5px;
   width: 100%;
   padding-right: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   padding-left: 25px;
 }
 .ProjRow .square .projImg .projIcon img {
-  width: 30%;
-  -webkit-filter: invert(0.2);
-  filter: invert(0.2);
-  -o-filter: invert(0.2);
-  -moz-filter: invert(0.2);
-  -ms-filter: invert(0.2);
+  width: 25%;
+  margin-bottom: 10px;
 }
 .ProjRow .square .projImg .projIcon .projTitle {
   font-family: 'MuseoSans-700', sans-serif;
@@ -300,16 +296,31 @@ a:hover p {
   font-variant: small-caps;
   color: #555;
   letter-spacing: 1px;
+  -webkit-transition: all 0.35s ease-in-out 0.1s;
+  -moz-transition: all 0.35s ease-in-out 0.1s;
+  -ms-transition: all 0.35s ease-in-out 0.1s;
+  -o-transition: all 0.35s ease-in-out 0.1s;
+  transition: all 0.35s ease-in-out 0.1s;
 }
 .ProjRow .square .projImg .projIcon hr {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: left;
+  -webkit-transition: all 0.35s ease-in-out 0.1s;
+  -moz-transition: all 0.35s ease-in-out 0.1s;
+  -ms-transition: all 0.35s ease-in-out 0.1s;
+  -o-transition: all 0.35s ease-in-out 0.1s;
+  transition: all 0.35s ease-in-out 0.1s;
 }
 .ProjRow .square .projImg .projIcon .projTags {
   color: #777;
   font-family: 'MuseoSans-300', sans-serif;
   font-size: 16px;
+  -webkit-transition: all 0.35s ease-in-out 0.1s;
+  -moz-transition: all 0.35s ease-in-out 0.1s;
+  -ms-transition: all 0.35s ease-in-out 0.1s;
+  -o-transition: all 0.35s ease-in-out 0.1s;
+  transition: all 0.35s ease-in-out 0.1s;
 }
 .ProjRow .square .border {
   -webkit-transition: all 0.3s ease-in-out 0.1s;
@@ -319,11 +330,11 @@ a:hover p {
   transition: all 0.3s ease-in-out 0.1s;
 }
 .ProjRow .square .scaled-img {
-  -webkit-transition: all 0.3s ease-in-out 0.1s;
-  -moz-transition: all 0.3s ease-in-out 0.1s;
-  -ms-transition: all 0.3s ease-in-out 0.1s;
-  -o-transition: all 0.3s ease-in-out 0.1s;
-  transition: all 0.3s ease-in-out 0.1s;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 .ProjRow .square:hover {
   cursor: pointer;
@@ -336,16 +347,22 @@ a:hover p {
 }
 .ProjRow .square:hover .projTitle {
   color: white !important;
+  transform: translateY(-35px);
+}
+.ProjRow .square:hover hr {
+  transform: translateY(-35px);
 }
 .ProjRow .square:hover .projTags {
   color: white !important;
+  transform: translateY(-35px);
 }
 .ProjRow .square:hover .projIcon img {
-  -webkit-filter: invert(0);
-  filter: invert(0);
-  -o-filter: invert(0);
-  -moz-filter: invert(0);
-  -ms-filter: invert(0);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .ProjRow .square:before {
   position: absolute;
@@ -357,11 +374,11 @@ a:hover p {
   height: 2px;
   margin-bottom: 25px;
   content: '';
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  -ms-transition: all 0.3s ease-in-out 0s;
-  -o-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.35s ease-in-out 0s;
+  -moz-transition: all 0.35s ease-in-out 0s;
+  -ms-transition: all 0.35s ease-in-out 0s;
+  -o-transition: all 0.35s ease-in-out 0s;
+  transition: all 0.35s ease-in-out 0s;
   opacity: 0;
   background: #fff;
 }
