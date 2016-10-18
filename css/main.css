@@ -289,6 +289,16 @@ a:hover p {
 .ProjRow .square .projImg .projIcon img {
   width: 25%;
   margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 768px) {
+  .ProjRow .square .projImg .projIcon img {
+    width: 32%;
+  }
 }
 .ProjRow .square .projImg .projIcon .projTitle {
   font-family: 'MuseoSans-700', sans-serif;
@@ -336,33 +346,31 @@ a:hover p {
   -o-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
-.ProjRow .square:hover {
-  cursor: pointer;
-}
-.ProjRow .square:hover .border {
-  height: 40px;
-}
-.ProjRow .square:hover .projImg .scaled-img {
-  opacity: 1;
-}
-.ProjRow .square:hover .projTitle {
-  color: white !important;
-  transform: translateY(-35px);
-}
-.ProjRow .square:hover hr {
-  transform: translateY(-35px);
-}
-.ProjRow .square:hover .projTags {
-  color: white !important;
-  transform: translateY(-35px);
-}
-.ProjRow .square:hover .projIcon img {
-  opacity: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+@media only screen and (min-width: 768px) {
+  .ProjRow .square:hover {
+    cursor: pointer;
+  }
+  .ProjRow .square:hover .border {
+    height: 0px;
+  }
+  .ProjRow .square:hover .projImg .scaled-img {
+    opacity: 1;
+  }
+  .ProjRow .square:hover .projTitle {
+    color: white !important;
+    transform: translateY(-35px);
+  }
+  .ProjRow .square:hover hr {
+    transform: translateY(-35px);
+  }
+  .ProjRow .square:hover .projTags {
+    color: white !important;
+    transform: translateY(-35px);
+  }
+  .ProjRow .square:hover .projIcon img {
+    opacity: 0;
+    transform: translateY(-35px);
+  }
 }
 .ProjRow .square:before {
   position: absolute;
@@ -476,25 +484,6 @@ a:hover p {
 .ContactRow .contact-info {
   color: #555;
   font-family: 'MuseoSans-300', sans-serif;
-}
-@media only screen and (max-width: 768px) {
-  /*show background img for proj*/
-  .projImg .scaled-img {
-    opacity: 1 !important;
-  }
-  .ProjRow .projTitle {
-    color: white !important;
-  }
-  .ProjRow .projTags {
-    color: white !important;
-  }
-  .projIcon img {
-    -webkit-filter: invert(0) !important;
-    filter: invert(0) !important;
-    -o-filter: invert(0) !important;
-    -moz-filter: invert(0) !important;
-    -ms-filter: invert(0) !important;
-  }
 }
 @-webkit-keyframes bounce {
   0%,
