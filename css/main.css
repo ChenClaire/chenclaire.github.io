@@ -257,7 +257,7 @@ a:hover p {
 }
 @media only screen and (max-width: 768px) {
   .ProjRow .square .projImg {
-    width: 370px;
+    width: 300px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -371,64 +371,6 @@ a:hover p {
     opacity: 0;
     transform: translateY(-35px);
   }
-}
-.ProjRow .square:before {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: -50px;
-  display: inline-block;
-  width: 40px;
-  height: 2px;
-  margin-bottom: 25px;
-  content: '';
-  -webkit-transition: all 0.35s ease-in-out 0s;
-  -moz-transition: all 0.35s ease-in-out 0s;
-  -ms-transition: all 0.35s ease-in-out 0s;
-  -o-transition: all 0.35s ease-in-out 0s;
-  transition: all 0.35s ease-in-out 0s;
-  opacity: 0;
-  background: #fff;
-}
-.ProjRow .square:hover:before {
-  left: 60px;
-  -webkit-transition: all 0.3s ease-in-out 0.3s;
-  -moz-transition: all 0.3s ease-in-out 0.3s;
-  -ms-transition: all 0.3s ease-in-out 0.3s;
-  -o-transition: all 0.3s ease-in-out 0.3s;
-  transition: all 0.3s ease-in-out 0.3s;
-  opacity: 1;
-}
-.ProjRow .square:after {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: -20px;
-  display: inline-block;
-  width: 10px;
-  width: 0;
-  height: 10px;
-  height: 0;
-  margin-bottom: 21px;
-  content: '';
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  -ms-transition: all 0.3s ease-in-out 0s;
-  -o-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-  opacity: 0;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid #fff;
-}
-.ProjRow .square:hover:after {
-  left: 97px;
-  -webkit-transition: all 0.3s ease-in-out 0.3s;
-  -moz-transition: all 0.3s ease-in-out 0.3s;
-  -ms-transition: all 0.3s ease-in-out 0.3s;
-  -o-transition: all 0.3s ease-in-out 0.3s;
-  transition: all 0.3s ease-in-out 0.3s;
-  opacity: 1;
 }
 .ContactRow {
   margin-top: 20px;
