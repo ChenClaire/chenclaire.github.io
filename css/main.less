@@ -165,7 +165,7 @@ a:hover {
             .inline-control {
                 @media only screen and (max-width: 480px) {
                     display: block;
-                    &:nth-child(2){
+                    &:nth-child(2) {
                         display: none;
                     }
                 }
@@ -442,20 +442,23 @@ a:hover {
     .ending-hr {
         width: 250px;
         border-top: 2.5px solid @primary-color;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
     }
     i {
         font-size: 23px;
         margin: 20px 4px 0 4px;
-        color: #555;
+        color: @mid-gray;
         &:hover {
             cursor: pointer;
             color: @primary-color;
         }
     }
     .contact-info {
-        color: @dark-gray;
+        color: @mid-gray;
         font-family: 'MuseoSans-300', sans-serif;
+        margin-top: 25px;
+        display: block;
+        line-height: 1.7;
     }
 }
 

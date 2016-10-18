@@ -420,20 +420,22 @@ a:hover p {
 .ContactRow .ending-hr {
   width: 250px;
   border-top: 2.5px solid #d83e77;
-  margin-bottom: 30px;
 }
 .ContactRow i {
   font-size: 23px;
   margin: 20px 4px 0 4px;
-  color: #555;
+  color: #777;
 }
 .ContactRow i:hover {
   cursor: pointer;
   color: #d83e77;
 }
 .ContactRow .contact-info {
-  color: #555;
+  color: #777;
   font-family: 'MuseoSans-300', sans-serif;
+  margin-top: 25px;
+  display: block;
+  line-height: 1.7;
 }
 @-webkit-keyframes bounce {
   0%,
