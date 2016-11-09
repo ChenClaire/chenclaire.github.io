@@ -806,11 +806,11 @@ a:hover p {
   height: 740px;
 }
 .carousel#museum-carousel .carousel-inner {
-  height: 740px;
+  height: 540px;
 }
 @media only screen and (max-width: 480px) {
   .carousel#museum-carousel .carousel-inner {
-    height: 610px;
+    height: 450px;
   }
 }
 .carousel#deepintent-carousel .carousel-inner {
