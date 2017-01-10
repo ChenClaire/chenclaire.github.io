@@ -565,19 +565,10 @@ a:hover p {
 }
 .jumbotronRow {
   position: relative;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 40px;
   color: #d83e77;
   font-weight: 300;
   font-family: 'MuseoSans-300', sans-serif;
-}
-@media only screen and (max-width: 550px) {
-  .jumbotronRow {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
 }
 .jumbotronRow h1 {
   font-family: 'MuseoSans-300', sans-serif;
@@ -627,6 +618,12 @@ a:hover p {
   -ms-transform: translateX(10px);
   -webkit-transform: translateX(10px);
   transform: translateX(10px);
+}
+.hero-img {
+  width: 100%;
+}
+.hero-img img {
+  width: 100%;
 }
 .img-title {
   color: #555;
