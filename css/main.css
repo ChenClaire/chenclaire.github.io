@@ -79,10 +79,9 @@ a:hover p {
   padding-bottom: 30px;
 }
 .IntroRow .intro {
-  width: 53%;
+  width: 50%;
   margin: auto;
-  margin-top: 25px;
-  padding-top: 5px;
+  margin-top: 80px;
 }
 @media only screen and (max-width: 1100px) {
   .IntroRow .intro {
@@ -109,44 +108,32 @@ a:hover p {
     width: 85%;
   }
 }
-.IntroRow .intro .fullName {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 55px;
-  letter-spacing: 2;
-  color: #555;
-  padding-bottom: 10px;
-}
-@media only screen and (max-width: 480px) {
-  .IntroRow .intro .fullName {
-    font-size: 40px;
-  }
-}
-.IntroRow .intro .blackHr {
-  width: 80%;
+.IntroRow .intro .divider {
+  width: 50px;
   margin: auto;
-  margin-top: 15px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #d83e77;
 }
 .IntroRow .intro .keywords {
-  font-family: 'MuseoSans-300', sans-serif;
-  font-size: 18px;
-  padding-top: 15px;
-  letter-spacing: 0.5px;
+  font-family: 'MuseoSans-700', sans-serif;
   opacity: 0;
-  color: #d83e77;
+  color: #555;
+  padding-bottom: 15px;
+  font-size: 32px;
   line-height: 1.7;
 }
-@media only screen and (max-width: 480px) {
-  .IntroRow .intro .keywords {
-    font-size: 17px;
-  }
+.IntroRow .intro .keywords .fullName {
+  color: #d83e77;
+  padding-bottom: 10px;
 }
-@media only screen and (max-width: 480px) {
-  .IntroRow .intro .keywords .inline-control {
-    display: block;
-  }
-  .IntroRow .intro .keywords .inline-control:nth-child(2) {
-    display: none;
-  }
+.IntroRow .intro .introduction {
+  font-size: 17px;
+  font-family: 'MuseoSans-500', sans-serif;
+  color: #777;
+  padding-top: 15px;
 }
 .IntroRow .nav-link {
   font-family: 'MuseoSans-700', sans-serif;
@@ -381,13 +368,12 @@ a:hover p {
   }
 }
 .ContactRow {
-  margin-top: 20px;
+  margin-top: 70px;
   padding-top: 40px;
   padding-bottom: 30px;
 }
 @media only screen and (max-width: 768px) {
   .ContactRow {
-    margin-top: 0px;
     padding-top: 10px;
   }
 }
