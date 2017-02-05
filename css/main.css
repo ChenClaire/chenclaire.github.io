@@ -656,6 +656,8 @@ a:hover p {
   border-radius: 5px;
 }
 .whiteLine .details {
+  font-family: 'MuseoSans-300', sans-serif;
+  color: #555;
   margin-bottom: 50px;
   margin-right: 15px;
 }
@@ -669,12 +671,21 @@ a:hover p {
     margin-right: 0px;
   }
 }
-.whiteLine .details p {
-  font-family: 'MuseoSans-300', sans-serif;
-  color: #555;
+.whiteLine .details p,
+.whiteLine .details span {
   font-size: 16px;
   letter-spacing: 0.15px;
   line-height: 1.5;
+}
+.whiteLine .details blockquote {
+  padding: 4px 20px 4px 10px;
+  font-size: 16px;
+  margin: 12px 0px 7px 10px;
+  border-left: 4px solid #eeeeee;
+}
+.whiteLine .details blockquote .quoted-by {
+  font-style: italic;
+  color: #b9b9b9;
 }
 .whiteLine .details h4 {
   font-family: 'MuseoSans-700', sans-serif;
