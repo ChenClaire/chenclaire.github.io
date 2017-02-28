@@ -2,6 +2,7 @@
 @primary-color: #d83e77;
 @dark-gray: #555;
 @mid-gray: #777;
+@nav-gray: #999;
 @light-gray: #b9b9b9;
 @light-light-gray: #eeeeee;
 @font-face {
@@ -135,49 +136,45 @@ a:hover {
         @media only screen and (max-width: 480px) {
             width: 85%;
         }
-        .divider {
-            width: 50px;
-            margin: auto;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            height: 2px;
-            border-radius: 2px;
-            background-color: @primary-color;
-        }
-        .keywords {
-            font-family: 'MuseoSans-700', sans-serif;
-            opacity: 0;
-            color: @dark-gray;
-            padding-bottom: 15px;
-            font-size: 32px;
-            line-height: 1.7;
+        // .divider {
+        //     width: 50px;
+        //     margin: auto;
+        //     margin-top: 25px;
+        //     margin-bottom: 15px;
+        //     height: 2px;
+        //     border-radius: 2px;
+        //     background-color: @primary-color;
+        // }
+        .introduction {
+            font-size: 22px;
+            font-family: 'MuseoSans-500', sans-serif;
+            color: @mid-gray;
+            padding-top: 15px;
             .fullName {
                 color: @primary-color;
                 padding-bottom: 10px;
             }
         }
-        .introduction {
-            font-size: 17px;
-            font-family: 'MuseoSans-500', sans-serif;
+        .mytitle {
+            margin: 20px auto;
             color: @mid-gray;
-            padding-top: 15px;
+            letter-spacing: 1.1;
         }
     }
     .nav-link {
-        font-family: 'MuseoSans-700', sans-serif;
+        // font-family: 'MuseoSans-700', sans-serif;
         font-size: 14px;
         position: relative;
         display: inline-block;
         margin: 15px auto;
         padding-top: 10px;
-        padding-right: 10px;
+        padding-right: 7px;
         padding-bottom: 5px;
-        padding-left: 10px;
+        padding-left: 7px;
         .transition(all .25s);
         letter-spacing: 1.1;
-        text-transform: uppercase;
-        color: @light-gray;
-        // text-align: center;
+        color: @nav-gray;
+        font-variant: small-caps;
         &:focus {
             color: @primary-color;
         }
