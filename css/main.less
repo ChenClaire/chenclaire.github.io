@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i);
 @primary-color: #d83e77;
 @dark-gray: #555;
 @mid-gray: #777;
@@ -136,20 +136,14 @@ a:hover {
         @media only screen and (max-width: 480px) {
             width: 85%;
         }
-        // .divider {
-        //     width: 50px;
-        //     margin: auto;
-        //     margin-top: 25px;
-        //     margin-bottom: 15px;
-        //     height: 2px;
-        //     border-radius: 2px;
-        //     background-color: @primary-color;
-        // }
         .introduction {
-            font-size: 22px;
-            font-family: 'MuseoSans-500', sans-serif;
+            font-family: 'Lora', serif;
+            font-size: 27px;
+            // font-family: 'MuseoSans-500', sans-serif;
+            // font-family: 'Cormorant Garamond', serif;
             color: @mid-gray;
             padding-top: 15px;
+            font-style: italic;
             .fullName {
                 color: @primary-color;
                 padding-bottom: 10px;
@@ -203,17 +197,17 @@ a:hover {
             opacity: 1;
         }
     }
-    .arrowDown {
-        font-size: 33px;
-        margin-top: 20px;
-        color: @primary-color;
-        &:hover {
-            cursor: pointer;
-        }
-        .bounce {
-            .animation(bounce 2s 3s 10);
-        }
-    }
+    // .arrowDown {
+    //     font-size: 33px;
+    //     margin-top: 20px;
+    //     color: @primary-color;
+    //     &:hover {
+    //         cursor: pointer;
+    //     }
+    //     .bounce {
+    //         .animation(bounce 2s 3s 10);
+    //     }
+    // }
 }
 
 .ProjRow {
@@ -289,6 +283,8 @@ a:hover {
                 }
                 .projTitle {
                     font-family: 'MuseoSans-700', sans-serif;
+                    // font-family: 'Lora', serif;
+                    // font-style: italic;
                     font-size: 19px;
                     font-variant: small-caps;
                     color: @dark-gray;
@@ -662,8 +658,8 @@ a:hover {
 }
 
 .img-title {
-    color: @dark-gray;
-    font-family: 'Cormorant Garamond', serif;
+    color: @light-gray;
+    font-family: 'Lora', serif;
     font-style: italic;
     margin-top: 10px;
     padding: 0px;
@@ -720,6 +716,7 @@ a:hover {
             .quoted-by {
                 font-style: italic;
                 color: @light-gray;
+                font-family: 'Lora', serif;
             }
             // &:before {
             //     content: open-quote;

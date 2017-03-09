@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i);
 @font-face {
   font-family: 'MuseoSans-300';
   src: url('../fonts/museosans-300.woff') format('woff'), url('../fonts/museosans-300.ttf') format('truetype');
@@ -104,10 +104,11 @@ a:hover p {
   }
 }
 .IntroRow .intro .introduction {
-  font-size: 22px;
-  font-family: 'MuseoSans-500', sans-serif;
+  font-family: 'Lora', serif;
+  font-size: 27px;
   color: #777;
   padding-top: 15px;
+  font-style: italic;
 }
 .IntroRow .intro .introduction .fullName {
   color: #d83e77;
@@ -170,21 +171,6 @@ a:hover p {
 .IntroRow .nav-link:active:after {
   width: 100%;
   opacity: 1;
-}
-.IntroRow .arrowDown {
-  font-size: 33px;
-  margin-top: 20px;
-  color: #d83e77;
-}
-.IntroRow .arrowDown:hover {
-  cursor: pointer;
-}
-.IntroRow .arrowDown .bounce {
-  -webkit-animation: bounce 2s 3s 10;
-  -moz-animation: bounce 2s 3s 10;
-  -ms-animation: bounce 2s 3s 10;
-  -o-animation: bounce 2s 3s 10;
-  animation: bounce 2s 3s 10;
 }
 .ProjRow {
   margin-top: 10px;
@@ -593,8 +579,8 @@ a:hover p {
   width: 100%;
 }
 .img-title {
-  color: #555;
-  font-family: 'Cormorant Garamond', serif;
+  color: #b9b9b9;
+  font-family: 'Lora', serif;
   font-style: italic;
   margin-top: 10px;
   padding: 0px;
@@ -669,6 +655,7 @@ a:hover p {
 .whiteLine .details blockquote .quoted-by {
   font-style: italic;
   color: #b9b9b9;
+  font-family: 'Lora', serif;
 }
 .whiteLine .details h4 {
   font-family: 'MuseoSans-700', sans-serif;
