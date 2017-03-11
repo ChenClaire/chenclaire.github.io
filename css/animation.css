@@ -339,6 +339,8 @@
 }
 .the-sky {
   background-color: #d9f1ff;
+  position: relative;
+  overflow: hidden;
 }
 .the-sky .cloud-wrapper {
   position: relative;
