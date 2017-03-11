@@ -1,0 +1,53 @@
+.keyframes(@name; @arguments) {
+    @-moz-keyframes @name {
+        @arguments();
+    }
+    @-webkit-keyframes @name {
+        @arguments();
+    }
+    @-o-keyframes @name {
+        @arguments();
+    }
+    @keyframes @name {
+        @arguments();
+    }
+}
+
+.animation(@arguments) {
+    -webkit-animation: @arguments;
+    -moz-animation: @arguments;
+    -o-animation: @arguments;
+    animation: @arguments;
+}
+
+.transform(@arguments) {
+    -webkit-transform: @arguments;
+    -moz-transform: @arguments;
+    -ms-transform: @arguments;
+    -o-transform: @arguments;
+}
+
+.icon-drawing {
+    .line {
+        stroke-dashoffset: 1000;
+        stroke-dasharray: 1000;
+    }
+    .line-drawing {
+        animation: drawing 10s infinite ease-in-out;
+    }
+    .keyframes(drawing;
+    {
+        0% {
+            stroke-dashoffset: 0;
+        }
+        50% {
+            stroke-dashoffset: 1000;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    });
+    svg{
+    	width: 190px;
+    }
+}

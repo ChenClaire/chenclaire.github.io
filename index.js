@@ -40,4 +40,6 @@ $('.carousel').carousel();
 
 
 
+            // $(".icon-drawing").find("path").addClass("line-drawing");
+       
  
