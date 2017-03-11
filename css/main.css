@@ -127,9 +127,9 @@ a:hover p {
   display: inline-block;
   margin: 15px auto;
   padding-top: 10px;
-  padding-right: 7px;
+  padding-right: 12px;
   padding-bottom: 5px;
-  padding-left: 7px;
+  padding-left: 12px;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   -ms-transition: all 0.25s;
@@ -137,7 +137,7 @@ a:hover p {
   transition: all 0.25s;
   letter-spacing: 1.1;
   color: #999;
-  font-variant: small-caps;
+  text-transform: uppercase;
 }
 .IntroRow .nav-link:focus {
   color: #d83e77;
