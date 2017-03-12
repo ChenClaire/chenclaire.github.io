@@ -6,13 +6,6 @@
 @light-gray: #b9b9b9;
 @light-light-gray: #eeeeee;
 @font-face {
-    font-family: 'MuseoSans-300';
-    // src: ~"url('../fonts/museosans-300.eot') format('embedded-opentype')";/* IE9 Compat Modes */
-    src: ~"url('../fonts/museosans-300.woff') format('woff')", ~"url('../fonts/museosans-300.ttf') format('truetype')";
-    /* Safari, Android, iOS */
-}
-
-@font-face {
     font-family: 'MuseoSans-100';
     // src: ~"url('../fonts/museosans-100.eot') format('embedded-opentype')";/* IE9 Compat Modes */
     src: ~"url('../fonts/museosans-100.woff') format('woff')", ~"url('../fonts/museosans-100.ttf') format('truetype')";
@@ -30,6 +23,20 @@
     font-family: 'MuseoSans-700';
     // src: ~"url('../fonts/museosans-700.eot') format('embedded-opentype')";/* IE9 Compat Modes */
     src: ~"url('../fonts/museosans-700.woff') format('woff')", ~"url('../fonts/museosans-700.ttf') format('truetype')";
+    /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'MuseoSans-300';
+    // src: ~"url('../fonts/museosans-300.eot') format('embedded-opentype')";/* IE9 Compat Modes */
+    src: ~"url('../fonts/museosans-300.woff') format('woff')", ~"url('../fonts/museosans-300.ttf') format('truetype')";
+    /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    // src: ~"url('../fonts/museosans-300.eot') format('embedded-opentype')";/* IE9 Compat Modes */
+    src: ~"url('../fonts/fontawesome-webfont.woff') format('woff')", ~"url('../fonts/fontawesome-webfont.ttf') format('truetype')";
     /* Safari, Android, iOS */
 }
 
@@ -116,14 +123,12 @@ a:hover {
 
 .IntroRow {
     padding-bottom: 30px;
+    font-family: 'MuseoSans-300', sans-serif;
     .intro {
         width: 40%;
         margin: auto;
         margin-top: 80px;
-        // padding-top: 5px;
-        // @media only screen and (max-width: 1100px) {
-        //     width: 53%;
-        // }
+        
         @media only screen and (max-width: 992px) {
             width: 60%;
         }
@@ -137,13 +142,9 @@ a:hover {
             width: 85%;
         }
         .introduction {
-            font-family: 'Lora', serif;
-            font-size: 27px;
-            // font-family: 'MuseoSans-500', sans-serif;
-            // font-family: 'Cormorant Garamond', serif;
+            font-size: 26px;
             color: @mid-gray;
             padding-top: 15px;
-            font-style: italic;
             .fullName {
                 color: @primary-color;
                 padding-bottom: 10px;
@@ -152,13 +153,12 @@ a:hover {
         .mytitle {
             margin: 20px auto;
             color: @mid-gray;
-            letter-spacing: 1.2;
+            letter-spacing: 1.1;
             font-size: 17px;
             font-variant: small-caps;
         }
     }
     .nav-link {
-        // font-family: 'MuseoSans-700', sans-serif;
         font-size: 14px;
         position: relative;
         display: inline-block;
@@ -199,17 +199,7 @@ a:hover {
             opacity: 1;
         }
     }
-    // .arrowDown {
-    //     font-size: 33px;
-    //     margin-top: 20px;
-    //     color: @primary-color;
-    //     &:hover {
-    //         cursor: pointer;
-    //     }
-    //     .bounce {
-    //         .animation(bounce 2s 3s 10);
-    //     }
-    // }
+    
 }
 
 .ProjRow {
@@ -447,39 +437,32 @@ a:hover {
         display: block;
         line-height: 1.7;
     }
-    blockquote {
-        &:before {
-            content: open-quote;
-            font-size: 50px;
-            color: @light-gray;
-            line-height: 0;
-            vertical-align: -20px;
-            margin-right: 5px;
-            color:@primary-color;
+    .quote-wrapper {
+        margin: 0px 25% 10px 25%;
+        font-family: 'Lora', serif;
+        color:@nav-gray;
+        @media only screen and (max-width: 768px) {
+            margin: 0px 2% 10px 2%;
         }
-        &:after {
-            content: close-quote;
-            font-size: 50px;
-            color: @light-gray;
-            vertical-align: -20px;
-            line-height: 1.1;
-            color:@primary-color;
+        blockquote {
+            &:before {
+                font-family: 'FontAwesome';
+                content: "\f10d";
+                font-size: 15px;
+                color: @primary-color;
+                display: block;
+                margin-bottom: 3px;
+            }
+            padding: 5px 0px;
+            margin: 0px;
+            border-left: none;
+            font-size: inherit;
         }
-        p {
+        .quoted-by {
+            // font-style: italic;
+            // color: @light-gray;
             // font-family: 'Lora', serif;
-            display: inline;
         }
-        // font-style: italic;
-        padding: 4px 30px 4px 0px;
-        margin: 12px 0px 7px 10px;
-        border-left: none;
-        display: inline;
-        font-size: inherit;
-    }
-    .quoted-by {
-        // font-style: italic;
-        // color: @light-gray;
-        // font-family: 'Lora', serif;
     }
 }
 
