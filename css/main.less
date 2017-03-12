@@ -93,8 +93,6 @@ a:hover {
             position: absolute;
             top: 50%;
             left: 50%;
-            // width: 160px;
-            // height: 160px;
             transform: translateY(-50%) translateX(-50%);
             .object {
                 .animation(scaling 2s infinite);
@@ -128,7 +126,6 @@ a:hover {
         width: 40%;
         margin: auto;
         margin-top: 80px;
-        
         @media only screen and (max-width: 992px) {
             width: 60%;
         }
@@ -199,7 +196,6 @@ a:hover {
             opacity: 1;
         }
     }
-    
 }
 
 .ProjRow {
@@ -213,7 +209,6 @@ a:hover {
     .square {
         margin-bottom: 20px;
         padding: 5px;
-        // overflow: hidden;
         .border {
             position: absolute;
             bottom: 0;
@@ -262,11 +257,6 @@ a:hover {
                 padding-left: 25px;
                 img {
                     width: 25%;
-                    // -webkit-filter: invert(.2);
-                    // filter: invert(.2);
-                    // -o-filter: invert(.2);
-                    // -moz-filter: invert(.2);
-                    // -ms-filter: invert(.2);
                     margin-bottom: 10px;
                     .transition(all .3s ease-in-out);
                     @media only screen and (max-width: 768px) {
@@ -275,8 +265,6 @@ a:hover {
                 }
                 .projTitle {
                     font-family: 'MuseoSans-700', sans-serif;
-                    // font-family: 'Lora', serif;
-                    // font-style: italic;
                     font-size: 19px;
                     font-variant: small-caps;
                     color: @dark-gray;
@@ -292,7 +280,6 @@ a:hover {
                 .projTags {
                     color: @mid-gray;
                     font-family: 'MuseoSans-300', sans-serif;
-                    // font-family: 'Muli', sans-serif;
                     font-size: 16px;
                     .transition(all .35s ease-in-out .1s);
                 }
@@ -330,63 +317,14 @@ a:hover {
                 }
             }
         }
-        // &:before {
-        //     content:""
-        //     position: absolute;
-        //     z-index: 1;
-        //     bottom: 0;
-        //     left: -50px;
-        //     display: inline-block;
-        //     width: 40px;
-        //     height: 2px;
-        //     margin-bottom: 25px;
-        //     content: '';
-        //     .transition(all .35s ease-in-out 0s);
-        //     opacity: 0;
-        //     background: #fff;
-        // }
-        // &:hover:before {
-        //     left: 55px;
-        //     .transition(all .3s ease-in-out .3s);
-        //     opacity: 1;
-        // }
-        // &:after {
-        //     position: absolute;
-        //     z-index: 1;
-        //     bottom: 0;
-        //     left: -20px;
-        //     display: inline-block;
-        //     width: 10px;
-        //     width: 0;
-        //     height: 10px;
-        //     height: 0;
-        //     margin-bottom: 21px;
-        //     content: '';
-        //     .transition(all .3s ease-in-out 0s);
-        //     opacity: 0;
-        //     border-top: 5px solid transparent;
-        //     border-bottom: 5px solid transparent;
-        //     border-left: 5px solid #fff;
-        // }
-        // &:hover:after {
-        //     left: 92px;
-        //     .transition(all .3s ease-in-out .3s);
-        //     opacity: 1;
-        // }
     }
 }
 
-// .moreAboutMe {
-//     background-color: #f1edee;
-// }
 .ContactRow {
     margin-top: 70px;
     padding-top: 40px;
     padding-bottom: 30px;
-    // color: #555;
-    // font-weight: 300;
     @media only screen and (max-width: 768px) {
-        // margin-top: 0px;
         padding-top: 10px;
     }
     .special {
@@ -402,12 +340,10 @@ a:hover {
         font-family: 'MuseoSans-300', sans-serif;
         font-size: 14px;
         margin-bottom: 20px;
-        // letter-spacing: 0.5px;
         line-height: 1.5;
         color: @dark-gray;
     }
     .myPic {
-        // display: none;
         margin-top: 25px;
         margin-bottom: 35px;
         img {
@@ -419,7 +355,6 @@ a:hover {
     .ending-hr {
         width: 250px;
         border-top: 2.5px solid @primary-color;
-        // margin-bottom: 30px;
     }
     i {
         font-size: 23px;
@@ -440,7 +375,7 @@ a:hover {
     .quote-wrapper {
         margin: 0px 25% 10px 25%;
         font-family: 'Lora', serif;
-        color:@nav-gray;
+        color: @nav-gray;
         @media only screen and (max-width: 768px) {
             margin: 0px 2% 10px 2%;
         }
@@ -458,36 +393,10 @@ a:hover {
             border-left: none;
             font-size: inherit;
         }
-        .quoted-by {
-            // font-style: italic;
-            // color: @light-gray;
-            // font-family: 'Lora', serif;
-        }
+        .quoted-by {}
     }
 }
 
-// @media only screen and (max-width: 768px) {
-//     /*show background img for proj*/
-//     .projImg .scaled-img {
-//         opacity: 1 !important;
-//     }
-//     .ProjRow .projTitle {
-//         color: white !important;
-//     }
-//     .ProjRow .projTags {
-//         color: white !important;
-//     }
-//     .projIcon img {
-//         -webkit-filter: invert(0) !important;
-//         filter: invert(0) !important;
-//         -o-filter: invert(0) !important;
-//         -moz-filter: invert(0) !important;
-//         -ms-filter: invert(0) !important;
-//     }
-//     .border {
-//         // height: 40px !important;
-//     }
-// }
 @-webkit-keyframes bounce {
     0%,
     20%,
@@ -592,7 +501,6 @@ a:hover {
 }
 
 .topKey {
-    // border-radius: 100%;
     display: none;
     background-color: @primary-color;
     width: 50px;
@@ -621,13 +529,8 @@ a:hover {
     color: @primary-color;
     font-weight: 300;
     font-family: 'MuseoSans-300', sans-serif;
-    // @media only screen and (max-width: 550px) {
-    //     padding-left: 40px;
-    //     padding-right: 40px;
-    // }
     h1 {
         font-family: 'MuseoSans-300', sans-serif;
-        // font-weight: 300;
         letter-spacing: 0.3;
         @media only screen and (max-width: 550px) {
             font-size: 28px;
@@ -716,7 +619,6 @@ a:hover {
         font-family: 'MuseoSans-300', sans-serif;
         color: @dark-gray;
         margin-bottom: 50px;
-        // margin-right: 15px;
         @media only screen and (max-width: 815px) {
             margin-right: 15px;
         }
@@ -763,11 +665,6 @@ a:hover {
             margin: 5px;
             border-radius: 2px;
             color: #333;
-            // &:hover {
-            //     background-color: rgba(red(@primary-color), green(@primary-color), blue(@primary-color), 0.1);
-            //     border: 1px solid @primary-color;
-            //     color: @primary-color;
-            // }
         }
     }
     .small-img {
@@ -897,12 +794,6 @@ a:hover {
         opacity: 1;
         color: @primary-color;
     }
-    // a {
-    //     text-decoration: none;
-    //     &:hover{
-    //         text-decoration: none;
-    //     }
-    // }
 }
 
 .TC-Web-Row {
