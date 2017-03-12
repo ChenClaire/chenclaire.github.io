@@ -392,6 +392,33 @@ a:hover p {
   display: block;
   line-height: 1.7;
 }
+.ContactRow blockquote {
+  padding: 4px 30px 4px 0px;
+  margin: 12px 0px 7px 10px;
+  border-left: none;
+  display: inline;
+  font-size: inherit;
+}
+.ContactRow blockquote:before {
+  content: open-quote;
+  font-size: 50px;
+  color: #b9b9b9;
+  line-height: 0;
+  vertical-align: -20px;
+  margin-right: 5px;
+  color: #d83e77;
+}
+.ContactRow blockquote:after {
+  content: close-quote;
+  font-size: 50px;
+  color: #b9b9b9;
+  vertical-align: -20px;
+  line-height: 1.1;
+  color: #d83e77;
+}
+.ContactRow blockquote p {
+  display: inline;
+}
 @-webkit-keyframes bounce {
   0%,
   20%,
@@ -584,14 +611,16 @@ a:hover p {
   color: #b9b9b9;
   font-family: 'Lora', serif;
   font-style: italic;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 20px;
   padding: 0px;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .img-title {
     padding: 0px 15px;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 25px;
   }
 }
 .whiteLine {

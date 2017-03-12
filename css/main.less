@@ -447,6 +447,40 @@ a:hover {
         display: block;
         line-height: 1.7;
     }
+    blockquote {
+        &:before {
+            content: open-quote;
+            font-size: 50px;
+            color: @light-gray;
+            line-height: 0;
+            vertical-align: -20px;
+            margin-right: 5px;
+            color:@primary-color;
+        }
+        &:after {
+            content: close-quote;
+            font-size: 50px;
+            color: @light-gray;
+            vertical-align: -20px;
+            line-height: 1.1;
+            color:@primary-color;
+        }
+        p {
+            // font-family: 'Lora', serif;
+            display: inline;
+        }
+        // font-style: italic;
+        padding: 4px 30px 4px 0px;
+        margin: 12px 0px 7px 10px;
+        border-left: none;
+        display: inline;
+        font-size: inherit;
+    }
+    .quoted-by {
+        // font-style: italic;
+        // color: @light-gray;
+        // font-family: 'Lora', serif;
+    }
 }
 
 // @media only screen and (max-width: 768px) {
@@ -663,12 +697,14 @@ a:hover {
     color: @light-gray;
     font-family: 'Lora', serif;
     font-style: italic;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 20px;
     padding: 0px;
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 991px) {
         padding: 0px 15px;
         text-align: center;
+        margin-top: 0px;
+        margin-bottom: 25px;
     }
 }
 
@@ -721,16 +757,6 @@ a:hover {
                 color: @light-gray;
                 font-family: 'Lora', serif;
             }
-            // &:before {
-            //     content: open-quote;
-            //     color: @light-gray;
-            //     font-size: 30px;
-            // }
-            // &:after {
-            //     content: close-quote;
-            //     color: @light-gray;
-            //     font-size: 30px;
-            // }
         }
         h4 {
             font-family: 'MuseoSans-700', sans-serif;
