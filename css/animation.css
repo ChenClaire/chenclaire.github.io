@@ -106,120 +106,148 @@
   }
 }
 .the-arrow {
-  background-color: #ffedea;
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+.the-arrow svg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150px;
+  z-index: 1000;
 }
 .the-arrow .arrow-down {
-  width: 50px;
-  height: 50px;
+  width: 144px;
+  height: 144px;
   position: relative;
   border-radius: 100%;
   opacity: 1;
   cursor: pointer;
-  -webkit-transition: opacity 1.3s .5s;
+  -webkit-transition: opacity 5s .5s;
   left: 50%;
   transform: translateX(-50%);
+  top: 187px;
 }
 .the-arrow .arrow-down .arrow {
-  width: 30px;
-  height: 30px;
+  width: 144px;
+  height: 144px;
   display: block;
-  background-color: tomato;
-  background-size: 12px;
+  background-color: #FDEDAA;
+  background-size: 144px;
   border-radius: 100%;
   position: absolute;
-  top: 10px;
-  left: 10px;
   z-index: 100;
+  background: radial-gradient(#FDEDAA 35%, transparent 100%);
+  background: -webkit-radial-gradient(#FDEDAA 35%, transparent 100%);
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#FDEDAA 35%, transparent 100%);
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#FDEDAA 35%, transparent 100%);
 }
 .the-arrow .arrow-down:before {
   content: "";
-  background-color: tomato;
-  width: 50px;
-  height: 50px;
+  background-color: #FDEDAA;
+  background: radial-gradient(#fdd737 20%, transparent 100%);
+  background: -webkit-radial-gradient(#fdd737 20%, transparent 100%);
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#fdd737 20%, transparent 100%);
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#fdd737 20%, transparent 100%);
+  width: 280px;
+  height: 280px;
   border-radius: 100%;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   position: absolute;
   opacity: 0;
-  left: 0px;
-  -webkit-animation: jumper 1.8s 0.33333s ease-out infinite;
-  -moz-animation: jumper 1.8s 0.33333s ease-out infinite;
-  -o-animation: jumper 1.8s 0.33333s ease-out infinite;
-  animation: jumper 1.8s 0.33333s ease-out infinite;
+  left: -70px;
+  top: -70px;
+  -webkit-animation: jumper 5s ease-out infinite;
+  -moz-animation: jumper 5s ease-out infinite;
+  -o-animation: jumper 5s ease-out infinite;
+  animation: jumper 5s ease-out infinite;
 }
 .the-arrow .arrow-down:after {
   content: "";
-  background-color: tomato;
-  width: 50px;
-  height: 50px;
+  background-color: #FDEDAA;
+  background: radial-gradient(#fdd737 20%, transparent 100%);
+  background: -webkit-radial-gradient(#fdd737 20%, transparent 100%);
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#fdd737 20%, transparent 100%);
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#fdd737 20%, transparent 100%);
+  width: 280px;
+  height: 280px;
   border-radius: 100%;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   position: absolute;
   opacity: 0;
-  left: 0px;
-  -webkit-animation: jumper 1.8s 0.66666s ease-out infinite;
-  -moz-animation: jumper 1.8s 0.66666s ease-out infinite;
-  -o-animation: jumper 1.8s 0.66666s ease-out infinite;
-  animation: jumper 1.8s 0.66666s ease-out infinite;
+  left: -70px;
+  top: -70px;
+  -webkit-animation: jumper 5s 4s ease-out infinite;
+  -moz-animation: jumper 5s 4s ease-out infinite;
+  -o-animation: jumper 5s 4s ease-out infinite;
+  animation: jumper 5s 4s ease-out infinite;
 }
 @-moz-keyframes jumper {
   0% {
     opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
-  5% {
-    opacity: 1;
+  50% {
+    opacity: 0.45;
   }
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
     opacity: 0;
   }
 }
 @-webkit-keyframes jumper {
   0% {
     opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
-  5% {
-    opacity: 1;
+  50% {
+    opacity: 0.45;
   }
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
     opacity: 0;
   }
 }
 @-o-keyframes jumper {
   0% {
     opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
-  5% {
-    opacity: 1;
+  50% {
+    opacity: 0.45;
   }
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
     opacity: 0;
   }
 }
 @keyframes jumper {
   0% {
     opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
-  5% {
-    opacity: 1;
+  50% {
+    opacity: 0.45;
   }
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
     opacity: 0;
   }
 }

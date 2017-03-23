@@ -29,6 +29,15 @@
         -o-transform: @arguments;
     }
     
+    .background-gradient(@argument1, @argument2) {
+        background: radial-gradient(@argument1, @argument2);
+        background: -webkit-radial-gradient(@argument1, @argument2);
+        /* Safari 5.1 to 6.0 */
+        background: -o-radial-gradient(@argument1, @argument2);
+        /* For Opera 11.6 to 12.0 */
+        background: -moz-radial-gradient(@argument1, @argument2);
+    }
+    
     .single-item svg {
         width: 190px;
     }
@@ -82,69 +91,86 @@
     }
     
     .the-arrow {
-        background-color: #ffedea;
+        // background-color: #4b4a4c;
+        position: relative;
+        height: 600px;
+        overflow: hidden;
+        svg {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 150px;
+            z-index: 1000;
+        }
         .arrow-down {
-            width: 50px;
-            height: 50px;
+            width: 144px;
+            height: 144px;
             position: relative;
             border-radius: 100%;
             opacity: 1;
             cursor: pointer;
-            -webkit-transition: opacity 1.3s .5s;
+            -webkit-transition: opacity 5s .5s;
             left: 50%;
             transform: translateX(-50%);
+            top: 187px;
             .arrow {
-                width: 30px;
-                height: 30px;
+                width: 144px;
+                height: 144px;
                 display: block;
-                background-color: tomato;
-                background-size: 12px;
+                background-color: #FDEDAA;
+                background-size: 144px;
                 border-radius: 100%;
                 position: absolute;
-                top: 10px;
-                left: 10px;
+                // top: -47px;
+                // left: -47px;
                 z-index: 100;
+                // opacity: 0.8;
+                .background-gradient(#FDEDAA 35%, transparent 100%);
             }
             &:before {
                 content: "";
-                background-color: tomato;
-                width: 50px;
-                height: 50px;
+                background-color: #FDEDAA;
+                .background-gradient(#fdd737 20%, transparent 100%);
+                width: 280px;
+                height: 280px;
                 border-radius: 100%;
                 -webkit-animation-fill-mode: both;
                 animation-fill-mode: both;
                 position: absolute;
                 opacity: 0;
-                left: 0px;
-                .animation(jumper 1.8s 0.33333s ease-out infinite);
+                left: -70px;
+                top: -70px;
+                .animation(jumper 5s ease-out infinite);
             }
             &:after {
                 content: "";
-                background-color: tomato;
-                width: 50px;
-                height: 50px;
+                background-color: #FDEDAA;
+                .background-gradient(#fdd737 20%, transparent 100%);
+                width: 280px;
+                height: 280px;
                 border-radius: 100%;
                 -webkit-animation-fill-mode: both;
                 animation-fill-mode: both;
                 position: absolute;
                 opacity: 0;
-                left: 0px;
-                .animation(jumper 1.8s 0.66666s ease-out infinite);
+                left: -70px;
+                top: -70px;
+                .animation(jumper 5s 4s ease-out infinite);
             }
         }
         .keyframes(jumper;
         {
             0% {
                 opacity: 0;
-                -webkit-transform: scale(0);
-                transform: scale(0);
+                -webkit-transform: scale(0.5);
+                transform: scale(0.5);
             }
-            5% {
-                opacity: 1;
+            50% {
+                opacity: 0.45;
             }
             100% {
-                -webkit-transform: scale(1);
-                transform: scale(1);
+                -webkit-transform: scale(0.75);
+                transform: scale(0.75);
                 opacity: 0;
             }
         }
