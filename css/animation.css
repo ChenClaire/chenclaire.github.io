@@ -138,22 +138,22 @@
   border-radius: 100%;
   position: absolute;
   z-index: 100;
-  background: radial-gradient(#FDEDAA 35%, transparent 100%);
-  background: -webkit-radial-gradient(#FDEDAA 35%, transparent 100%);
+  background: radial-gradient(#FDEDAA 35%, #fffae7 100%);
+  background: -webkit-radial-gradient(#FDEDAA 35%, #fffae7 100%);
   /* Safari 5.1 to 6.0 */
-  background: -o-radial-gradient(#FDEDAA 35%, transparent 100%);
+  background: -o-radial-gradient(#FDEDAA 35%, #fffae7 100%);
   /* For Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(#FDEDAA 35%, transparent 100%);
+  background: -moz-radial-gradient(#FDEDAA 35%, #fffae7 100%);
 }
 .the-arrow .arrow-down:before {
   content: "";
   background-color: #FDEDAA;
-  background: radial-gradient(#fdd737 20%, transparent 100%);
-  background: -webkit-radial-gradient(#fdd737 20%, transparent 100%);
+  background: radial-gradient(#fdd737 20%, #fffae7 100%);
+  background: -webkit-radial-gradient(#fdd737 20%, #fffae7 100%);
   /* Safari 5.1 to 6.0 */
-  background: -o-radial-gradient(#fdd737 20%, transparent 100%);
+  background: -o-radial-gradient(#fdd737 20%, #fffae7 100%);
   /* For Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(#fdd737 20%, transparent 100%);
+  background: -moz-radial-gradient(#fdd737 20%, #fffae7 100%);
   width: 280px;
   height: 280px;
   border-radius: 100%;
@@ -171,12 +171,12 @@
 .the-arrow .arrow-down:after {
   content: "";
   background-color: #FDEDAA;
-  background: radial-gradient(#fdd737 20%, transparent 100%);
-  background: -webkit-radial-gradient(#fdd737 20%, transparent 100%);
+  background: radial-gradient(#fdd737 20%, #fffae7 100%);
+  background: -webkit-radial-gradient(#fdd737 20%, #fffae7 100%);
   /* Safari 5.1 to 6.0 */
-  background: -o-radial-gradient(#fdd737 20%, transparent 100%);
+  background: -o-radial-gradient(#fdd737 20%, #fffae7 100%);
   /* For Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(#fdd737 20%, transparent 100%);
+  background: -moz-radial-gradient(#fdd737 20%, #fffae7 100%);
   width: 280px;
   height: 280px;
   border-radius: 100%;
