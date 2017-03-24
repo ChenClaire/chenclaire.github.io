@@ -10,11 +10,15 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.js"></script>
     <!-- Bootstrapt css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- chartist.js -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
     <!-- fontawesome -->
     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <!-- myCSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <link rel="stylesheet" type="text/css" href="css/chartist-plugin-tooltip.css">
     <script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -53,6 +57,16 @@
         </div>
         <div class="row whiteLine">
             <div class="col-md-12 col-xs-12 col-sm-12">
+                <div class="details line-chart text-center ">
+                    <div class="ct-chart ct-perfect-fourth the-line"></div>
+                    <div class="hints">*Hover datapoints to see values.</div>
+                </div>
+                <!-- <div class="details pie-chart text-center ">
+                    <div class="ct-chart ct-perfect-fourth the-bar"></div>
+                </div>
+                <div class="details pie-chart text-center ">
+                    <div class="ct-chart ct-perfect-fourth the-pie"></div>
+                </div> -->
                 <div class="details icon-drawing text-center single-item">
                     <svg width="264px" height="122px" viewBox="-1 -1 264 122">
                         <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(1.000000, 1.000000)">
@@ -119,7 +133,7 @@
                             </mask>
                         </defs>
                         <g id="bulb" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(252.000000, 531.000000)">
-                            <path d="M38.0105121,192 C15.3604638,204.393078 0,228.444665 0,256.08388 C0,296.400666 32.6832133,329.08388 73,329.08388 L73,329.08388 C113.316787,329.08388 146,296.400666 146,256.08388 C146,228.469646 130.66729,204.436559 108.050886,192.033633" id="Oval-20" stroke="#FED84E" stroke-width="2" stroke-linecap="round" ></path>
+                            <path d="M38.0105121,192 C15.3604638,204.393078 0,228.444665 0,256.08388 C0,296.400666 32.6832133,329.08388 73,329.08388 L73,329.08388 C113.316787,329.08388 146,296.400666 146,256.08388 C146,228.469646 130.66729,204.436559 108.050886,192.033633" id="Oval-20" stroke="#FED84E" stroke-width="2" stroke-linecap="round"></path>
                             <path d="M81.9693633,193 L81.9693633,245.567758 C81.9693633,253.538465 88.4308981,260 96.4016053,260 C104.372312,260 110.833847,253.538465 110.833847,245.567758 C110.833847,237.597051 104.372312,231.135516 96.4016053,231.135516 L50.4219837,231.135516 C42.4615348,231.135516 36,237.597051 36,245.567758 C36,253.538465 42.4615348,260 50.432242,260 C58.4029491,260 64.8644839,253.538465 64.8644839,245.567758 L64.8644839,193" id="Oval-19" stroke="#FED84E" stroke-width="2" stroke-linecap="round"></path>
                             <path d="M72.6868452,0.266856812 C62.0091354,55.5160079 64.6560782,56.3640105 75.0904281,69.6012351 C80.4978631,76.461215 67.0439494,99.0155371 69.5784314,107.238259 C71.708426,114.148687 76.0025515,114.209602 76.9173035,121.112523 C77.741883,127.334982 74.6827599,136.160506 72.6868452,141.786909" id="Path-37" stroke="#B0B0B0" stroke-width="2" stroke-linecap="round"></path>
                             <path d="M73,0 L73.1608458,140.932424" id="Path-36" stroke="#A1A1A1" stroke-width="4" stroke-linecap="round"></path>
@@ -228,8 +242,9 @@
     <!-- <script src="./Xintong C._files/parse-1.4.0.min.js"></script> -->
     <!-- myJS -->
     <script type="text/javascript" src="index.js"></script>
-    <!-- processing -->
-    <!-- <script src="processing.js" type="text/javascript"></script> -->
+    <!-- charts -->
+    <script type="text/javascript" src="chartist-plugin-tooltip.js"></script>
+    <script type="text/javascript" src="charts.js"></script>
 </body>
 
 </html>

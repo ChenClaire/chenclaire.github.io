@@ -6,18 +6,147 @@
   background-color: #fafafa;
   margin-bottom: 25px;
 }
+.line-chart .hints {
+  margin-top: 50px;
+}
+.line-chart .ct-chart {
+  height: 300px;
+  width: 90%;
+  margin: auto;
+}
+@media only screen and (max-width: 600px) {
+  .line-chart .ct-chart {
+    width: 100%;
+  }
+}
+.line-chart .ct-chart svg {
+  position: relative;
+  margin: auto;
+  padding-top: 5px;
+}
+.line-chart .ct-chart svg .ct-series {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+}
+.line-chart .ct-chart svg .ct-series .ct-line {
+  stroke-width: 3px;
+}
+.line-chart .ct-chart svg .ct-series .ct-point {
+  stroke-width: 8px;
+  opacity: 0;
+}
+.line-chart .ct-chart svg .ct-series-a {
+  -webkit-animation: draw 2s 0s ease-in-out both;
+  -moz-animation: draw 2s 0s ease-in-out both;
+  -o-animation: draw 2s 0s ease-in-out both;
+  animation: draw 2s 0s ease-in-out both;
+}
+.line-chart .ct-chart svg .ct-series-a .ct-line,
+.line-chart .ct-chart svg .ct-series-a .ct-point {
+  stroke: #79beff;
+  -webkit-animation: fade-in 1s 0.6s ease-in-out forwards;
+  -moz-animation: fade-in 1s 0.6s ease-in-out forwards;
+  -o-animation: fade-in 1s 0.6s ease-in-out forwards;
+  animation: fade-in 1s 0.6s ease-in-out forwards;
+}
+.line-chart .ct-chart svg .ct-series-b {
+  -webkit-animation: draw 2s 0.4s ease-in-out both;
+  -moz-animation: draw 2s 0.4s ease-in-out both;
+  -o-animation: draw 2s 0.4s ease-in-out both;
+  animation: draw 2s 0.4s ease-in-out both;
+}
+.line-chart .ct-chart svg .ct-series-b .ct-line,
+.line-chart .ct-chart svg .ct-series-b .ct-point {
+  stroke: #52e08e;
+  -webkit-animation: fade-in 1s 1.2s ease-in-out forwards;
+  -moz-animation: fade-in 1s 1.2s ease-in-out forwards;
+  -o-animation: fade-in 1s 1.2s ease-in-out forwards;
+  animation: fade-in 1s 1.2s ease-in-out forwards;
+}
+.line-chart .ct-chart svg .ct-series-c {
+  -webkit-animation: draw 2s 0.8s ease-in-out both;
+  -moz-animation: draw 2s 0.8s ease-in-out both;
+  -o-animation: draw 2s 0.8s ease-in-out both;
+  animation: draw 2s 0.8s ease-in-out both;
+}
+.line-chart .ct-chart svg .ct-series-c .ct-line,
+.line-chart .ct-chart svg .ct-series-c .ct-point {
+  stroke: #ffce30;
+  -webkit-animation: fade-in 1s 1.8s ease-in-out forwards;
+  -moz-animation: fade-in 1s 1.8s ease-in-out forwards;
+  -o-animation: fade-in 1s 1.8s ease-in-out forwards;
+  animation: fade-in 1s 1.8s ease-in-out forwards;
+}
+@-moz-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-o-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+.pie-chart .ct-chart {
+  height: 300px;
+}
+.pie-chart .ct-chart .ct-series-a .ct-slice-donut {
+  stroke: #ff6668;
+}
+.pie-chart .ct-chart .ct-series-b .ct-slice-donut {
+  stroke: #ff9652;
+}
+.pie-chart .ct-chart .ct-series-c .ct-slice-donut {
+  stroke: #ffd558;
+}
+.pie-chart .ct-chart .ct-label {
+  font-size: 14px;
+  font-weight: 500px;
+  font-family: 'MuseoSans-700', sans-serif;
+  color: #666;
+}
 .icon-drawing {
   background-color: #fff8e6;
-}
-.icon-drawing .line {
-  stroke-dashoffset: 1000;
-  stroke-dasharray: 1000;
 }
 .icon-drawing .line-drawing {
   -webkit-animation: drawing 10s infinite ease-in-out;
   -moz-animation: drawing 10s infinite ease-in-out;
   -o-animation: drawing 10s infinite ease-in-out;
   animation: drawing 10s infinite ease-in-out;
+}
+.icon-drawing .line {
+  stroke-dashoffset: 1000;
+  stroke-dasharray: 1000;
 }
 @-moz-keyframes drawing {
   0% {
