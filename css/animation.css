@@ -36,10 +36,10 @@
   opacity: 0;
 }
 .line-chart .ct-chart svg .ct-series-a {
-  -webkit-animation: draw 2s 0s ease-in-out both;
-  -moz-animation: draw 2s 0s ease-in-out both;
-  -o-animation: draw 2s 0s ease-in-out both;
-  animation: draw 2s 0s ease-in-out both;
+  -webkit-animation: draw 3s 0s ease-in-out both;
+  -moz-animation: draw 3s 0s ease-in-out both;
+  -o-animation: draw 3s 0s ease-in-out both;
+  animation: draw 3s 0s ease-in-out both;
 }
 .line-chart .ct-chart svg .ct-series-a .ct-line,
 .line-chart .ct-chart svg .ct-series-a .ct-point {
@@ -50,10 +50,10 @@
   animation: fade-in 1s 0.6s ease-in-out forwards;
 }
 .line-chart .ct-chart svg .ct-series-b {
-  -webkit-animation: draw 2s 0.4s ease-in-out both;
-  -moz-animation: draw 2s 0.4s ease-in-out both;
-  -o-animation: draw 2s 0.4s ease-in-out both;
-  animation: draw 2s 0.4s ease-in-out both;
+  -webkit-animation: draw 3s 0.4s ease-in-out both;
+  -moz-animation: draw 3s 0.4s ease-in-out both;
+  -o-animation: draw 3s 0.4s ease-in-out both;
+  animation: draw 3s 0.4s ease-in-out both;
 }
 .line-chart .ct-chart svg .ct-series-b .ct-line,
 .line-chart .ct-chart svg .ct-series-b .ct-point {
@@ -64,10 +64,10 @@
   animation: fade-in 1s 1.2s ease-in-out forwards;
 }
 .line-chart .ct-chart svg .ct-series-c {
-  -webkit-animation: draw 2s 0.8s ease-in-out both;
-  -moz-animation: draw 2s 0.8s ease-in-out both;
-  -o-animation: draw 2s 0.8s ease-in-out both;
-  animation: draw 2s 0.8s ease-in-out both;
+  -webkit-animation: draw 3s 0.8s ease-in-out both;
+  -moz-animation: draw 3s 0.8s ease-in-out both;
+  -o-animation: draw 3s 0.8s ease-in-out both;
+  animation: draw 3s 0.8s ease-in-out both;
 }
 .line-chart .ct-chart svg .ct-series-c .ct-line,
 .line-chart .ct-chart svg .ct-series-c .ct-point {
