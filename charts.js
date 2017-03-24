@@ -1,9 +1,9 @@
 var chart = new Chartist.Line(".the-line", {
-    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+    labels: ['Jan.', 'Feb.', 'Mar.', 'Apr.'],
     series: [
-        [1.5, 4, -3, 4.5, 2, ],
-        [3, 2, -2, -5, 4],
-        [2, 1, -3, -1.5, -2]
+        [1.5, 4, -3, 4 ],
+        [3, 2, -2, -1],
+        [0, 1, -3, -1.5]
     ]
 }, {
     high: 5,
