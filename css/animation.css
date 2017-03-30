@@ -29,8 +29,8 @@
   padding-top: 5px;
 }
 .line-chart .ct-chart svg .ct-series {
-  stroke-dasharray: 2000;
-  stroke-dashoffset: 2000;
+  stroke-dasharray: 2000px;
+  stroke-dashoffset: 2000px;
 }
 .line-chart .ct-chart svg .ct-series .ct-line {
   stroke-width: 3px;
