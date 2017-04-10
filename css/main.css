@@ -744,6 +744,11 @@ a:hover p {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .whiteLine .add-margin {
+    padding: 0px 10px;
+  }
+}
 .carousel {
   margin-bottom: 65px;
   margin-top: 15px;
