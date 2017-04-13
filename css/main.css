@@ -724,6 +724,24 @@ a:hover p {
   border-radius: 2px;
   color: #333;
 }
+.whiteLine .details .personas-wrapper {
+  display: table;
+  margin-bottom: 10px;
+}
+.whiteLine .details .personas-wrapper .ad-persona {
+  background: #eeeeee;
+  padding: 15px 20px 5px 20px;
+  border-radius: 3px;
+  margin-left: -15px;
+}
+.whiteLine .details .personas-wrapper .ad-persona .persona-name {
+  font-family: 'MuseoSans-700', sans-serif;
+}
+.whiteLine .details .personas-wrapper .ad-persona .labels {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'MuseoSans-700', sans-serif;
+}
 .whiteLine .small-img {
   width: 90%;
   box-shadow: none !important;
