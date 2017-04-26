@@ -663,7 +663,7 @@ a:hover p {
 }
 .whiteLine img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .whiteLine .details {
   font-family: 'MuseoSans-300', sans-serif;
@@ -731,7 +731,7 @@ a:hover p {
 .whiteLine .details .personas-wrapper .ad-persona {
   background: #eeeeee;
   padding: 15px 20px 5px 20px;
-  border-radius: 3px;
+  border-radius: 2px;
   margin-left: -15px;
 }
 .whiteLine .details .personas-wrapper .ad-persona .persona-name {
@@ -756,7 +756,7 @@ a:hover p {
   width: 100%;
 }
 .whiteLine .shadow-img {
-  box-shadow: 2px 2px 13px #b7b7b7;
+  box-shadow: 2px 2px 7px #b7b7b7;
 }
 .whiteLine .add-margin {
   margin-top: 5px;
@@ -773,10 +773,10 @@ a:hover p {
   margin-top: 15px;
 }
 .carousel .carousel-inner {
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .carousel .carousel-inner .item img {
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .carousel .carousel-indicators {
   bottom: -45px;
