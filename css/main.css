@@ -668,7 +668,7 @@ a:hover p {
 .whiteLine .details {
   font-family: 'MuseoSans-300', sans-serif;
   color: #555;
-  margin-bottom: 50px;
+  margin-bottom: 72px;
 }
 .whiteLine .details .color-text {
   color: #d83e77;
@@ -707,6 +707,7 @@ a:hover p {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 16px;
+  margin-bottom: 16px;
 }
 .whiteLine .details .label-tag {
   background-color: #d83e77;
@@ -857,14 +858,6 @@ a:hover p {
     width: 100%;
     height: auto;
   }
-}
-.ecorcoran-img-responsive img:first-child {
-  width: 25%;
-  margin: 0px 1.5% 0px 0px;
-}
-.ecorcoran-img-responsive img:nth-child(2) {
-  width: 68.5%;
-  margin: 0px 0px 0px 3%;
 }
 /*TC website redesign */
 .TCweb-btn {
