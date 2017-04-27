@@ -80,6 +80,11 @@ a:hover p {
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
+body {
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+}
 .IntroRow {
   padding-bottom: 30px;
   font-family: 'MuseoSans-300', sans-serif;
@@ -681,6 +686,19 @@ a:hover p {
 @media only screen and (max-width: 480px) {
   .whiteLine .details {
     margin-right: 0px;
+  }
+}
+.whiteLine .details.museum-solutions .row p {
+  margin-top: 25%;
+}
+@media only screen and (max-width: 992px) {
+  .whiteLine .details.museum-solutions .row p {
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .whiteLine .details.museum-solutions .row p {
+    margin-top: 0px;
   }
 }
 .whiteLine .details p,
