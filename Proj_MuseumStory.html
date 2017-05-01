@@ -3,33 +3,14 @@
 <head>
     <title>Project: Story x Museum</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- jQuery UI lib -->
-    <script type="text/javascript" src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
-    <!-- transit -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.js"></script>
     <!-- Bootstrapt css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- fancybox css -->
+    <link rel="stylesheet" type="text/css" href="fancybox/dist/jquery.fancybox.css">
     <!-- fontawesome -->
     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <!-- myCSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-67851225-1', 'auto');
-    ga('send', 'pageview');
-    </script>
 </head>
 
 <body>
@@ -101,25 +82,24 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <p><strong class="color-text">Feature 1: Artwork Lists </strong>
-                            <br>Categorized the artwork by themes which allowed visitors to be able to click on the artwork itself to view supporting information.</p>
+                                <br>Categorized the artwork by themes which allowed visitors to be able to click on the artwork itself to view supporting information.</p>
                         </div>
                         <div class="col-md-3 col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1 add-margin">
                             <img class="shadow-img" src="img/museum-browsing.gif">
                             </img>
                         </div>
-                       
                     </div>
                     <hr>
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <p><strong class="color-text">Feature 2: Prompts & Stories</strong>
-                            <br>Provided users prompts about the artwork and allowed visitors to leave their stories to those prompts, to increased user's engagement with the artwork.</p>
+                                <br>Provided users prompts about the artwork and allowed visitors to leave their stories to those prompts, to increased user's engagement with the artwork.</p>
                         </div>
                         <div class="col-md-3 col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1 add-margin">
                             <img class="shadow-img" src="img/museum-prompt.gif">
                             </img>
                         </div>
-                         <div class="col-md-3 col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1 add-margin">
+                        <div class="col-md-3 col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1 add-margin">
                             <img class="shadow-img" src="img/museum-3.png">
                             </img>
                         </div>
@@ -128,7 +108,7 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <p><strong class="color-text">Feature 3: Sharing & Commenting</strong>
-                            <br>Increased interaction amongst visitors when they share stories and comments through the app or when they talk with each other face-to-face</p>
+                                <br>Increased interaction amongst visitors when they share stories and comments through the app or when they talk with each other face-to-face</p>
                         </div>
                         <div class="col-md-3 col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1 add-margin">
                             <img class="shadow-img" src="img/museum-story.gif">
@@ -143,7 +123,9 @@
                 <div class="details">
                     <h4><i class="fa fa-sitemap"></i> &nbsp; Interaction Map</h4>
                     <p>
-                        <img class="no-shadow-img add-margin" src="img/museum-a.png" alt="">
+                        <a href="img/museum-a.png" data-fancybox="image">
+                            <img class="no-shadow-img" src="img/museum-a.png" alt="">
+                        </a>
                     </p>
                 </div>
                 <div class="details">
@@ -178,8 +160,15 @@
             </div>
         </div>
     </div>
+    <!-- jQuery UI lib -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
     <!-- Bootstrapt js-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- transit -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.js"></script>
+    <!-- fancybox js -->
+    <script src="fancybox/dist/jquery.fancybox.js"></script>
     <!-- myJS -->
     <script type="text/javascript" src="index.js"></script>
     <!-- processing -->

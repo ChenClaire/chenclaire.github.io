@@ -7,11 +7,8 @@ $(window).load(function() {
     $(".loading").fadeOut(500);
 });
 
-
-$("[data-fancybox]").fancybox({
-});
-
 $('.intro .keywords').transition({ y: '10px', opacity: 1, delay: 100 }, 900);
+
 $('.intro .introduction').transition({ y: '-10px', opacity: 1, delay: 100 }, 700);
 
 $(".navbar-nav li a").click(function(event) {
@@ -35,3 +32,5 @@ $(window).scroll(function() {
 });
 
 $('.carousel').carousel();
+
+$("[data-fancybox]").fancybox();
