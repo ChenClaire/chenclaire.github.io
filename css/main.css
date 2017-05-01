@@ -617,18 +617,23 @@ body {
   color: #b9b9b9;
   font-family: 'Lora', serif;
   font-style: italic;
-  margin-top: 13px;
+  margin-top: 8px;
   margin-bottom: 20px;
-  padding: 0px;
 }
 .img-title .fa-hand-o-up {
   display: none;
 }
+.img-title hr {
+  margin: 7px 0px;
+  width: 180px;
+}
+@media only screen and (max-width: 500px) {
+  .img-title hr {
+    width: 115px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .img-title {
-    padding: 0px 15px;
-    text-align: center;
-    margin-top: 0px;
     margin-bottom: 25px;
   }
   .img-title .fa-hand-o-up {

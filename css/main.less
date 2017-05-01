@@ -118,11 +118,13 @@ a:hover {
         }
     }
 }
-body{
+
+body {
     max-width: 1440px;
-    margin:auto;
+    margin: auto;
     position: relative;
 }
+
 .IntroRow {
     padding-bottom: 30px;
     font-family: 'MuseoSans-300', sans-serif;
@@ -587,16 +589,19 @@ body{
     color: @light-gray;
     font-family: 'Lora', serif;
     font-style: italic;
-    margin-top: 13px;
+    margin-top: 8px;
     margin-bottom: 20px;
-    padding: 0px;
     .fa-hand-o-up {
         display: none;
     }
+    hr {
+        margin: 7px 0px;
+        width: 180px;
+         @media only screen and (max-width: 500px){
+            width: 115px;
+         }
+    }
     @media only screen and (max-width: 768px) {
-        padding: 0px 15px;
-        text-align: center;
-        margin-top: 0px;
         margin-bottom: 25px;
         .fa-hand-o-up {
             display: inline-block;
