@@ -5,6 +5,7 @@
 @nav-gray: #999;
 @light-gray: #b9b9b9;
 @light-light-gray: #eeeeee;
+@even-lighter-gray:#f4f4f4;
 @font-face {
     font-family: 'MuseoSans-100';
     // src: ~"url('../fonts/museosans-100.eot') format('embedded-opentype')";/* IE9 Compat Modes */
@@ -597,9 +598,9 @@ body {
     hr {
         margin: 7px 0px;
         width: 180px;
-         @media only screen and (max-width: 500px){
+        @media only screen and (max-width: 500px) {
             width: 115px;
-         }
+        }
     }
     @media only screen and (max-width: 768px) {
         margin-bottom: 25px;
@@ -703,11 +704,10 @@ body {
             display: table;
             margin-bottom: 10px;
             .ad-persona {
-                background: @light-light-gray;
-                padding: 15px 20px 5px 20px;
+                background: @even-lighter-gray;
+                padding: 24px 24px 14px 24px;
                 border-radius: 2px;
-                margin-left: -15px;
-                p {}
+                margin: 5px -15px;
                 .persona-name {
                     font-family: 'MuseoSans-700', sans-serif;
                 }
@@ -852,7 +852,6 @@ body {
 //         }
 //     }
 // }
-
 .link-wrapper {
     margin-bottom: 10px;
     margin-top: 5px;
