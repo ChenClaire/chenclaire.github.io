@@ -788,7 +788,6 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .whiteLine .add-margin {
-    padding: 0px 10px;
     margin-bottom: 15px;
   }
 }
