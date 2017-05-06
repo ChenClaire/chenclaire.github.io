@@ -87,7 +87,6 @@ body {
 }
 .IntroRow {
   padding-bottom: 30px;
-  font-family: 'MuseoSans-300', sans-serif;
 }
 .IntroRow .intro {
   width: 40%;
@@ -115,9 +114,14 @@ body {
   }
 }
 .IntroRow .intro .introduction {
-  font-size: 26px;
+  font-size: 32px;
   color: #777;
   padding-top: 15px;
+}
+@media only screen and (max-width: 480px) {
+  .IntroRow .intro .introduction {
+    font-size: 28px;
+  }
 }
 .IntroRow .intro .introduction .fullName {
   color: #d83e77;
@@ -131,14 +135,14 @@ body {
   font-variant: small-caps;
 }
 .IntroRow .nav-link {
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
   display: inline-block;
   margin: 15px auto;
   padding-top: 10px;
-  padding-right: 12px;
+  padding-right: 8px;
   padding-bottom: 5px;
-  padding-left: 12px;
+  padding-left: 8px;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   -ms-transition: all 0.25s;
@@ -366,7 +370,7 @@ body {
 }
 .ContactRow .myIntro {
   font-family: 'MuseoSans-300', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 20px;
   line-height: 1.5;
   color: #555;
@@ -385,8 +389,8 @@ body {
   border-top: 2.5px solid #d83e77;
 }
 .ContactRow i {
-  font-size: 23px;
-  margin: 20px 4px 0 4px;
+  font-size: 24px;
+  margin: 20px 8px 0 8px;
   color: #777;
 }
 .ContactRow i:hover {
@@ -404,6 +408,7 @@ body {
   margin: 0px 25% 10px 25%;
   font-family: 'Lora', serif;
   color: #999;
+  font-style: 18px;
 }
 @media only screen and (max-width: 768px) {
   .ContactRow .quote-wrapper {
@@ -728,8 +733,9 @@ body {
   color: #b9b9b9;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 16px;
+  line-height: 1.5;
 }
 .whiteLine .details .label-tag {
   background-color: #d83e77;
