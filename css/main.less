@@ -128,7 +128,6 @@ body {
 
 .IntroRow {
     padding-bottom: 30px;
-    // font-family: 'MuseoSans-300', sans-serif;
     .intro {
         width: 40%;
         margin: auto;
@@ -149,6 +148,7 @@ body {
             font-size: 32px;
             color: @mid-gray;
             padding-top: 15px;
+            font-family: 'MuseoSans-700', sans-serif;
             @media only screen and (max-width: 480px) {
                 font-size: 28px;
             }
@@ -163,6 +163,7 @@ body {
             letter-spacing: 1.1;
             font-size: 17px;
             font-variant: small-caps;
+            font-family: 'MuseoSans-700', sans-serif;
         }
     }
     .nav-link {
@@ -178,6 +179,7 @@ body {
         letter-spacing: 1.1;
         color: @nav-gray;
         text-transform: uppercase;
+        font-family: 'MuseoSans-500', sans-serif;
         &:focus {
             color: @primary-color;
         }
@@ -223,9 +225,10 @@ body {
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 100%;
+            width: 0%;
             height: 5px;
             background-color: @primary-color;
+            border-radius: 0px 0px 2px 2px;
         }
         .projImg {
             position: relative;
@@ -256,7 +259,8 @@ body {
                 width: 250px;
             }
             .scaled-img {
-                opacity: 0;
+                // opacity: 1;
+                border-radius: 2px;
             }
             .projIcon {
                 position: absolute;
@@ -265,19 +269,21 @@ body {
                 padding-right: 25px;
                 padding-bottom: 10px;
                 padding-left: 25px;
-                img {
-                    width: 25%;
-                    margin-bottom: 10px;
-                    .transition(all .3s ease-in-out);
-                    @media only screen and (max-width: 768px) {
-                        width: 32%;
-                    }
-                }
+                // img {
+                //     display: none;
+                //     width: 25%;
+                //     margin-bottom: 10px;
+                //     .transition(all .3s ease-in-out);
+                //     @media only screen and (max-width: 768px) {
+                //         width: 32%;
+                //     }
+                // }
                 .projTitle {
                     font-family: 'MuseoSans-700', sans-serif;
                     font-size: 19px;
                     font-variant: small-caps;
                     color: @dark-gray;
+                    color: white;
                     letter-spacing: 1px;
                     .transition(all .35s ease-in-out .1s);
                 }
@@ -286,10 +292,12 @@ body {
                     margin-bottom: 10px;
                     text-align: left;
                     .transition(all .35s ease-in-out .1s);
+                    display: none;
                 }
                 .projTags {
                     color: @mid-gray;
-                    font-family: 'MuseoSans-300', sans-serif;
+                    color: white;
+                    font-family: 'MuseoSans-100', sans-serif;
                     font-size: 16px;
                     .transition(all .35s ease-in-out .1s);
                 }
@@ -298,33 +306,34 @@ body {
         .border {
             .transition(all .3s ease-in-out .1s);
         }
-        .scaled-img {
-            .transition(all .6s ease-in-out);
-        }
+        // .scaled-img {
+        //     .transition(all .6s ease-in-out);
+        // }
         &:hover {
             @media only screen and (min-width: 768px) {
                 cursor: pointer;
                 .border {
-                    height: 0px;
+                    // height: 0px;
+                    width: 100%;
                 }
-                .projImg .scaled-img {
-                    opacity: 1;
-                }
+                // .projImg .scaled-img {
+                //     opacity: 1;
+                // }
                 .projTitle {
-                    color: white !important;
+                    // color: white !important;
                     transform: translateY(-35px);
                 }
                 hr {
                     transform: translateY(-35px);
                 }
                 .projTags {
-                    color: white !important;
+                    // color: white !important;
                     transform: translateY(-35px);
                 }
-                .projIcon img {
-                    opacity: 0;
-                    transform: translateY(-35px);
-                }
+                // .projIcon img {
+                //     opacity: 0;
+                //     transform: translateY(-35px);
+                // }
             }
         }
     }

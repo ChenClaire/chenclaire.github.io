@@ -117,6 +117,7 @@ body {
   font-size: 32px;
   color: #777;
   padding-top: 15px;
+  font-family: 'MuseoSans-700', sans-serif;
 }
 @media only screen and (max-width: 480px) {
   .IntroRow .intro .introduction {
@@ -133,6 +134,7 @@ body {
   letter-spacing: 1.1;
   font-size: 17px;
   font-variant: small-caps;
+  font-family: 'MuseoSans-700', sans-serif;
 }
 .IntroRow .nav-link {
   font-size: 16px;
@@ -151,6 +153,7 @@ body {
   letter-spacing: 1.1;
   color: #999;
   text-transform: uppercase;
+  font-family: 'MuseoSans-500', sans-serif;
 }
 .IntroRow .nav-link:focus {
   color: #d83e77;
@@ -204,9 +207,10 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 0%;
   height: 5px;
   background-color: #d83e77;
+  border-radius: 0px 0px 2px 2px;
 }
 .ProjRow .square .projImg {
   position: relative;
@@ -254,7 +258,7 @@ body {
   }
 }
 .ProjRow .square .projImg .scaled-img {
-  opacity: 0;
+  border-radius: 2px;
 }
 .ProjRow .square .projImg .projIcon {
   position: absolute;
@@ -264,25 +268,12 @@ body {
   padding-bottom: 10px;
   padding-left: 25px;
 }
-.ProjRow .square .projImg .projIcon img {
-  width: 25%;
-  margin-bottom: 10px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-@media only screen and (max-width: 768px) {
-  .ProjRow .square .projImg .projIcon img {
-    width: 32%;
-  }
-}
 .ProjRow .square .projImg .projIcon .projTitle {
   font-family: 'MuseoSans-700', sans-serif;
   font-size: 19px;
   font-variant: small-caps;
   color: #555;
+  color: white;
   letter-spacing: 1px;
   -webkit-transition: all 0.35s ease-in-out 0.1s;
   -moz-transition: all 0.35s ease-in-out 0.1s;
@@ -299,10 +290,12 @@ body {
   -ms-transition: all 0.35s ease-in-out 0.1s;
   -o-transition: all 0.35s ease-in-out 0.1s;
   transition: all 0.35s ease-in-out 0.1s;
+  display: none;
 }
 .ProjRow .square .projImg .projIcon .projTags {
   color: #777;
-  font-family: 'MuseoSans-300', sans-serif;
+  color: white;
+  font-family: 'MuseoSans-100', sans-serif;
   font-size: 16px;
   -webkit-transition: all 0.35s ease-in-out 0.1s;
   -moz-transition: all 0.35s ease-in-out 0.1s;
@@ -317,36 +310,20 @@ body {
   -o-transition: all 0.3s ease-in-out 0.1s;
   transition: all 0.3s ease-in-out 0.1s;
 }
-.ProjRow .square .scaled-img {
-  -webkit-transition: all 0.6s ease-in-out;
-  -moz-transition: all 0.6s ease-in-out;
-  -ms-transition: all 0.6s ease-in-out;
-  -o-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
-}
 @media only screen and (min-width: 768px) {
   .ProjRow .square:hover {
     cursor: pointer;
   }
   .ProjRow .square:hover .border {
-    height: 0px;
-  }
-  .ProjRow .square:hover .projImg .scaled-img {
-    opacity: 1;
+    width: 100%;
   }
   .ProjRow .square:hover .projTitle {
-    color: white !important;
     transform: translateY(-35px);
   }
   .ProjRow .square:hover hr {
     transform: translateY(-35px);
   }
   .ProjRow .square:hover .projTags {
-    color: white !important;
-    transform: translateY(-35px);
-  }
-  .ProjRow .square:hover .projIcon img {
-    opacity: 0;
     transform: translateY(-35px);
   }
 }
