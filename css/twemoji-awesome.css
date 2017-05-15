@@ -44,6 +44,13 @@
   vertical-align: -0.5em;
   background-size: 5em 5em; }
 
+.twa-avocado{
+  background-image: url("https://twemoji.maxcdn.com/2/72x72/1f951.svg")
+}
+
+.twa-tools{
+  background-image: url("https://twemoji.maxcdn.com/2/72x72/1f6e0.png")
+}
 .twa-mahjong-red-dragon {
   background-image: url("https://twemoji.maxcdn.com/2/svg/1f004.svg"); }
 
@@ -295,6 +302,7 @@
 
 .twa-cook-island-flag {
   background-image: url("https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f0.svg"); }
+
 
 .twa-chile-flag {
   background-image: url("https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f1.svg"); }
