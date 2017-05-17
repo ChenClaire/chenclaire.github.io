@@ -155,7 +155,6 @@
             top: 0;
             z-index: 20;
             padding: 40px 0px;
-            
             .inner-wrapper {
                 position: relative;
                 height: 100%;
@@ -298,7 +297,7 @@
             }
             .nav-wrapper {
                 margin-left: -8px;
-                padding-top: 30px;
+                padding-top: 20px;
                 @media only screen and (max-width: 700px) {
                     display: none;
                 }
@@ -353,7 +352,7 @@
         .ProjRow {
             margin-top: 10px;
             // margin-right: 7%;
-            margin-bottom: 35px;
+            margin-bottom: 85px;
             // margin-left: 7%;
             img {
                 width: 100%;
@@ -368,24 +367,22 @@
                     height: 5px;
                     background-color: @primary-color;
                     border-radius: 2px;
-                    @media only screen and (max-width: 768px) {
-                        display: none;
-                    }
+                    // @media only screen and (max-width: 768px) {
+                    //     display: none;
+                    // }
                 }
                 .projImg {
                     position: relative;
                     margin: auto;
                     border-radius: 2px;
+                    height: 200px;
+                    overflow: hidden;
                     @media only screen and (max-width: 768px) {
-                        height: 250px;
-                        overflow: hidden;
+                        height: 240px;
                     }
                     .scaled-img {
                         opacity: 0;
                         border-radius: 2px;
-                        @media only screen and (max-width: 768px) {
-                            opacity: 1;
-                        }
                     }
                     .projIcon {
                         position: absolute;
@@ -395,41 +392,31 @@
                         padding-bottom: 10px;
                         padding-left: 25px;
                         img {
-                            width: 25%;
-                            margin-bottom: 10px;
+                            width: auto;
+                            height: 24px;
+                            transform: translateY(20px);
                             .transition(all .3s ease-in-out);
-                            @media only screen and (max-width: 768px) {
-                                // width: 32%;
-                                display: none;
-                            }
                         }
                         .projTitle {
                             font-family: 'MuseoSans-700', sans-serif;
-                            font-size: 19px;
+                            font-size: 18px;
                             font-variant: small-caps;
-                            color: @dark-gray;
-                            // color: white;
+                            color: white;
+                            opacity: 0;
                             letter-spacing: 1px;
                             .transition(all .35s ease-in-out .1s);
-                            @media only screen and (max-width: 768px) {
-                                color: white;
-                            }
                         }
                         hr {
                             margin-top: 10px;
                             margin-bottom: 10px;
                             text-align: left;
                             .transition(all .35s ease-in-out .1s);
-                            // display: none;
                         }
                         .projTags {
                             color: @mid-gray;
                             font-family: 'MuseoSans-300', sans-serif;
                             font-size: 16px;
                             .transition(all .35s ease-in-out .1s);
-                            @media only screen and (max-width: 768px) {
-                                color: white;
-                            }
                         }
                     }
                 }
@@ -440,37 +427,33 @@
                     .transition(all .6s ease-in-out);
                 }
                 &:hover {
-                    @media only screen and (min-width: 768px) {
-                        cursor: pointer;
-                        .border {
-                            height: 0px;
-                        }
-                        .projImg .scaled-img {
-                            opacity: 1;
-                        }
-                        .projTitle {
-                            color: white !important;
-                            transform: translateY(-35px);
-                        }
-                        hr {
-                            transform: translateY(-35px);
-                        }
-                        .projTags {
-                            color: white !important;
-                            transform: translateY(-35px);
-                        }
-                        .projIcon img {
-                            opacity: 0;
-                            transform: translateY(-35px);
-                        }
+                    cursor: pointer;
+                    .border {
+                        height: 0px;
+                    }
+                    .projImg .scaled-img {
+                        opacity: 1;
+                    }
+                    .projTitle {
+                        opacity: 1 !important;
+                        transform: translateY(-20px);
+                    }
+                    hr {
+                        transform: translateY(-20px);
+                    }
+                    .projTags {
+                        color: white !important;
+                        transform: translateY(-20px);
+                    }
+                    .projIcon img {
+                        opacity: 0;
+                        transform: translateY(-20px);
                     }
                 }
             }
         }
         
         .ContactRow {
-            // margin-top: 70px;
-            // padding-top: 40px;
             padding-bottom: 30px;
             @media only screen and (max-width: 768px) {
                 padding-top: 10px;
@@ -963,34 +946,13 @@
                     opacity: 1;
                 }
             }
-            &#calligraphy-carousel .carousel-inner>.item>img,
-            &#gridspark-carousel .carousel-inner>.item>img,
-            &#ecorcoran-cms-carousel .carousel-inner>.item>img {
-                width: 100%;
-            }
-            &#calligraphy-carousel .carousel-inner,
-            &#gridspark-carousel .carousel-inner,
-            &#ecorcoran-cms-carousel .carousel-inner {
-                width: 770px;
-                margin: auto;
-                @media only screen and (max-width: 800px) {
-                    width: 90%
-                }
-            }
-            &#deepintent-carousel .carousel-inner>.item>img,
-            &#museum-carousel .carousel-inner>.item>img {
+            &#deepintent-carousel .carousel-inner>.item>img {
                 margin: auto;
                 height: 100%;
                 width: auto;
             }
             &#deepintent-carousel .carousel-inner {
                 height: 740px;
-            }
-            &#museum-carousel .carousel-inner {
-                height: 540px;
-                @media only screen and (max-width: 480px) {
-                    height: 450px;
-                }
             }
             &#deepintent-carousel .carousel-inner {
                 padding-bottom: 15px;
@@ -1005,19 +967,18 @@
                 }
             }
         }
-        /*TC website redesign */
         
-        .link-wrapper {
-            margin-bottom: 10px;
-            margin-top: 5px;
-            .TC-web-link {
-                display: inline-block;
-                margin-right: 10px;
-                a {
-                    color: #3b6aa0;
-                    &:hover {
-                        color: #1D3550;
-                    }
-                }
-            }
-        }
+        // .link-wrapper {
+        //     margin-bottom: 10px;
+        //     margin-top: 5px;
+        //     .TC-web-link {
+        //         display: inline-block;
+        //         margin-right: 10px;
+        //         a {
+        //             color: #3b6aa0;
+        //             &:hover {
+        //                 color: #1D3550;
+        //             }
+        //         }
+        //     }
+        // }
