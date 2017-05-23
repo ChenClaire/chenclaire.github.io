@@ -384,6 +384,7 @@ body {
   height: 5px;
   background-color: #d83e77;
   border-radius: 2px;
+  display: none;
 }
 .ProjRow .square .projImg {
   position: relative;
@@ -411,7 +412,7 @@ body {
 }
 .ProjRow .square .projImg .projIcon img {
   width: auto;
-  height: 24px;
+  height: 22px;
   transform: translateY(20px);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
