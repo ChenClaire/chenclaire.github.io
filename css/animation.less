@@ -38,8 +38,10 @@
         background: -moz-radial-gradient(@argument1, @argument2);
     }
     
-    .single-item svg {
-        width: 190px;
+    .single-item {
+        .pic {
+            width: 200px;
+        }
     }
     
     .details {
@@ -69,6 +71,10 @@
             }
         }
         );
+    }
+    
+    .whale {
+        background: #dfeeff;
     }
     
     .windmill {
@@ -132,6 +138,78 @@
             }
             .cls-12 {
                 fill: #332818;
+            }
+        }
+    }
+    
+    .flag {
+        background: #dff5ef;
+        svg {
+            .clouds {
+                position: absolute;
+                fill: #fff;
+                .animation (cloud 10s infinite linear);
+                &.tiny-cloud {
+                    .transform (scale(0.23, 0.23));
+                }
+                &.small-cloud {
+                    .transform(scale(0.4, 0.4));
+                }
+                &.big-cloud {
+                    .transform (scale(0.53, 0.53));
+                }
+                &.large-cloud {
+                    .transform(scale(0.6, 0.6));
+                }
+                .keyframes(cloud;
+                {
+                    0% {
+                        left: 0%;
+                    }
+                    100% {
+                        left: 120%;
+                    }
+                }
+                );
+            }
+            .cls-1 {
+                fill: #fff;
+            }
+            .cls-2 {
+                fill: #e1ecef;
+            }
+            .cls-3 {
+                opacity: 0.6;
+            }
+            .cls-4 {
+                opacity: 0.8;
+            }
+            .cls-5 {
+                fill: none;
+                stroke: #282022;
+                stroke-miterlimit: 10;
+                stroke-width: 6.4px;
+            }
+            .cls-6 {
+                fill: #ce3653;
+            }
+            .cls-7 {
+                fill: #acd1c6;
+            }
+            .cls-8 {
+                opacity: 0.05;
+            }
+            .cls-9 {
+                fill: #83c9bc;
+            }
+            .cls-10 {
+                opacity: 0.06;
+            }
+            .cls-11 {
+                fill: #070707;
+            }
+            .cls-12 {
+                fill: #4abaa5;
             }
         }
     }
@@ -237,14 +315,4 @@
                 }
             }
         }
-        .keyframes(cloud;
-        {
-            0% {
-                left: 0%;
-            }
-            100% {
-                left: 120%;
-            }
-        }
-        );
     }

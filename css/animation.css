@@ -1,5 +1,5 @@
-.single-item svg {
-  width: 190px;
+.single-item .pic {
+  width: 200px;
 }
 .details {
   padding: 150px 30px;
@@ -56,6 +56,9 @@
     -ms-transform: rotate(35deg);
     -o-transform: rotate(35deg);
   }
+}
+.whale {
+  background: #dfeeff;
 }
 .windmill {
   background: #fdf7e1;
@@ -169,6 +172,112 @@
 }
 .windmill svg .cls-12 {
   fill: #332818;
+}
+.flag {
+  background: #dff5ef;
+}
+.flag svg .clouds {
+  position: absolute;
+  fill: #fff;
+  -webkit-animation: cloud 10s infinite linear;
+  -moz-animation: cloud 10s infinite linear;
+  -o-animation: cloud 10s infinite linear;
+  animation: cloud 10s infinite linear;
+}
+.flag svg .clouds.tiny-cloud {
+  -webkit-transform: scale(0.23, 0.23);
+  -moz-transform: scale(0.23, 0.23);
+  -ms-transform: scale(0.23, 0.23);
+  -o-transform: scale(0.23, 0.23);
+}
+.flag svg .clouds.small-cloud {
+  -webkit-transform: scale(0.4, 0.4);
+  -moz-transform: scale(0.4, 0.4);
+  -ms-transform: scale(0.4, 0.4);
+  -o-transform: scale(0.4, 0.4);
+}
+.flag svg .clouds.big-cloud {
+  -webkit-transform: scale(0.53, 0.53);
+  -moz-transform: scale(0.53, 0.53);
+  -ms-transform: scale(0.53, 0.53);
+  -o-transform: scale(0.53, 0.53);
+}
+.flag svg .clouds.large-cloud {
+  -webkit-transform: scale(0.6, 0.6);
+  -moz-transform: scale(0.6, 0.6);
+  -ms-transform: scale(0.6, 0.6);
+  -o-transform: scale(0.6, 0.6);
+}
+@-moz-keyframes cloud {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+@-webkit-keyframes cloud {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+@-o-keyframes cloud {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+@keyframes cloud {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+.flag svg .cls-1 {
+  fill: #fff;
+}
+.flag svg .cls-2 {
+  fill: #e1ecef;
+}
+.flag svg .cls-3 {
+  opacity: 0.6;
+}
+.flag svg .cls-4 {
+  opacity: 0.8;
+}
+.flag svg .cls-5 {
+  fill: none;
+  stroke: #282022;
+  stroke-miterlimit: 10;
+  stroke-width: 6.4px;
+}
+.flag svg .cls-6 {
+  fill: #ce3653;
+}
+.flag svg .cls-7 {
+  fill: #acd1c6;
+}
+.flag svg .cls-8 {
+  opacity: 0.05;
+}
+.flag svg .cls-9 {
+  fill: #83c9bc;
+}
+.flag svg .cls-10 {
+  opacity: 0.06;
+}
+.flag svg .cls-11 {
+  fill: #070707;
+}
+.flag svg .cls-12 {
+  fill: #4abaa5;
 }
 .the-sky {
   background-color: #d9f1ff;
@@ -286,36 +395,4 @@
   animation-delay: 2.1s;
   -webkit-animation-duration: 78s;
   animation-duration: 78s;
-}
-@-moz-keyframes cloud {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 120%;
-  }
-}
-@-webkit-keyframes cloud {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 120%;
-  }
-}
-@-o-keyframes cloud {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 120%;
-  }
-}
-@keyframes cloud {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 120%;
-  }
 }
