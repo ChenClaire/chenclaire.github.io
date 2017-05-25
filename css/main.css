@@ -127,6 +127,8 @@ body {
   text-transform: uppercase;
   font-size: 30px;
   letter-spacing: 1.5;
+  display: block;
+  margin: 0px 80px;
 }
 .mobile-nav .inner-wrapper .inner .nav-option:hover {
   opacity: 1;
@@ -384,7 +386,6 @@ body {
   height: 5px;
   background-color: #d83e77;
   border-radius: 2px;
-  display: none;
 }
 .ProjRow .square .projImg {
   position: relative;
