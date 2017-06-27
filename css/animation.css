@@ -279,6 +279,78 @@
 .flag svg .cls-12 {
   fill: #4abaa5;
 }
+.snack {
+  background: #e7dff5;
+}
+.snack svg .cls-1,
+.snack svg .cls-19 {
+  fill: #fff;
+}
+.snack svg .cls-2 {
+  fill: #56417b;
+}
+.snack svg .cls-3 {
+  fill: #7c4dff;
+}
+.snack svg .cls-17,
+.snack svg .cls-3,
+.snack svg .cls-8 {
+  opacity: 0.1;
+}
+.snack svg .cls-4 {
+  opacity: 0.05;
+}
+.snack svg .cls-5 {
+  fill: #eee6ff;
+  opacity: 0.04;
+}
+.snack svg .cls-6 {
+  fill: #ea6c6c;
+}
+.snack svg .cls-7 {
+  opacity: 0.07;
+}
+.snack svg .cls-9 {
+  fill: #f7f3e8;
+}
+.snack svg .cls-10,
+.snack svg .cls-18 {
+  fill: none;
+  stroke-linejoin: round;
+}
+.snack svg .cls-10 {
+  stroke: #e2e2e2;
+  stroke-linecap: round;
+  stroke-width: 4px;
+}
+.snack svg .cls-11 {
+  fill: #f9f9f9;
+}
+.snack svg .cls-12 {
+  fill: #fcc978;
+}
+.snack svg .cls-13 {
+  fill: #7bb755;
+}
+.snack svg .cls-14 {
+  fill: #f18d60;
+}
+.snack svg .cls-15 {
+  fill: #9bd376;
+}
+.snack svg .cls-16 {
+  fill: #fbddab;
+}
+.snack svg .cls-17 {
+  fill: #333;
+}
+.snack svg .cls-18 {
+  stroke: #f7f7f7;
+  stroke-width: 2px;
+}
+.snack svg .cls-19 {
+  opacity: 0.03;
+}
 .the-sky {
   background-color: #d9f1ff;
   position: relative;
