@@ -351,6 +351,68 @@
 .snack svg .cls-19 {
   opacity: 0.03;
 }
+.succulent {
+  background: #f1f9f2;
+}
+.succulent svg .cls-1 {
+  fill: none;
+}
+.succulent svg .cls-2 {
+  isolation: isolate;
+}
+.succulent svg .cls-3,
+.succulent svg .cls-5 {
+  fill: #fff;
+}
+.succulent svg .cls-4 {
+  fill: #f9f4ca;
+}
+.succulent svg .cls-5 {
+  opacity: 0.1;
+}
+.succulent svg .cls-6,
+.succulent svg .cls-7,
+.succulent svg .cls-8 {
+  fill: #edc10a;
+}
+.succulent svg .cls-6 {
+  opacity: 0.05;
+}
+.succulent svg .cls-7 {
+  opacity: 0.04;
+}
+.succulent svg .cls-8 {
+  opacity: 0.03;
+}
+.succulent svg .cls-9 {
+  clip-path: url(#clip-path);
+}
+.succulent svg .cls-10 {
+  fill: #e2e2e2;
+}
+.succulent svg .cls-11 {
+  fill: #efefef;
+}
+.succulent svg .cls-12 {
+  fill: #f7f7f7;
+}
+.succulent svg .cls-13 {
+  fill: #828282;
+}
+.succulent svg .cls-14 {
+  clip-path: url(#clip-path-2);
+}
+.succulent svg .cls-15,
+.succulent svg .cls-17 {
+  fill: #78a567;
+}
+.succulent svg .cls-16 {
+  fill: #c8eac1;
+}
+.succulent svg .cls-17 {
+  opacity: 0.25;
+  mix-blend-mode: screen;
+}
 .the-sky {
   background-color: #d9f1ff;
   position: relative;
