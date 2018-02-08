@@ -62,8 +62,12 @@
     background-image: url("../twmoji/camera.svg");
 }
 
-.twa-tools {
-    background-image: url("../twmoji/tools.svg")
+// .twa-tools {
+//     background-image: url("../twmoji/tools.svg")
+// }
+
+.twa-cooking {
+    background-image: url("../twmoji/cooking.svg")
 }
 
 .twa-shibuya-109 {

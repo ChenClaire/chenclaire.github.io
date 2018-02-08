@@ -86,7 +86,7 @@ body {
   position: relative;
 }
 .color-text {
-  color: #d83e77;
+  color: #d83e77 !important;
 }
 .mobile-nav {
   display: none;
@@ -154,7 +154,9 @@ body {
   width: 100px;
 }
 .IntroRow {
-  padding-bottom: 40px;
+  padding-bottom: 24px;
+  font-family: 'MuseoSans-300', sans-serif;
+  color: #444;
 }
 .IntroRow .intro {
   margin: auto;
@@ -177,14 +179,24 @@ body {
 }
 .IntroRow .intro .introduction {
   font-size: 32px;
-  color: #777;
+  color: #444;
   line-height: 1.5;
-  padding-top: 5px;
   font-family: 'MuseoSans-700', sans-serif;
 }
 @media only screen and (max-width: 768px) {
   .IntroRow .intro .introduction {
-    font-size: 23px;
+    font-size: 26px;
+  }
+}
+.IntroRow .intro .introduction-note {
+  font-family: 'Lora', serif;
+  width: 60%;
+  line-height: 1.5;
+  color: #777;
+}
+@media only screen and (max-width: 1024px) {
+  .IntroRow .intro .introduction-note {
+    width: 100%;
   }
 }
 .IntroRow .intro .shuffle-wrapper {
@@ -195,6 +207,14 @@ body {
 @media only screen and (max-width: 768px) {
   .IntroRow .intro .shuffle-wrapper {
     height: 40px;
+  }
+}
+.IntroRow .intro .shuffle-wrapper.mobile {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .IntroRow .intro .shuffle-wrapper.mobile {
+    display: block;
   }
 }
 .IntroRow .intro .shuffle-wrapper .shuffle {
@@ -212,7 +232,7 @@ body {
   -o-animation: flash 7s steps(4) infinite;
   animation: flash 7s steps(4) infinite;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .IntroRow .intro .shuffle-wrapper .shuffle {
     display: none;
   }
@@ -220,79 +240,120 @@ body {
 .IntroRow .intro .shuffle-wrapper .shuffle.mobile {
   padding: 0px;
   display: none;
-  -webkit-animation: flash-mobile 7s steps(4) infinite;
-  -moz-animation: flash-mobile 7s steps(4) infinite;
-  -ms-animation: flash-mobile 7s steps(4) infinite;
-  -o-animation: flash-mobile 7s steps(4) infinite;
-  animation: flash-mobile 7s steps(4) infinite;
+}
+@media only screen and (max-width: 1024px) {
+  .IntroRow .intro .shuffle-wrapper .shuffle.mobile {
+    -webkit-animation: flash-medium 7s steps(4) infinite;
+    -moz-animation: flash-medium 7s steps(4) infinite;
+    -ms-animation: flash-medium 7s steps(4) infinite;
+    -o-animation: flash-medium 7s steps(4) infinite;
+    animation: flash-medium 7s steps(4) infinite;
+    display: block;
+  }
 }
 @media only screen and (max-width: 768px) {
   .IntroRow .intro .shuffle-wrapper .shuffle.mobile {
-    display: block;
+    -webkit-animation: flash-mobile 7s steps(4) infinite;
+    -moz-animation: flash-mobile 7s steps(4) infinite;
+    -ms-animation: flash-mobile 7s steps(4) infinite;
+    -o-animation: flash-mobile 7s steps(4) infinite;
+    animation: flash-mobile 7s steps(4) infinite;
   }
 }
 @-moz-keyframes flash {
   0% {
-    top: 0px;
+    top: -6px;
   }
   100% {
-    top: -195px;
+    top: -198px;
   }
 }
 @-webkit-keyframes flash {
   0% {
-    top: 0px;
+    top: -6px;
   }
   100% {
-    top: -195px;
+    top: -198px;
   }
 }
 @-o-keyframes flash {
   0% {
-    top: 0px;
+    top: -6px;
   }
   100% {
-    top: -195px;
+    top: -198px;
   }
 }
 @keyframes flash {
   0% {
+    top: -6px;
+  }
+  100% {
+    top: -198px;
+  }
+}
+@-moz-keyframes flash-medium {
+  0% {
     top: 0px;
   }
   100% {
-    top: -195px;
+    top: -192px;
+  }
+}
+@-webkit-keyframes flash-medium {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -192px;
+  }
+}
+@-o-keyframes flash-medium {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -192px;
+  }
+}
+@keyframes flash-medium {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -192px;
   }
 }
 @-moz-keyframes flash-mobile {
   0% {
-    top: 4px;
+    top: 0px;
   }
   100% {
-    top: -137px;
+    top: -156px;
   }
 }
 @-webkit-keyframes flash-mobile {
   0% {
-    top: 4px;
+    top: 0px;
   }
   100% {
-    top: -137px;
+    top: -156px;
   }
 }
 @-o-keyframes flash-mobile {
   0% {
-    top: 4px;
+    top: 0px;
   }
   100% {
-    top: -137px;
+    top: -156px;
   }
 }
 @keyframes flash-mobile {
   0% {
-    top: 4px;
+    top: 0px;
   }
   100% {
-    top: -137px;
+    top: -156px;
   }
 }
 .IntroRow .intro .mytitle {
@@ -369,8 +430,7 @@ body {
   opacity: 1;
 }
 .ProjRow {
-  margin-top: 10px;
-  margin-bottom: 85px;
+  margin-bottom: 24px;
 }
 .ProjRow img {
   width: 100%;
@@ -378,88 +438,59 @@ body {
 .ProjRow .square {
   margin-bottom: 20px;
 }
-.ProjRow .square .border {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background-color: #d83e77;
-  border-radius: 2px;
-}
 .ProjRow .square .projImg {
+  width: 100%;
   position: relative;
   margin: auto;
-  border-radius: 2px;
-  height: 200px;
+  height: 240px;
   overflow: hidden;
+  box-shadow: 0px 2px 0px 0px #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
 }
-@media only screen and (max-width: 768px) {
-  .ProjRow .square .projImg {
-    height: 240px;
-  }
+.ProjRow .square .projImg:hover {
+  box-shadow: 0px 3px 18px 0px rgba(185, 185, 185, 0.4);
 }
 .ProjRow .square .projImg .scaled-img {
-  opacity: 0;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 .ProjRow .square .projImg .projIcon {
   position: absolute;
-  bottom: 5px;
+  background: transparent;
+  top: 0px;
   width: 100%;
+  height: 260px;
   padding-right: 25px;
   padding-bottom: 10px;
   padding-left: 25px;
-}
-.ProjRow .square .projImg .projIcon img {
-  width: auto;
-  height: 22px;
-  transform: translateY(20px);
+  padding-top: 64px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.ProjRow .square .projImg .projIcon .projTitle {
-  font-family: 'MuseoSans-700', sans-serif;
-  font-size: 18px;
-  font-variant: small-caps;
-  color: white;
-  opacity: 0;
-  letter-spacing: 1px;
-  -webkit-transition: all 0.35s ease-in-out 0.1s;
-  -moz-transition: all 0.35s ease-in-out 0.1s;
-  -ms-transition: all 0.35s ease-in-out 0.1s;
-  -o-transition: all 0.35s ease-in-out 0.1s;
-  transition: all 0.35s ease-in-out 0.1s;
-}
-.ProjRow .square .projImg .projIcon hr {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: left;
-  -webkit-transition: all 0.35s ease-in-out 0.1s;
-  -moz-transition: all 0.35s ease-in-out 0.1s;
-  -ms-transition: all 0.35s ease-in-out 0.1s;
-  -o-transition: all 0.35s ease-in-out 0.1s;
-  transition: all 0.35s ease-in-out 0.1s;
+.ProjRow .square .projImg .projIcon img {
+  width: auto;
+  height: 20px;
+  margin-bottom: 16px;
 }
 .ProjRow .square .projImg .projIcon .projTags {
-  color: #777;
+  color: #b9b9b9;
   font-family: 'MuseoSans-300', sans-serif;
   font-size: 16px;
-  -webkit-transition: all 0.35s ease-in-out 0.1s;
-  -moz-transition: all 0.35s ease-in-out 0.1s;
-  -ms-transition: all 0.35s ease-in-out 0.1s;
-  -o-transition: all 0.35s ease-in-out 0.1s;
-  transition: all 0.35s ease-in-out 0.1s;
 }
-.ProjRow .square .border {
-  -webkit-transition: all 0.3s ease-in-out 0.1s;
-  -moz-transition: all 0.3s ease-in-out 0.1s;
-  -ms-transition: all 0.3s ease-in-out 0.1s;
-  -o-transition: all 0.3s ease-in-out 0.1s;
-  transition: all 0.3s ease-in-out 0.1s;
+.ProjRow .square .projImg .projIcon .square-cta {
+  color: #d83e77;
+  opacity: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .ProjRow .square .scaled-img {
   -webkit-transition: all 0.6s ease-in-out;
@@ -471,26 +502,11 @@ body {
 .ProjRow .square:hover {
   cursor: pointer;
 }
-.ProjRow .square:hover .border {
-  height: 0px;
+.ProjRow .square:hover .projIcon {
+  transform: translateY(-5px);
 }
-.ProjRow .square:hover .projImg .scaled-img {
+.ProjRow .square:hover .projIcon .square-cta {
   opacity: 1;
-}
-.ProjRow .square:hover .projTitle {
-  opacity: 1 !important;
-  transform: translateY(-20px);
-}
-.ProjRow .square:hover hr {
-  transform: translateY(-20px);
-}
-.ProjRow .square:hover .projTags {
-  color: white !important;
-  transform: translateY(-20px);
-}
-.ProjRow .square:hover .projIcon img {
-  opacity: 0;
-  transform: translateY(-20px);
 }
 .ContactRow {
   padding-bottom: 30px;
@@ -514,7 +530,7 @@ body {
   font-size: 16px;
   margin-bottom: 20px;
   line-height: 1.5;
-  color: #555;
+  color: #444;
 }
 .ContactRow .myPic {
   margin-top: 25px;
@@ -544,31 +560,6 @@ body {
   margin-top: 25px;
   display: block;
   line-height: 1.7;
-}
-.ContactRow .quote-wrapper {
-  margin: 0px 25% 10px 25%;
-  font-family: 'Lora', serif;
-  color: #999;
-  font-style: 18px;
-}
-@media only screen and (max-width: 768px) {
-  .ContactRow .quote-wrapper {
-    margin: 0px 2% 10px 2%;
-  }
-}
-.ContactRow .quote-wrapper blockquote {
-  padding: 5px 0px;
-  margin: 0px;
-  border-left: none;
-  font-size: inherit;
-}
-.ContactRow .quote-wrapper blockquote:before {
-  font-family: 'FontAwesome';
-  content: "\f10d";
-  font-size: 15px;
-  color: #d83e77;
-  display: block;
-  margin-bottom: 3px;
 }
 @-webkit-keyframes bounce {
   0%,
@@ -822,7 +813,7 @@ body {
 }
 .whiteLine .details {
   font-family: 'MuseoSans-300', sans-serif;
-  color: #555;
+  color: #444;
   margin-bottom: 72px;
 }
 @media only screen and (max-width: 815px) {
@@ -891,25 +882,26 @@ body {
   border-radius: 2px;
   color: #333;
 }
-.whiteLine .details .personas-wrapper {
+.whiteLine .details .gray-block-wrapper {
   display: table;
   margin-bottom: 10px;
+  width: 100%;
 }
-.whiteLine .details .personas-wrapper .ad-persona {
+.whiteLine .details .gray-block-wrapper .gray-block {
   background: #f4f4f4;
   padding: 24px 24px 14px 24px;
   border-radius: 2px;
   margin: 5px -15px;
 }
 @media only screen and (max-width: 480px) {
-  .whiteLine .details .personas-wrapper .ad-persona {
+  .whiteLine .details .gray-block-wrapper .gray-block {
     padding: 20px 20px 10px 20px;
   }
 }
-.whiteLine .details .personas-wrapper .ad-persona .persona-name {
+.whiteLine .details .gray-block-wrapper .gray-block .persona-name {
   font-family: 'MuseoSans-700', sans-serif;
 }
-.whiteLine .details .personas-wrapper .ad-persona .labels {
+.whiteLine .details .gray-block-wrapper .gray-block .labels {
   text-transform: uppercase;
   font-size: 14px;
   font-family: 'MuseoSans-700', sans-serif;
