@@ -860,9 +860,9 @@ body {
 .whiteLine .details h4 {
   font-family: 'MuseoSans-700', sans-serif;
   color: #b9b9b9;
-  text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 18px;
+  text-transform: uppercase;
   margin-bottom: 16px;
   line-height: 1.5;
 }
@@ -891,7 +891,7 @@ body {
   background: #f4f4f4;
   padding: 24px 24px 14px 24px;
   border-radius: 2px;
-  margin: 5px -15px;
+  margin: 5px 0px 5px -15px;
 }
 @media only screen and (max-width: 480px) {
   .whiteLine .details .gray-block-wrapper .gray-block {
