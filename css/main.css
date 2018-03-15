@@ -454,6 +454,16 @@ body {
 .ProjRow .square .projImg .scaled-img {
   border-radius: 4px;
 }
+@media only screen and (max-width: 991px) {
+  .ProjRow .square .projImg .scaled-img.md-move-up {
+    margin-top: -300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ProjRow .square .projImg .scaled-img.md-move-up {
+    margin-top: auto;
+  }
+}
 .ProjRow .square .projImg .projIcon {
   position: absolute;
   background: transparent;
@@ -491,13 +501,6 @@ body {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-.ProjRow .square .scaled-img {
-  -webkit-transition: all 0.6s ease-in-out;
-  -moz-transition: all 0.6s ease-in-out;
-  -ms-transition: all 0.6s ease-in-out;
-  -o-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
 }
 .ProjRow .square:hover {
   cursor: pointer;

@@ -1,6 +1,9 @@
 .single-item .pic {
   width: 200px;
 }
+.single-item .pic g {
+  box-shadow: 1px 1px 4px lightblue;
+}
 .details {
   padding: 150px 30px;
   background-color: #fafafa;
@@ -65,69 +68,6 @@
 }
 .windmill svg {
   overflow: visible;
-}
-.windmill svg #fan {
-  -webkit-animation: rotation 7s infinite linear;
-  -moz-animation: rotation 7s infinite linear;
-  -o-animation: rotation 7s infinite linear;
-  animation: rotation 7s infinite linear;
-  -webkit-transform-origin: 50% 50%;
-}
-@-moz-keyframes rotation {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes rotation {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-  }
-}
-@-o-keyframes rotation {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-  }
-}
-@keyframes rotation {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-  }
 }
 .windmill svg .cls-1,
 .windmill svg .cls-3,

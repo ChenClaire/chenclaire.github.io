@@ -401,6 +401,14 @@
                     }
                     .scaled-img {
                         border-radius: 4px;
+                        &.md-move-up {
+                            @media only screen and (max-width: 991px) {
+                                margin-top: -300px;
+                            }
+                            @media only screen and (max-width: 768px) {
+                                margin-top: auto;
+                            }
+                        }
                     }
                     .projIcon {
                         position: absolute;
@@ -434,9 +442,7 @@
                         }
                     }
                 }
-                .scaled-img {
-                    .transition(all .6s ease-in-out);
-                }
+               
                 &:hover {
                     cursor: pointer;
                     .projIcon {
@@ -802,7 +808,6 @@
                     text-transform: uppercase;
                     margin-bottom: 16px;
                     line-height: 1.5;
-                    
                 }
                 .label-tag {
                     background-color: @primary-color;
@@ -850,9 +855,9 @@
                 @media only screen and (max-width: 768px) {
                     font-size: 26px;
                 }
-                a{
+                a {
                     padding: 8px;
-                    border:1px solid;
+                    border: 1px solid;
                 }
                 a:visited {
                     color: @primary-color;
