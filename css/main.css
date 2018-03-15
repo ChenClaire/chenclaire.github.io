@@ -947,6 +947,8 @@ body {
   margin-right: 8px;
 }
 .whiteLine .next-step i {
+  font-size: 14px;
+  display: none;
   vertical-align: middle;
 }
 @media only screen and (max-width: 768px) {
