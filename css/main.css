@@ -80,6 +80,9 @@ a:hover p {
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
+strong {
+  font-family: 'MuseoSans-700';
+}
 body {
   max-width: 1440px;
   margin: auto;
