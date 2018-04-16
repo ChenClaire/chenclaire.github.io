@@ -192,9 +192,8 @@ body {
   }
 }
 .IntroRow .intro .introduction-note {
-  font-family: 'Lora', serif;
   width: 60%;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #777;
 }
 @media only screen and (max-width: 1024px) {
@@ -491,7 +490,7 @@ body {
 .ProjRow .square .projImg .projIcon .projTags {
   color: #b9b9b9;
   font-family: 'MuseoSans-300', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 .ProjRow .square .projImg .projIcon .square-cta {
   color: #d83e77;
