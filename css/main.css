@@ -980,7 +980,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .whiteLine .add-margin {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 }
 .carousel {
